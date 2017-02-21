@@ -1,1 +1,90 @@
-ff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>lazysizes (inline svg external link object tag)</title>
+<link rel="canonical" href="https://afarkas.github.io/lazysizes/index.html" />
+  <script>
+    function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+    if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
+    document.createElement('picture');
+    loadJS("http://afarkas.github.io/lazysizes/plugins/respimg/ls.respimg.min.js");
+    }
+  </script>
+<link href="http://afarkas.github.io/lazysizes/assets/css/tidy.css" rel="stylesheet" />
+<style>
+#mainholder{background:yellow;height:auto;position:absolute; margin-top:100px;margin-bottom:100px;z-index:9999;width:80%;left:10%;}
+.contentbubble{width:98%;margin:110px auto;margin-bottom:100px;margin-top:100px;
+background:white;border:2px solid black;z-index:9999;}
+.heightauto{height:auto;}
+.height77vh{height:77vh;}
+.cont1{background-image: url("https://i.ytimg.com/vi/TchsZrs96HY/hqdefault.jpg");background-position:center;background-repeat: no-repeat;background-size:cover}
+.cont2{background-image: url("http://mac.h-cdn.co/assets/15/20/980x490/landscape-1431726891-mustard.jpg");background-position:center;background-repeat: no-repeat;background-size:cover cover}
+iframe{overflow-x:hidden;width:100%;height:100%}
+
+</style>
+	
+<script>
+  (function(){
+  var docElem = document.documentElement;
+  window.lazySizesConfig = window.lazySizesConfig || {};
+  window.lazySizesConfig.loadMode = 1;
+  //set expand to a higher value on larger displays
+  window.lazySizesConfig.expand = Math.max(Math.min(docElem.clientWidth, docElem.clientHeight, 1222) - 1, 359);
+  window.lazySizesConfig.expFactor = lazySizesConfig.expand < 380 ? 3 : 2;
+  })();
+</script>
+	
+<script src="http://afarkas.github.io/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js" async=""></script>
+<script src="http://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
+
+</head>
+<body>
+
+<div id="mainholder" class="center ber lazyload"> 
+  <h2>External caller box list to add to template</h2>
+
+  <div class="contentbubble height77vh cont1 lazyload">
+    <img src="http://billyssuns.com/svgex/run2.svg" />
+  </div>
+	
+  <div class="contentbubble height77vh cont2 lazyload">
+    <img src="http://billyssuns.com/svgex/pop.svg" />
+  </div>
+	
+  <div class="contentbubble height77vh">
+    <iframe id="Example2" class="lazyload" 
+      title="Example2"
+      frameborder="0"
+      scrolling="yes"
+      marginheight="0"
+      marginwidth="0"
+      src="https://phillycheese007.github.io/three.js/apasta/examples/crappy.html">
+    </iframe>
+  </div>
+
+
+	
+  <div class="contentbubble height77vh">
+	<object width="100%" height="500px" data="https://phillycheese007.github.io/three.js/apasta/examples/lazysizes/rety7.html" ></object>
+  </div>
+	
+  <div class="contentbubble height77vh">
+    <iframe id="Example2" class="lazyload"
+      title="Example2"
+      frameborder="0"
+      scrolling="yes"
+      marginheight="0"
+      marginwidth="0"
+      src="https://www.youtube.com/embed/pni_kDv9BsU" frameborder="0" allowfullscreen>
+    </iframe>
+  </div>
+
+
+</div> <!-- end #mainholder -->
+
+
+
+</body>
+</html>
