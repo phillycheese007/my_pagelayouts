@@ -16,7 +16,7 @@
   background:white;border-bottom:2px solid black;
   *zoom: 1;height:60px;
 }
-.box {
+#city .box {
   background: white;
 
   float: left;
@@ -33,6 +33,13 @@
 /*end function city*/
 
 /*begin function shitty*/
+#shitty .box {
+  float: left;
+  margin: 1.858736059%;
+  padding: 20px 0;
+  text-align: center;
+  width: 29.615861214%;
+}
 .shitty .box:nth-child(1) {background:blue;color:white;}
 .shitty .box:nth-child(2) {background:red;color:white;}
 .shitty .box:nth-child(3) {background:orange;color:black;}
