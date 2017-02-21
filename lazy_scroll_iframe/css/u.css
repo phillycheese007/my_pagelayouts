@@ -42,38 +42,7 @@
 .shitty .box:nth-child(3) {background:orange;color:black;}.shitty .box:nth-child(1) a {color:black;}
 /*end function shitty*/
 
-ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: red;height:500px;
-}
 
-/* Float the list items side by side */
-ul.tab li {float: left;}
-ul.tab:first-child {margin-left:1px;}
-
-/* Style the links inside the list items */
-ul.tab li a {
-    display:block;
-    color: black;
-    text-align: center;
-    padding:0;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 3em;
-}
-
-/* Change background color of links on hover */
-ul.tab li a:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-ul.tab li a:focus, .active {
-    background-color: white;text-decoration:underline;
-}
 figure.box a:focus, .active {
     background:color:white;font-weight:bold;text-decoration:underline;
 }
