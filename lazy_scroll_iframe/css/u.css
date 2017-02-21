@@ -1,2 +1,45 @@
 /*magic*/
-#t{color:#fff}
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;height:500px;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+ul.tab:first-child {margin-left:1px;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding:0;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: white;text-decoration:underline;
+}
+figure.box a:focus, .active {
+    background:color:white;font-weight:bold;text-decoration:underline;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding:0;padding-top:10px;margin-top:40px;
+    background-color: white;
+
+}
+
