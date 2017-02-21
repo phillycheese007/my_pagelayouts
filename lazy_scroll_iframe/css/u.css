@@ -47,7 +47,7 @@
 
  figure.box a{font-size:3em;color:black! important}
 .yu{text-decoration:none;}
-figure.box a:focus, .active { border-radius:50px;
+figure.box a:focus, .active {     border: 2px solid;border-radius: 25px;
     background:color:none;font-weight:bold;text-decoration:underline! important;
 }
 
