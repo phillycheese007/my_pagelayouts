@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>lazysizes - the ultimate lazyloader for responsive images, iframes and widget</title>
+	<link rel="canonical" href="https://afarkas.github.io/lazysizes/index.html" />
+
+	<script>
+		function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+
+		if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
+			document.createElement('picture');
+			loadJS("http://afarkas.github.io/lazysizes/plugins/respimg/ls.respimg.min.js");
+		}
+	</script>
+<link href="http://afarkas.github.io/lazysizes/assets/css/tidy.css" rel="stylesheet" />
+<link href="/my_pagelayouts/lazy_scroll_iframe/css/u.css" rel="stylesheet" />
+
+<style>
+#foz{background:none;height:auto;position:absolute; margin-top:100px;margin-bottom:100px;z-index:9999;width:80%;left:10%;}
+
+.bigbubble{width:98%;margin:110px auto;margin-bottom:100px;margin-top:100px;display:table;
+background:white;border:2px solid black;z-index:9999;}
+	.contentbubble{width:100%;background:green; }
+	.bigbubble .info{background:yellow;width:100%;height:100%;display:block;margin:0 auto;padding:0;display:table-row;}
+	
+.heightauto{height:auto;}
+.height77vh{height:77vh;}
+	.phonepadder{padding:30px 0;background:black;}
+.cont1{background-image: url("https://i.ytimg.com/vi/TchsZrs96HY/hqdefault.jpg");background-position:center;background-repeat: no-repeat;background-size:cover}
+.cont2{background-image: url("http://mac.h-cdn.co/assets/15/20/980x490/landscape-1431726891-mustard.jpg");background-position:center;background-repeat: no-repeat;background-size:cover}
+iframe{overflow-x:hidden;width:100%;height:100%}
+	#gap{display:block;}
+</style>
+
+	<script>
+		(function(){
+			var docElem = document.documentElement;
+
+			window.lazySizesConfig = window.lazySizesConfig || {};
+
+			window.lazySizesConfig.loadMode = 1;
+
+			//set expand to a higher value on larger displays
+			window.lazySizesConfig.expand = Math.max(Math.min(docElem.clientWidth, docElem.clientHeight, 1222) - 1, 359);
+			window.lazySizesConfig.expFactor = lazySizesConfig.expand < 380 ? 3 : 2;
+		})();
+	</script>
+
+	<script src="http://afarkas.github.io/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js" async=""></script>
+
+	<script src="http://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
+
+</head>
+<body>
+
+
+
+
+<div id="foz" class="center ber lazyload height77vh"> 
+<h2>External caller box list to add to template</h2>
+
+<div class="bigbubble">
+  <div class="info">
+	  <p><a href="https://phillycheese007.github.io/my_threejs/apasta/examples/crappy.html">https://phillycheese007.github.io/my_threejs/apasta/examples/crappy.html</a>
+	  </p><br><p>hhhh kkly ptyrt </p><br>
+  </div>
+  <div class="contentbubble cont1 lazyload height77vh">
+	  <iframe id="Example2" class="lazyload"
+    title="Example2"
+    frameborder="0"
+    scrolling="yes"
+    marginheight="0"
+    marginwidth="0"
+    src="https://phillycheese007.github.io/my_threejs/apasta/examples/crappy.html" frameborder="0" allowfullscreen>
+	</iframe>  </div>
+</div>
+	
+<div class="bigbubble">
+  <div class="contentbubble height77vh phonepadder">
+	<object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/svg/phoneyphone.svg" ></object>
+  </div>
+  <div class="info">
+    <p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br>
+  </div>
+</div>
+	
+<div class="bigbubble">
+  <div class="contentbubble cont2 lazyload height77vh">
+    <img src="http://billyssuns.com/svgex/pop.svg" />
+  </div>
+</div>
+	
+<div class="bigbubble">
+  <div class="contentbubble cont1 lazyload height77vh">
+    <img src="http://billyssuns.com/svgex/run2.svg" />
+  </div>
+  <div class="info">
+    <p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br>
+  </div>
+</div>
+	
+<div class="bigbubble">
+  <div class="contentbubble height77vh">
+  <iframe id="Example2" class="lazyload"
+    title="Example2"
+    frameborder="0"
+    scrolling="yes"
+    marginheight="0"
+    marginwidth="0"
+    src="https://www.youtube.com/embed/pni_kDv9BsU" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+  
+
+	
+	
+	
+</div>
+
+
+
+</body>
+</html>
