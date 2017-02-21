@@ -16,7 +16,7 @@
   background:white;border-bottom:2px solid black;
   *zoom: 1;height:60px;
 }
-#city .box {
+.city .box {
   background: white;
 
   float: left;
@@ -33,11 +33,11 @@
 /*end function city*/
 
 /*begin function shitty*/
-#shitty .box:nth-child(1) {
+.shitty .box:nth-child(1) {
   position: relative;background:blue;
   top: 20px;
 }
-#shitty .box:nth-child(2) {
+.shitty .box:nth-child(2) {
   position: relative;background:red;
   top: 20px;
 }
