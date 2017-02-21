@@ -13,9 +13,9 @@
   clear: both;
 }
 .box-set {
-  background:black;
   *zoom: 1;height:60px;
 }
+.city{background:black}.shitty{background:white;}
 .box {
   float: left;
   margin: 1.858736059%;margin-top:0;margin-bottom:0;
