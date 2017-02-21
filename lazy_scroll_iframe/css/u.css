@@ -1,4 +1,33 @@
 /*magic*/
+
+.box-set,
+.box {
+ margin:0;padding:0;}
+}
+.box-set:before,
+.box-set:after {
+  content: "";
+  display: table;
+}
+.box-set:after {
+  clear: both;
+}
+.box-set {
+  background:white;border-bottom:2px solid black;
+  *zoom: 1;height:60px;
+}
+.box {
+  background: white;
+
+  float: left;
+  margin: 1.858736059%;
+  padding:10px 0;
+  text-align: center;
+  width: 21.2825279%;
+}
+
+
+
 ul.tab {
     list-style-type: none;
     margin: 0;
