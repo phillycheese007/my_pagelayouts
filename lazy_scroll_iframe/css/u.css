@@ -56,13 +56,13 @@ ul.tab:first-child {margin-left:1px;}
 
 /* Style the links inside the list items */
 ul.tab li a {
-    display: inline-block;
+    display:block;
     color: black;
     text-align: center;
     padding:0;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 14px;
+    font-size: 3em;
 }
 
 /* Change background color of links on hover */
