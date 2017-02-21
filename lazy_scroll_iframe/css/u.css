@@ -42,7 +42,7 @@
 .shitty .box:nth-child(3) {background:orange;color:black;}.shitty .box:nth-child(1) a {color:black;}
 /*end function shitty*/
 
- figure.box a: {text-decoration:none;font-size:3em;}
+ figure.box a{text-decoration:none;font-size:3em;color:black! important}
 figure.box a:focus, .active {
     background:color:none;font-weight:bold;text-decoration:underline;
 }
