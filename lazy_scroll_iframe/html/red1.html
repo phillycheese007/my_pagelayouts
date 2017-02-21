@@ -92,7 +92,6 @@ iframe{overflow-x:hidden;width:100%;height:100%}
         <figure class="box"><a href="javascript:void(0)" class="tablinks-one" onclick="openCity(event, 'Specials')">Specials</a></figure>
         <figure class="box"><a href="javascript:void(0)" class="tablinks-one" onclick="openCity(event, 'Sandwiches')">Sandwiches</a>     </figure>
         <figure class="box"><a href="javascript:void(0)" class="tablinks-one active" onclick="openCity(event, 'Sides')">Sides</a></figure>
-        <figure class="box"><a href="javascript:void(0)" class="tablinks-one" onclick="openCity(event, 'Deserts')">Deserts</a></figure>
       </div>
 
 
@@ -167,9 +166,9 @@ iframe{overflow-x:hidden;width:100%;height:100%}
 <div class="bigbubble">
 	  
       <div class="box-set">
-        <figure class="box"><a href="javascript:void(0)" class="tablinks-two active" onclick="openCity(event, 'java')">java</a></figure>
-        <figure class="box"><a href="javascript:void(0)" class="tablinks-two" onclick="openCity(event, 'coffee')">coffee</a>     </figure>
-        <figure class="box"><a href="javascript:void(0)" class="tablinks-two" onclick="openCity(event, 'joe')">joe</a></figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-two active" onclick="openShitty(event, 'java')">java</a></figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-two" onclick="openShitty(event, 'coffee')">coffee</a>     </figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-two" onclick="openShitty(event, 'joe')">joe</a></figure>
       </div>
 	
       <div id="java" class="tabcontent-two" style="display:block;">
@@ -253,7 +252,7 @@ function openCity(evt, cityName) {
 </script>
 	
 <script>
-function openCity(evt, cityName) {
+function openShitty(evt, shittyName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent-two");
     for (i = 0; i < tabcontent.length; i++) {
@@ -263,7 +262,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(shittyName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 </script>
