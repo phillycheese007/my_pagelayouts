@@ -17,15 +17,15 @@
   *zoom: 1;height:60px;
 }
 .box {
-  background: white;
-
   float: left;
-  margin: 1.858736059%;
-  padding:10px 0;
+  margin: 1.858736059%;margin-top:0;margin-bottom:0;
+  padding: 5px 0;
   text-align: center;
-  width: 21.2825279%;
+  width: 29.615861214%;
 }
-
+.box:nth-child(1) {background:blue;}.shitty .box:nth-child(1)a{color:white;}.bacblu{background:blue;border:3px solid blue;}
+.box:nth-child(2) {background:red;}.shitty .box:nth-child(1) a {color:lightyellow;}
+.box:nth-child(3) {background:orange;color:black;}.shitty .box:nth-child(1) a {color:black;}
 
 /*end function city*/
 
