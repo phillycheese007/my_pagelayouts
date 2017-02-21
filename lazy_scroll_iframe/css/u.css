@@ -28,7 +28,7 @@
 .bac3{border: 4px solid orange;}
 
 .box:nth-child(1) > a{background:blue;}.shitty .box:nth-child(1)a{color:white;}
-.box:nth-child(2 > a {background:red;}.shitty .box:nth-child(1) a {color:lightyellow;}
+.box:nth-child(2) > a {background:red;}.shitty .box:nth-child(1) a {color:lightyellow;}
 .box:nth-child(3) > a  {background:orange;color:black;}.shitty .box:nth-child(1) a {color:black;}
 
 /*end function city*/
