@@ -44,7 +44,7 @@
 
  figure.box a{text-decoration:none;font-size:3em;color:black! important}
 figure.box a:focus, .active {
-    background:color:none;font-weight:bold;text-decoration:underline;
+    background:color:none;font-weight:bold;text-decoration:underline! important;
 }
 
 /* Style the tab content */
