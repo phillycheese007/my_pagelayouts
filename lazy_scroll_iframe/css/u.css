@@ -43,6 +43,7 @@
 /*end function shitty*/
 
  figure.box a{font-size:3em;color:black! important}
+.yu{text-decoration:none;}
 figure.box a:focus, .active {
     background:color:none;font-weight:bold;text-decoration:underline! important;
 }
