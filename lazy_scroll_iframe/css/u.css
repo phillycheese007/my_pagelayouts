@@ -58,8 +58,7 @@ figure.box a:focus, .active {         border: 0px solid;
 .tabcontent-one, .tabcontent-two {
     display: none;
     padding:0;
-    background-color: white;width:97%;margin:0 auto;
-
+    background-color: white;
 }
-
+.tabcontent-one {width:97%;margin:0 auto;}
 
