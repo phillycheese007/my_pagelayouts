@@ -16,7 +16,7 @@
   background:white;border-bottom:2px solid black;
   *zoom: 1;height:60px;
 }
-#city .box {
+.city .box {
   background: white;
 
   float: left;
@@ -33,7 +33,7 @@
 /*end function city*/
 
 /*begin function shitty*/
-#shitty .box {
+.shitty .box {
   float: left;
   margin: 1.858736059%;
   padding: 20px 0;
