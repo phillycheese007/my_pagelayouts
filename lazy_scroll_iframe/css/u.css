@@ -23,9 +23,9 @@
   text-align: center;
   width: 29.615861214%;
 }
-.bac1{border:3px solid blue;}
-.bac2{border:3px solid red;}
-.bac3{border:3px solid orange;}
+.bac1{border:6px 3px solid blue;}
+.bac2{border:6px 3px solid red;}
+.bac3{border:6px 3px solid orange;}
 
 .box:nth-child(1) {background:blue;}.shitty .box:nth-child(1)a{color:white;}
 .box:nth-child(2) {background:red;}.shitty .box:nth-child(1) a {color:lightyellow;}
