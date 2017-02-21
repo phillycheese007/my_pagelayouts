@@ -1,4 +1,4 @@
-/*magic*/
+/*begin function city*/
 
 .box-set,
 .box {
@@ -25,8 +25,20 @@
   text-align: center;
   width: 21.2825279%;
 }
+.box:nth-child(2) {
+  position: relative;
+  top: 20px;
+}
 
+/*end function city*/
 
+/*begin function shitty*/
+
+#shitty .box:nth-child(2) {
+  position: relative;background:red;
+  top: 20px;
+}
+/*end function shitty*/
 
 ul.tab {
     list-style-type: none;
