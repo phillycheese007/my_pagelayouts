@@ -89,10 +89,10 @@ iframe{overflow-x:hidden;width:100%;height:100%}
 	  
 	  
       <div class="box-set">
-        <figure class="box"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Specials')">Specials</a></figure>
-        <figure class="box"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Sandwiches')">Sandwiches</a>     </figure>
-        <figure class="box"><a href="javascript:void(0)" class="tablinks active" onclick="openCity(event, 'Sides')">Sides</a></figure>
-        <figure class="box"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Deserts')">Deserts</a></figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-one" onclick="openCity(event, 'Specials')">Specials</a></figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-one" onclick="openCity(event, 'Sandwiches')">Sandwiches</a>     </figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-one active" onclick="openCity(event, 'Sides')">Sides</a></figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-one" onclick="openCity(event, 'Deserts')">Deserts</a></figure>
       </div>
 
 
@@ -167,9 +167,9 @@ iframe{overflow-x:hidden;width:100%;height:100%}
 <div class="bigbubble">
 	  
       <div class="box-set">
-        <figure class="box"><a href="javascript:void(0)" class="tablinks active" onclick="openCity(event, 'java')">java</a></figure>
-        <figure class="box"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'coffee')">coffee</a>     </figure>
-        <figure class="box"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'joe')">joe</a></figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-two active" onclick="openCity(event, 'java')">java</a></figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-two" onclick="openCity(event, 'coffee')">coffee</a>     </figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-two" onclick="openCity(event, 'joe')">joe</a></figure>
       </div>
 	
       <div id="java" class="tabcontent-two" style="display:block;">
@@ -243,7 +243,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tablinks-one");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
@@ -259,7 +259,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tablinks-two");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
