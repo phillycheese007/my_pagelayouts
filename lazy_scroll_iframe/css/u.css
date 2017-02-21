@@ -33,14 +33,8 @@
 /*end function city*/
 
 /*begin function shitty*/
-.shitty .box:nth-child(1) {
-  position: relative;background:blue;
-  top: 20px;
-}
-.shitty .box:nth-child(2) {
-  position: relative;background:red;
-  top: 20px;
-}
+.shitty .box:nth-child(1) {background:blue;}
+.shitty .box:nth-child(2) {background:red;}
 /*end function shitty*/
 
 ul.tab {
