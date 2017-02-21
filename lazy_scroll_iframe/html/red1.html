@@ -97,7 +97,7 @@ iframe{overflow-x:hidden;width:100%;height:100%}
 
 
 
-      <div id="Specials" class="tabcontent">
+      <div id="Specials" class="tabcontent-one">
         <div class="w3-half w3-margin-bottom custard">
           <div class="w3-container w3-white">
             <div class="menu53">Cubano<span class="rope">$6</span></div>
@@ -117,7 +117,7 @@ iframe{overflow-x:hidden;width:100%;height:100%}
       </div>
 
 
-      <div id="Sandwiches" class="tabcontent">
+      <div id="Sandwiches" class="tabcontent-one">
         <div class="w3-half w3-margin-bottom custard">
           <div class="w3-container w3-white">
             <div class="menu53">The Charm City<span class="rope">$6</span></div>
@@ -137,7 +137,7 @@ iframe{overflow-x:hidden;width:100%;height:100%}
 	  
 	  
 
-      <div id="Sides" class="tabcontent" style="display:block;">
+      <div id="Sides" class="tabcontent-one" style="display:block;">
         <div class="w3-half w3-margin-bottom custard">
           <div class="w3-container w3-white">
             <div class="menu53">Hand-cut Fries <span class="rope">$6</span></div>
@@ -172,7 +172,7 @@ iframe{overflow-x:hidden;width:100%;height:100%}
         <figure class="box"><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'joe')">joe</a></figure>
       </div>
 	
-      <div id="java" class="tabcontent" style="display:block;">
+      <div id="java" class="tabcontent-two" style="display:block;">
         <div class="contentbubble height77vh phonepadder">
           <iframe id="Example2" class="lazyload"
     title="Example2"
@@ -184,12 +184,12 @@ iframe{overflow-x:hidden;width:100%;height:100%}
          </iframe>
        </div> 
       </div>
-      <div id="coffee" class="tabcontent">
+      <div id="coffee" class="tabcontent-two">
         <div class="contentbubble height77vh phonepadder">
 	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_threejs/apasta/examples/crappy.html" ></object>
         </div> 
       </div>	  
-      <div id="joe" class="tabcontent">
+      <div id="joe" class="tabcontent-two">
         <div class="contentbubble height77vh phonepadder">
 	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/svg/phoneyphone.svg" ></object>
         </div> 
@@ -239,7 +239,23 @@ iframe{overflow-x:hidden;width:100%;height:100%}
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent = document.getElementsByClassName("tabcontent-one");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+	
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-two");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
