@@ -28,9 +28,9 @@
 
 @keyframes colormorph {
   50% {
-    color: red;
+    color: red;transform:rotate(0deg);
   }
   100% {
-    color: black;
+    color: black;transform:rotate(360deg);
   }
 }
