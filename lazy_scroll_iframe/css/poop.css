@@ -47,7 +47,7 @@
 .letters {
     vertical-align: top;
     display: inline-block;
-    *display: inline;
+    *display: inline;text-align:right;
     zoom: 1
 }
 .stretch {
