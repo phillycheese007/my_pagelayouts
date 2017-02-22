@@ -1,10 +1,10 @@
 .mask-overlay {
   display: block;
-  background-color: white;height:10em;
+  background-color: white;
   mix-blend-mode: screen;border:53px solid;text-align:center;font-size: 17vw;  animation: colormorph 20s infinite;
 }
 .mask-overlay h1 {
-  animation: colormorph 20s infinite;    box-sizing: border-box;
+  animation: colormorph 20s infinite;    box-sizing: border-box;padding:2em;
   margin: 0;
   padding: 3rem;
   color: black;
