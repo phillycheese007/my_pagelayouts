@@ -35,3 +35,26 @@
 }
 
 
+
+.wrapper {padding:5%;
+	width: 90%; /*for example*/
+	border: 1px solid gray; /*only for demonstrative purposes*/
+	text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+.letters {
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+
