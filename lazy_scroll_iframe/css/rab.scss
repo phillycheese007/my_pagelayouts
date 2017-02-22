@@ -3,7 +3,9 @@
 ---
 
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #fff;
+$primary-color: black;
+$secondary-color: white;
+
 
 /* begin borders */
 $bor1pxbl: 1px solid black;
@@ -22,9 +24,9 @@ div {
 .box-set {
   *zoom: 1;height:60px;
 }
-.city{background:black}
+.city{background: black}
 
-.shitty{background:white;}
+.shitty{background: white;}
 
 .box {
   float: left;
