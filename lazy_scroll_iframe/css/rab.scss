@@ -60,3 +60,27 @@ div {
 .bac2{border: 7px solid red;}
 .bac3{border: 7px solid orange;}
 
+.box:nth-child(1) a{background:blue;}
+.shitty .box:nth-child(1) a{color:white;}
+.box:nth-child(2) a{background:red;}
+.shitty .box:nth-child(1) a{color:lightyellow;}
+.box:nth-child(3) a{background:orange;color:black;}
+.shitty .box:nth-child(1) a {color:black;}
+
+/*end function city*/
+
+/*begin function shitty*/
+.shitty .box {
+  float: left;
+  margin: 1.858736059%;margin-top:0;margin-bottom:0;
+  text-align: center;
+  width: 29.615861214%;
+}
+.shitty .box:nth-child(1) > a {background:blue;}
+.shitty .box:nth-child(1)a{color:white;}
+.shitty .box:nth-child(2) > a {background:red;}
+.shitty .box:nth-child(1) a {color:lightyellow;}
+.shitty .box:nth-child(3) > a {background:orange;color:black;}
+.shitty .box:nth-child(1) a {color:black;}
+
+
