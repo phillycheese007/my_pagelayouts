@@ -1,18 +1,10 @@
 .mask-overlay {
   display: block;
   background-color: white;
-  mix-blend-mode: screen;border:3px solid red;text-align:center;font-size: 55vw;
+  mix-blend-mode: screen;border:3px solid red;text-align:center;font-size: 11vw;
 }
 .mask-overlay {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 3rem;
-  color: black;
- 
-  font-weight: bold;
-  line-height: 1;
-  text-transform: uppercase;
-  animation: colormorph 20s infinite;
+
 }
 
 .buddy {
