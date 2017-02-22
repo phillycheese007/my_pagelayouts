@@ -3,7 +3,8 @@
   background-color: white;
   mix-blend-mode: screen;border:3px solid red;text-align:center;font-size: 11vw;
 }
-.mask-overlay {
+.mask-overlay h1 {
+  animation: colormorph 20s infinite;
 
 }
 
