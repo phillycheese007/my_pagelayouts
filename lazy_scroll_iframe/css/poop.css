@@ -1,7 +1,7 @@
 .mask-overlay {
   display: block;
   background-color: white;
-  mix-blend-mode: screen;border:3px solid red;
+  mix-blend-mode: screen;border:3px solid red;text-align:center;
 }
 .mask-overlay .bigletter {
   box-sizing: border-box;
