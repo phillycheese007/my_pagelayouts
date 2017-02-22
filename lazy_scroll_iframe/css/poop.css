@@ -6,7 +6,8 @@
 .mask-overlay h1 {
   animation: colormorph 20s infinite;    box-sizing: border-box;
   margin: 0;
-  padding: 3rem;
+
+	
   padding-bottom: 3.2rem;
   color: black;
   font-size: 16vw;
