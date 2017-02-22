@@ -13,8 +13,6 @@
   line-height: 1;
   text-transform: uppercase;
 }
-.oh{ animation: textflip 5s infinite; }
-
 .buddy {
 
   background-blend-mode: screen;
@@ -35,7 +33,4 @@
   }
 }
 
-@-webkit-keyframes texflip {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-  }
+
