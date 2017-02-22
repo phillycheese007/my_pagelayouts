@@ -2,10 +2,7 @@
 #glitchy
 ---
 
-body{
-  background:black;
-  font-family: 'Varela', sans-serif;
-}
+/*begin - glitch text */
 
 .glitch{
   color:white;
@@ -58,3 +55,5 @@ body{
   clip:rect(0,900px,0,0); 
   animation:noise-anim-2 3s infinite linear alternate-reverse;
 }
+
+/*end - glitch text */
