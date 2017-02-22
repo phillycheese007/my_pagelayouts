@@ -37,7 +37,7 @@
 
 
 .wrapper {
-	width: 90%;/*for example*/
+	width: 100%;/*for example*/
 padding:5%;
 	text-align: justify;
     -ms-text-justify: distribute-all-lines;
