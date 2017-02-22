@@ -39,7 +39,7 @@
 
 .wrapper {
 	width: 100%; /*for example*/
-	border: 10px solid gray; /*only for demonstrative purposes*/
+
 	text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
