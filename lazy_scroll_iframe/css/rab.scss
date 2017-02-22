@@ -4,7 +4,11 @@
 
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #fff;
-$border: 3px solid black;
+
+/* begin borders */
+$bor1pxbl: 1px solid black;
+$bor2pxbl: 2px solid black;
+/* end borders */
 
 body {
   font: 100% $font-stack;
@@ -14,3 +18,67 @@ body {
 div {
   border: $border;
 }
+
+/*begin function city*/
+
+.box-set,
+.box {
+ margin:0;padding:0;}
+}
+.box-set:before,
+.box-set:after {
+  content: "";
+  display: table;
+}
+.box-set:after {
+  clear: both;
+}
+.box-set {
+  *zoom: 1;height:60px;
+}
+.city{background:black}.shitty{background:white;}
+.box {
+  float: left;
+  margin: 1.858736059%;margin-top:0;margin-bottom:0;
+  padding: 5px 0;
+  text-align: center;
+  width: 29.615861214%;
+}
+.bac1{border: 7px solid blue;}
+.bac2{border: 7px solid red;}
+.bac3{border: 7px solid orange;}
+
+.box:nth-child(1) a{background:blue;}.shitty .box:nth-child(1)a{color:white;}
+.box:nth-child(2) a {background:red;}.shitty .box:nth-child(1) a {color:lightyellow;}
+.box:nth-child(3) a  {background:orange;color:black;}.shitty .box:nth-child(1) a {color:black;}
+
+/*end function city*/
+
+/*begin function shitty*/
+.shitty .box {
+  float: left;
+  margin: 1.858736059%;margin-top:0;margin-bottom:0;
+  text-align: center;
+  width: 29.615861214%;
+}
+.shitty .box:nth-child(1) > a {background:blue;}.shitty .box:nth-child(1)a{color:white;}
+.shitty .box:nth-child(2) > a {background:red;}.shitty .box:nth-child(1) a {color:lightyellow;}
+.shitty .box:nth-child(3) > a {background:orange;color:black;}.shitty .box:nth-child(1) a {color:black;}
+
+
+/*end function shitty*/
+
+ figure.box a{font-size:3em;color:black! important;border: 0px solid;display:block;}
+.yu{text-decoration:none;}
+figure.box a:focus, .active {         border: 0px solid;
+    border-top-left-radius: .5em;border-top-right-radius: .5em; display:block;
+    background:color:none;text-decoration:underline! important;
+}
+
+/* Style the tab content */
+.tabcontent-one, .tabcontent-two {
+    display: none;
+    padding:0;
+    background-color: white;
+}
+.tabcontent-one {width:97%;margin:0 auto;margin-bottom: .5em}
