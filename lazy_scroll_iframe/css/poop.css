@@ -6,9 +6,9 @@
 .mask-overlay h1 {
   animation: colormorph 20s infinite;    
   margin: 0;
-
-	
-  color: black;
+   padding:3rem;
+   padding-bottom:3.5rem;
+   color: black;
   font-size: 16vw;
   font-weight: bold;
   text-transform: uppercase;
@@ -35,26 +35,5 @@
 
 
 
-.wrapper {
-	width: 97%;/*for example*/
-	padding:2em;
-padding-right:3%;
-	text-align: justify;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines;
-}
-
-.letters {
-   
-    display: inline-block;
-    *display: inline;
-    zoom: 1
-}
-.stretch {
-    width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0
-}
 
 
