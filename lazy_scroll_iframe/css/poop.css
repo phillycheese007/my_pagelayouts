@@ -3,7 +3,7 @@
   background-color: white;
   mix-blend-mode: screen;
 }
-.mask-overlay h1 {
+.mask-overlay .bigletter {
   box-sizing: border-box;
   margin: 0;
   padding: 3rem;
