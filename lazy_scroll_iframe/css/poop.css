@@ -2,19 +2,18 @@
   display: block;
   background-color: white;
   mix-blend-mode: screen;
-  h1 {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 3rem;
-    color: black;
-    font-size: 16vw;
-    font-weight: bold;
-    line-height: 1;
-    text-transform: uppercase;
-    animation: colormorph 20s infinite;
-  }
 }
-
+.mask-overlay h1 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 3rem;
+  color: black;
+  font-size: 16vw;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  animation: colormorph 20s infinite;
+}
 
 .buddy {
   height: 100%;
@@ -27,7 +26,6 @@
   background-size: cover;
   font-family: Raleway, Arial Black, sans-serif;
 }
-
 
 @keyframes colormorph {
   50% {
