@@ -67,4 +67,13 @@ div {
 .box:nth-child(3) a{background:orange;color:black;}
 .shitty .box:nth-child(1) a {color:black;}
 
+figure.box a{font-size:3em;color:black! important;border: 0px solid;display:block;}
+
+.yu{text-decoration:none;}
+
+figure.box a:focus, .active {         
+    border: 0px solid;
+    border-top-left-radius: .5em;border-top-right-radius: .5em; display:block;
+    background:color:none;text-decoration:underline! important;
+}
 
