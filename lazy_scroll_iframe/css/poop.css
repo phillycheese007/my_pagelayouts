@@ -31,6 +31,6 @@
     color: red;transform:rotate(0deg);
   }
   100% {
-    color: black;transform:rotate(360deg);
+    color: black;transform:rotate(120deg);
   }
 }
