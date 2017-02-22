@@ -12,8 +12,8 @@
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
-
 }
+.oh{ animation: colormorph 5s infinite; }
 
 .buddy {
 
@@ -28,9 +28,17 @@
 
 @keyframes colormorph {
   50% {
-    color: red;transform:rotate(0deg);
+    color: red;
   }
   100% {
-    color: black;transform:rotate(120deg);
+    color: black;
+  }
+}
+@keyframes textflip {
+  50% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(120deg);
   }
 }
