@@ -21,6 +21,20 @@ div {
   border: $bor1pxbl;
 }
 
+.box-set,
+.box {
+  margin:0;
+  padding:0;}
+}
+.box-set:before,
+.box-set:after {
+  content: "";
+  display: table;
+}
+.box-set:after {
+  clear: both;
+}
+
 .box-set {
   *zoom: 1;height:60px;
 }
