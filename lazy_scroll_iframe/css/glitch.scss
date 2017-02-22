@@ -2,8 +2,6 @@
 #glitchy
 ---
 
-
-
 body{
   background:black;
   font-family: 'Varela', sans-serif;
@@ -16,6 +14,7 @@ body{
   width:400px;
   margin:0 auto;
 }
+
 @keyframes noise-anim{
   $steps:20;
   @for $i from 0 through $steps{
@@ -24,6 +23,7 @@ body{
     }
   }
 }
+
 .glitch:after{
   content:attr(data-text);
   position:absolute;
@@ -45,6 +45,7 @@ body{
     }
   }
 }
+
 .glitch:before{
   content:attr(data-text);
   position:absolute;
