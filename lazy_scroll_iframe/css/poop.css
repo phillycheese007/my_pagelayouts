@@ -37,9 +37,9 @@
 
 
 
-.wrapper {padding:5%;
-	width: 90%; /*for example*/
-	border: 1px solid gray; /*only for demonstrative purposes*/
+.wrapper {
+	width: 100%; /*for example*/
+	border: 10px solid gray; /*only for demonstrative purposes*/
 	text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
