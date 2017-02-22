@@ -19,6 +19,13 @@ div {
   border: $bor1pxbl;
 }
 
+.box-set {
+  *zoom: 1;height:60px;
+}
+.city{background:black}
+
+.shitty{background:white;}
+
 .box {
   float: left;
   margin: 1.858736059%;
