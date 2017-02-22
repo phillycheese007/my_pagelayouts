@@ -24,13 +24,15 @@ div {
 .box-set,
 .box {
   margin:0;
-  padding:0;}
+  padding:0;
 }
+
 .box-set:before,
 .box-set:after {
   content: "";
   display: table;
 }
+
 .box-set:after {
   clear: both;
 }
