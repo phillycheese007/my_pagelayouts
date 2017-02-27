@@ -13,6 +13,19 @@ $bor1pxbl: 1px solid black;
 $bor2pxbl: 2px solid black;
 /* end borders */
 
+$billy: 10px;
+
+$frontback: translateZ(          );
+
+
+.slab_10_1_1 .front, .slab_10_1_1 .back {
+  transform: $frontback;
+}
+
+
+
+
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
@@ -36,3 +49,72 @@ body {
 .slab_10_1_1 .top{transform:rotateX(90deg) translateZ(5vw)}
 .slab_10_1_1 .bottom{transform:rotateX(-90deg) translateZ(-4vw)}
   /*------------------------------end slab 10vw x 1vw x 1vw ----------------------------------*/
+
+
+
+
+
+
+
+$edge-len-landscape: 20vw;
+$edge-len-portrait: 
+	$edge-len-landscape*1vh/1vw;
+// variables used just to prettify
+$url: $base + 'cat_pumpkin_0.jpg';
+$ratio: $edge-len-landscape/100vw;
+$img-size: 425px;
+$mq-max: $img-size/$ratio;
+
+@mixin faces($l: $edge-len-landscape) {
+	margin: -.5*$l;
+	width: $l; height: $l;
+
+	@for $i from 0 to 6 {
+		&:nth-child(#{$i + 1}) {
+			transform: 
+				if($i < 4, rotateY($i*90deg), 
+					rotateX(pow(-1, $i)*90deg))
+				translateZ(.5*$l);
+		}
+	}
+}
+
+body {
+	height: 100vh;
+	perspective: 32em;
+	background: silver;
+}
+
+div { position: absolute; }
+
+.cube {
+	top: 50%; left: 50%;
+	transform-style: preserve-3d;
+	animation: rot 7s linear infinite;
+	
+	&__face {
+		@include faces();
+
+    @media (orientation: portrait) {
+			@include faces($edge-len-portrait);
+    }
+
+		/* background & related */
+		box-shadow: inset 0 0 0 1px #fff;
+		opacity: .5;
+		background: url($url) 50% no-repeat #000;
+
+		@media (max-width: $mq-max), 
+					(max-height: $mq-max) {
+			background-size: contain;
+		}
+	}
+}
+
+
+@keyframes rot {
+	to {
+		transform: rotateX(1turn) rotateY(1turn);
+	}
+}
+
