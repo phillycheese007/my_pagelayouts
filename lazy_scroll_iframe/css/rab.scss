@@ -6,14 +6,7 @@ $font-stack:    Helvetica, sans-serif;
 $primary-color: black;
 $secondary-color: white;
 
-/* begin heights */
-$hgt50vh: height:50vh;
-$hgt70vh: height:70vh;
-$hgt100vh: height:100vh;
 
-$hgtauto: height:auto;
-$hgt100per: height:100%;
-/* end heights */
 
 /* begin borders */
 $bor1pxbl: 1px solid black;
@@ -25,8 +18,3 @@ body {
   color: $primary-color;
 }
 
-.box-set,
-.box {
-  margin:0;
-  padding:0;
-}
