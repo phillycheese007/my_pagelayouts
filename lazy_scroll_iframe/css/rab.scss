@@ -7,10 +7,7 @@ $edge-len-landscape: 20vw;
 $edge-len-portrait: 
 	$edge-len-landscape*1vh/1vw;
 // variables used just to prettify
-$url: $base + 'cat_pumpkin_0.jpg';
-$ratio: $edge-len-landscape/100vw;
-$img-size: 425px;
-$mq-max: $img-size/$ratio;
+
 
 @mixin faces($l: $edge-len-landscape) {
 	margin: -.5*$l;
