@@ -15,6 +15,12 @@
 
 
 
+.weirdo {
+  $keyZ__2: 88px;
+  width: calc(100% - #{$keyZ__2});
+}
+
+
 
 .slab_test {
   $keyZ:10;
