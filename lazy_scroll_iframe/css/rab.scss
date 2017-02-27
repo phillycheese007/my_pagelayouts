@@ -23,12 +23,17 @@
 
 
 .slab_test {
-  $width: ;
-  $height: ;
-  $depth: ;
- 
   $keyZ:10vw;
   $zunny: $keyZ/ 2 ;
+  
+  
+  $width: 10;
+  $height: 1;
+  $depth: 1;
+ 
+
+  
+  
   width: 97%;
 
   p, div {
@@ -39,6 +44,15 @@
   figure { display: block; margin: 0; position: absolute; border: 1px solid #000; opacity: .7; }
   
   .front, .back { transform: translateZ($zunny); }
+  .right, .left { transform: translateZ($zunny); }
+  .top, .bottom { transform: translateZ($zunny); }
+  
+  .front  { transform: rotateY(   0deg ) translateZ(  50px ); }
+  .back   { transform: rotateX( 180deg ) translateZ(  50px ); }
+  .right  { transform: rotateY(  90deg ) translateZ( 150px ); }
+  .left   { transform: rotateY( -90deg ) translateZ( 150px ); }
+  .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
+  .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
 
 }
 
