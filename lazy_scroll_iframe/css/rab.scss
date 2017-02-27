@@ -32,11 +32,9 @@
     a { font-weight: bold; }
   }
   
-
   figure { display: block; margin: 0; position: absolute; border: 1px solid #000; opacity: .7; }
   
-  
-  .front { transform: translateZ($zunny); }
+  .front, .back { transform: translateZ($zunny); }
 
 }
 
