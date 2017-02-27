@@ -17,7 +17,8 @@
 
 
 .slab_test {
-  $zunny:30px;
+  $keyZ:10;
+  $zunny: $keyZ/2 ;
   width: 97%;
 
   p, div {
@@ -29,7 +30,7 @@
   figure { display: block; margin: 0; position: absolute; border: 1px solid #000; opacity: .7; }
   
   
-  .slab_10_1_1 .front { transform: translateZ($zunny); }
+  .front { transform: translateZ($zunny); }
 
 }
 
