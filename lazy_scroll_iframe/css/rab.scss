@@ -17,16 +17,20 @@
 
 
 .slab_test {
+  $zunny:30px;
   width: 97%;
 
   p, div {
     font-size: 2em;
     a { font-weight: bold; }
   }
+  
 
   figure { display: block; margin: 0; position: absolute; border: 1px solid #000; opacity: .7; }
- 
-  pre { font-size: 3em; }
+  
+  
+  .slab_10_1_1 .front { transform: translateZ($zunny); }
+
 }
 
 
