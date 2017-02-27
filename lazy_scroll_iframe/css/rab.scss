@@ -1,6 +1,9 @@
 ---
 #love
 ---
+$keyZ:10vw;
+$zunny: $keyZ/ 2 ;
+
 
 #main {
   width: 97%;
@@ -64,7 +67,6 @@
     top: ($height - $depth)/2 ;
   }
   
-
 .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:red; }
 .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:red; }
 .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:green; }
@@ -72,9 +74,6 @@
 .top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:blue; }
 .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:blue; }
   
-  
-
-
 } /*--end shape controler --*/
 
 
