@@ -65,7 +65,7 @@ figure.box a:focus, .active {         border: 0px solid;
    /* background-color: white; */
 }
 .tabcontent-one {    
-  width: calc(100% - 8px);
+  width: calc(100% - 14px);
   margin:0 auto;
   margin-bottom:0;
 }
