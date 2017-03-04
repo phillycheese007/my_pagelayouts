@@ -67,7 +67,7 @@ figure.box a:focus, .active {         border: 0px solid;
 .tabcontent-one {    
   width: calc(100% - 8px);
   margin:0 auto;
-  margin-bottom: .5em
+  margin-bottom: .5em;
 }
 
 
