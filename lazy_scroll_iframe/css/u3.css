@@ -48,8 +48,8 @@
 
 /*end function shitty*/
 
- .city figure.box a{font-size:1.2em;color:black! important;border: 0px solid;display:block;padding:.75em;} /* b careful the padding here can hide utube iframe */ 
- .shitty figure.box a{font-size:1.2em;color:black! important;border: 0px solid;display:block;padding:.75em;} /* b careful the padding here can hide utuiframe */ 
+ .city figure.box a{font-size:1.2em;color:black! important;border: 0px solid;display:block;padding:.73em;} /* b careful the padding here can hide utube iframe */ 
+ .shitty figure.box a{font-size:1.2em;color:black! important;border: 0px solid;display:block;padding:.73em;} /* b careful the padding here can hide utuiframe */ 
 
 .yu{text-decoration:none;}
 
