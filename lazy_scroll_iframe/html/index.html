@@ -1,38 +1,44 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>lazysizes - the ultimate lazyloader for responsive images, iframes and widget</title>
-	<link rel="canonical" href="https://afarkas.github.io/lazysizes/index.html" />
-
-	<script>
-		function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>lazysizes - the ultimate lazyloader for responsive images, iframes and widget</title>
+    <link rel="canonical" href="https://afarkas.github.io/lazysizes/index.html" />
+    <script>
+	function loadJS(u){var r=document.getElementsByTagName("script")[ 0   ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
 		if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
 			document.createElement('picture');
 			loadJS("http://afarkas.github.io/lazysizes/plugins/respimg/ls.respimg.min.js");
 		}
-	</script>
-<link href="http://afarkas.github.io/lazysizes/assets/css/tidy.css" rel="stylesheet" />
-<link href="/my_pagelayouts/lazy_scroll_iframe/css/u.css" rel="stylesheet" />
+    </script>
+    <link href="http://afarkas.github.io/lazysizes/assets/css/tidy.css" rel="stylesheet" />
+    <link href="../css/u3.css" rel="stylesheet" />
 
-<style>
-#foz{background:none;height:auto;position:absolute; margin-top:100px;margin-bottom:100px;z-index:9999;width:80%;left:10%;}
+    <style>
 
-.bigbubble{width:98%;margin:110px auto;margin-bottom:100px;margin-top:100px;display:table;
-background:white;border:2px solid black;z-index:9999;}
-	.contentbubble{width:100%;background:green; }
-	.bigbubble .info{background:yellow;width:100%;height:100%;display:block;margin:0 auto;padding:0;display:table-row;}
+
+  #foz{
+  background:white;height:auto;position:absolute; margin-top:100px;margin-bottom:100px;z-index:9999;width:80%;left:10%;}
+      .bigbubble{width:98%;margin:110px auto;margin-bottom:100px;margin-top:10px;display:table;
+      background:white;z-index:9999;}
+.bord-2p-black{border:2px solid black;}
+.nobord{border:none;}
+	.contentbubble{width:100%;background:none; }
+	.bigbubble .info{background:yellow;width:100%;display:block;margin:0 auto;padding:0;}
 	
+.height100per{height:100%;}
+.heightmin55vw{min-height:55vw;}
 .heightauto{height:auto;}
 .height77vh{height:77vh;}
-	.phonepadder{padding:30px 0;background:black;}
+.height100vh{height:100vh;}
+	.phonepadder{padding-top:10px;background:black;}
 .cont1{background-image: url("https://i.ytimg.com/vi/TchsZrs96HY/hqdefault.jpg");background-position:center;background-repeat: no-repeat;background-size:cover}
 .cont2{background-image: url("http://mac.h-cdn.co/assets/15/20/980x490/landscape-1431726891-mustard.jpg");background-position:center;background-repeat: no-repeat;background-size:cover}
 iframe{overflow-x:hidden;width:100%;height:100%}
-	#gap{display:block;}
+	#gap{display:block;-webkit-backface-visibility: hidden;}
+#intopo{width:100%height:200px;background:red;}
 </style>
 
 	<script>
@@ -59,60 +65,113 @@ iframe{overflow-x:hidden;width:100%;height:100%}
 
 
 
-<div id="foz" class="center ber lazyload height77vh"> 
-<h2>External caller box list to add to template</h2>
+<div id="foz" class="center ber lazyload"> 
 
-<div class="bigbubble">
+
+
+  <div class="bigbubble nobord">
+    <div class="contentbubble heightmin55vw phonepadder">
+      <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/svg/phoneyphone.svg" >    </object>
+    </div> 
+    <div id="intopo">llllllll<br>llll
+
+
+
   <div class="info">
-	  <p><a href="https://phillycheese007.github.io/my_threejs/apasta/examples/crappy.html">https://phillycheese007.github.io/my_threejs/apasta/examples/crappy.html</a>
-	  </p><br><p>hhhh kkly ptyrt </p><br>
+
+
+	  
+	  
+      <div class="box-set city">
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-one yu" onclick="openCity(event, 'Specials')">Specials</a></figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-one yu" onclick="openCity(event, 'Sandwiches')">Sandwiches</a>     </figure>
+        <figure class="box"><a href="javascript:void(0)" class="tablinks-one yu active" onclick="openCity(event, 'Sides')">Sides</a></figure>
+      </div>
+
+
+
+      <div id="Specials" class="tabcontent-one bac1">
+        <div class="w3-half w3-margin-bottom custard">
+          <div class="w3-container w3-white">
+            <div class="menu53">Cubano<span class="rope">$6</span></div>
+            <p class="nonada">Lechon Asado, Pancetta, House Pickles, Swiss Chess and Brown Mustard</p>
+            <hr class="dott">
+            <div class="menu53">Farm Burger<span class="rope">$6</span></div>
+            <p class="nonada">Sharp Cheddar, House Ketchup Mayo, Crispy Onions on Brioche</p>
+            <hr class="dott">
+            <div class="menu53">Green Curry (V)<span class="rope">$6</span></div>
+            <p class="nonada">Mushroom, Bell Peppers, Basil, Garlic, Onion with Rice</p>
+            <hr class="dott"/>
+            <hr class="dott"/>
+            <hr class="dott"/>
+            <hr class="dott"/>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="Sandwiches" class="tabcontent-one bac2">
+        <div class="w3-half w3-margin-bottom custard">
+          <div class="w3-container w3-white">
+            <div class="menu53">The Charm City<span class="rope">$6</span></div>
+            <p class="nonada">Roasted Turkey, cheddar, Red Onion, Basil Aioli and Apple on Focaccia</p>
+            <hr class="dott">
+            <div class="menu53">The Mobtown (V)<span class="rope">$6</span></div>
+            <p class="nonada">Grilled Mushroom, Red Onion, Crispy Kale, Basil Aioli on Focaccia</p>
+            <hr class="dott"/>
+            <hr class="dott"/>
+            <hr class="dott"/>
+            <hr class="dott"/>
+          </div>
+        </div>
+      </div>
+
+
+	  
+	  
+
+      <div id="Sides" class="tabcontent-one bac3" style="display:block;">
+        <div class="w3-half w3-margin-bottom custard">
+          <div class="w3-container w3-white">
+            <div class="menu53">Hand-cut Fries <span class="rope">$6</span></div>
+            <p class="nonada">w/ housemade ketchup</p>
+            <hr class="dott">
+            <div class="menu53">Spring Salad<span class="rope">$6</span></div>
+            <p class="nonada">Greens, Red Onion, Apple, Roasted Sunflower Seeds with House Vinaigrette</p>
+            <hr class="dott"/>
+            <hr class="dott"/>
+            <hr class="dott"/>
+            <hr class="dott"/>
+          </div>
+        </div>
+      </div>
+
   </div>
-  <div class="contentbubble cont1 lazyload height77vh">
-	  <iframe id="Example2" class="lazyload"
-    title="Example2"
-    frameborder="0"
-    scrolling="yes"
-    marginheight="0"
-    marginwidth="0"
-    src="https://phillycheese007.github.io/my_threejs/apasta/examples/crappy.html" frameborder="0" allowfullscreen>
-	</iframe>  </div>
-</div>
+ 
+
+    </div>
+  </div> 
+
+
+
+
+
+
+
+
+
+
 	
-<div class="bigbubble">
-  <div class="contentbubble height77vh phonepadder">
-	<object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/svg/phoneyphone.svg" ></object>
-  </div>
-  <div class="info">
-    <p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br>
-  </div>
-</div>
+
 	
-<div class="bigbubble">
-  <div class="contentbubble cont2 lazyload height77vh">
-    <img src="http://billyssuns.com/svgex/pop.svg" />
-  </div>
-</div>
 	
-<div class="bigbubble">
-  <div class="contentbubble cont1 lazyload height77vh">
-    <img src="http://billyssuns.com/svgex/run2.svg" />
-  </div>
-  <div class="info">
-    <p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br><p>hhhh kkly ptyrt </p><br>
-  </div>
-</div>
 	
-<div class="bigbubble">
-  <div class="contentbubble height77vh">
-  <iframe id="Example2" class="lazyload"
-    title="Example2"
-    frameborder="0"
-    scrolling="yes"
-    marginheight="0"
-    marginwidth="0"
-    src="https://www.youtube.com/embed/pni_kDv9BsU" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
+
+	
+	
+
+
+
 
   
 
@@ -121,7 +180,37 @@ iframe{overflow-x:hidden;width:100%;height:100%}
 	
 </div>
 
-
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-one");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks-one");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+	
+<script>
+function openShitty(evt, shittyName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-two");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks-two");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(shittyName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
 
 </body>
 </html>
