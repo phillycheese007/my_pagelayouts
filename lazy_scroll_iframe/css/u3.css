@@ -64,7 +64,11 @@ figure.box a:focus, .active {         border: 0px solid;
     padding:0;
     background-color: white;
 }
-.tabcontent-one {width:100%;margin:0 auto;margin-bottom: .5em}
+.tabcontent-one {    
+  width: calc(100% - 8px);
+  margin:0 auto;
+  margin-bottom: .5em
+}
 
 
 /* begin https://coolestguidesontheplanet.com/videodrome/youtube/ */
