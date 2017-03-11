@@ -17,22 +17,4 @@ mask-overlay {
   font-weight: normal;
   text-transform: uppercase;
 }
-.buddy {
 
-  background-blend-mode: screen;
-  background-color: #black;
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/dc/da/05/dcda05b2c2e4db345d456beb1e831db4.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: Raleway, Arial Black, sans-serif;
-}
-
-@keyframes colormorph {
-  50% {
-    color: red;
-  }
-  100% {
-    color: black;
-  }
-}
