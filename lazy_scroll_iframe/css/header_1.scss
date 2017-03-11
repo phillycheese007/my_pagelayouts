@@ -1,12 +1,12 @@
 ---
 #header1
 ---
-header.my_header_1{border:20px solid black;margin-top:90px;}
+header.my_header_1{border:20px solid black;margin-top:0px;}
 
 .mask-overlay {
   display: block;
   background-color: white;text-align:center;
-  mix-blend-mode: screen;border:3.2rem solid;font-size: 14vw;  animation: colormorph 20s infinite;
+  mix-blend-mode: screen;border: .5rem solid;font-size: 12vw;  animation: colormorph 20s infinite;
 }
 .mask-overlay h1 {
   animation: colormorph 20s infinite;    
@@ -14,7 +14,7 @@ header.my_header_1{border:20px solid black;margin-top:90px;}
    padding:0;
    padding-bottom:0;
    color: black;
-  font-size: 16vw;
+  font-size: 12vw;
   font-weight: normal;
   text-transform: uppercase;
 }
