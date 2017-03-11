@@ -48,9 +48,12 @@
   text-align: center;
   width: 29.615861214%;
 }
-.shitty .box:nth-child(1) > a {background:blue;}.shitty .box:nth-child(1)a{color:white;}
-.shitty .box:nth-child(2) > a {background:red;}.shitty .box:nth-child(1) a {color:lightyellow;}
-.shitty .box:nth-child(3) > a {background:orange;color:black;}.shitty .box:nth-child(1) a {color:black;}
+.shitty .box:nth-child(1) > a {background:blue;}
+.shitty .box:nth-child(1)a{color:white;}
+.shitty .box:nth-child(2) > a {background:red;}
+.shitty .box:nth-child(1) a {color:lightyellow;}
+.shitty .box:nth-child(3) > a {background:orange;color:black;}
+.shitty .box:nth-child(1) a {color:black;}
 
 
 /*end function shitty*/
@@ -60,9 +63,11 @@
 
 .yu{text-decoration:none;}
 
-figure.box a:focus, .active {         border: 0px solid;
-    border-top-left-radius: .5em;border-top-right-radius: .5em; display:block;
-    background:color:none;text-decoration:underline! important;
+figure.box a:focus,
+.active {
+  border: 0px solid;
+  border-top-left-radius: .5em;border-top-right-radius: .5em; display:block;
+  background:color:none;text-decoration:underline! important;
 }
 
 /* Style the tab content */
