@@ -27,9 +27,13 @@
   text-align: center;
   width: 29.615861214%;
 }
-.bac1{border:7px solid blue;height:100%;}
-.bac2{border:7px solid red;height:100%;}
-.bac3{border:7px solid orange;height:100%;}
+.bac1,
+.bac2,
+.bac3{
+  border:1px solid black;
+  height:100%;
+}
+
 
 .box:nth-child(1) a{background:blue;}
 .shitty .box:nth-child(1) a{color:white;}
