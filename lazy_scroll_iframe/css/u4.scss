@@ -30,9 +30,11 @@ $height-100vh:100vh;
   min-height: $bubble-min-height;
 }
 
-.bubble2 .contentbubble{
+.bubble2{
+  .contentbubble{
   @include bubble-size-1;
   border:30px solid green;
+  }
 }
 
 .height100per{height:100%;}
