@@ -23,7 +23,16 @@ $height-100vh:100vh;
   text-decoration: $text-decor-underline;
 }
 
-.boxing { @include link-style; }
+@mixin bubble-size-1 {
+  $bubble-height:50vh;
+  height: $bubble-height;
+  $bubble-min-height:38vw;
+  min-height: $bubble-min-height;
+}
+
+.bigbubble.bubble1 .contentbubble{
+  @include bubble-size-1;
+}
 
 .height100per{height:100%;}
 .heightmin38vw{min-height:38vw;}
@@ -37,9 +46,7 @@ $height-100vh:100vh;
 .phonepadder{padding-top:10px;background:black;}
 
 
-.bigbubble.bubble1 .contentbubble{
-  @include link-style;
-}
+
 
 
   
