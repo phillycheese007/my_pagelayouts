@@ -30,7 +30,7 @@ $height-100vh:100vh;
   min-height: $bubble-min-height;
 }
 
-#coffee{
+.tabcontent-2{
     .contentbubble{
     @include bubble-size-1;
     border:30px solid green;
