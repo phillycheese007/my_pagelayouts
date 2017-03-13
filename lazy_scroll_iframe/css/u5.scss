@@ -101,7 +101,9 @@ $height-100vh:100vh;
   background:none;
 }
 .bigbubble .info{
-  background:pink;  
+  background:pink; 
+  position:absolute;
+  z-index:9999;
   width:100%;
   display:block;
   margin:0 auto;
