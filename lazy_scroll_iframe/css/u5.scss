@@ -29,7 +29,10 @@ $height-100vh:100vh;
   $bubble-min-height:38vw;
   min-height: $bubble-min-height;
 }
-
+@mixin info-marg-top {
+  $bubble-height:50vh;
+  $bubble-min-height:38vw;
+}
 
 
 .tabcontent-two{
@@ -49,6 +52,13 @@ $height-100vh:100vh;
   heigth:auto;
   }
 }
+
+.bubble_1 .info{
+  @include info-marg-top;
+  margin-top:$bubble-height;
+}
+	
+	
 .height100per{height:100%;}
 .heightmin38vw{min-height:38vw;}
 .heightmin50vw{min-height:50vw;}
