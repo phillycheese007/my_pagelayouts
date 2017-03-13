@@ -1,8 +1,50 @@
 ---
 #portfoliomaster
 ---
+
+$1st-color:black;
+$2nd-color:white;
+$3rd-color:red;
+
+$height-auto:auto;
+$height-100-per:100%;
+$height-min-height-38-vw:38vw;
+$height-min-height-50-vw:50vw;
+$height-38vw:38vw;
+$height-50vw:50vw;
+$height-77vw:77vw;
+
+$height-50vh:50vh;
+$height-77vh:77vh;
+$height-100vh:100vh;
+
+
+@mixin link-style {
+  $text-decor-underline:underline;
+  text-decoration: $text-decor-underline;
+}
+
+.box { @include link-style; }
+
+.height100per{height:100%;}
+.heightmin38vw{min-height:38vw;}
+.heightmin50vw{min-height:50vw;}
+.heightauto{height:auto;}
+.height38vw{height:38vw;}   
+.height50vh{height:50vh;} 
+.height77vh{height:77vh;}
+.height77vw{height:77vw;}
+.height100vh{height:100vh;}
+.phonepadder{padding-top:10px;background:black;}
+
+
+.bigbubble.bubble1 .contentbubble{
+  height:
+  
+  
+
 #foz{
-  background:black;
+  background:$1st-color;
   height:auto;
   position:absolute; 
   margin-top:100px;
@@ -39,17 +81,7 @@
   margin:0 auto;
   padding:0;}
 
-.white{background:white;}
-.height100per{height:100%;}
-.heightmin38vw{min-height:38vw;}
-.heightmin50vw{min-height:50vw;}
-.heightauto{height:auto;}
-.height38vw{height:38vw;}   
-.height50vh{height:50vh;} 
-.height77vh{height:77vh;}
-.height77vw{height:77vw;}
-.height100vh{height:100vh;}
-.phonepadder{padding-top:10px;background:black;}
+
 
 .cont1{background-image: url("https://i.ytimg.com/vi/TchsZrs96HY/hqdefault.jpg");
   background-position:center;
