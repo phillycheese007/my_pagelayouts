@@ -31,7 +31,7 @@ $height-100vh:100vh;
 }
 @mixin info-marg-top {
   $bubble-height:50vh;
-  margin-top: $bubble-height;
+  top: $bubble-height;
 }
 
 
@@ -53,6 +53,16 @@ $height-100vh:100vh;
   }
 }
 
+.bigbubble .info{
+  background:pink; 
+  position:absolute;
+  z-index:9999;
+  width:100%;
+  display:block;
+  margin:0 auto;
+  padding:0;
+
+}
 .bubble_1 .info{
   @include info-marg-top;
 }
@@ -109,16 +119,7 @@ $height-100vh:100vh;
   width:100%;
   background:none;
 }
-.bigbubble .info{
-  background:pink; 
-  position:absolute;
-  z-index:9999;
-  width:100%;
-  display:block;
-  margin:0 auto;
-  padding:0;
-  top:0;
-}
+
 
 
 .cont1{background-image: url("https://i.ytimg.com/vi/TchsZrs96HY/hqdefault.jpg");
