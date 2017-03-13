@@ -30,7 +30,7 @@ $height-100vh:100vh;
   min-height: $bubble-min-height;
 }
 @mixin info-marg-top {
-  $bubble-height:50vh;
+  $bubble-height:100%;
   top: $bubble-height;
 }
 
