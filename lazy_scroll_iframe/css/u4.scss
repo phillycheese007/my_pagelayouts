@@ -40,7 +40,7 @@ $height-100vh:100vh;
 .tabcontent-two{
   .contentbubble{
   @include bubble-size-1;
-  border:30px solid green;
+  border:30px solid red;
   }
 }
 
@@ -194,7 +194,7 @@ z-index:99999;
  .city figure.box a{font-size:1.2em;color:black! important;border: 0px solid;display:block;padding:.73em;} /* b careful the padding here can hide utube iframe */ 
  .shitty figure.box a{font-size:1.2em;color:black! important;border: 0px solid;display:block;padding:.73em;} /* b careful the padding here can hide utuiframe */ 
 
-.yu{text-decoration:none;}
+.box a {text-decoration:none;}
 
 figure.box a:focus,
 .active {
