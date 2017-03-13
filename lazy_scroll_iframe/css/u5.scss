@@ -41,6 +41,14 @@ $height-100vh:100vh;
   }
 }
 
+.tabcontent-one{
+  .contentbubble{
+  @include bubble-size-1;
+  }
+  .contentbubble_video{
+  heigth:auto;
+  }
+}
 .height100per{height:100%;}
 .heightmin38vw{min-height:38vw;}
 .heightmin50vw{min-height:50vw;}
