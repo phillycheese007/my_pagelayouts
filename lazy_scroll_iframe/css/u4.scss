@@ -36,6 +36,9 @@ $height-100vh:100vh;
   .contentbubble{
   @include bubble-size-1;
   }
+  .contentbubble_video{
+  heigth:auto;
+  }
 }
 
 .height100per{height:100%;}
