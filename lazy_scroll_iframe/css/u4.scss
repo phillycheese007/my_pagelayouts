@@ -1,9 +1,9 @@
 ---
 #portfoliomaster
 ---
-$1st-color:black;
-$2nd-color:white;
-$3rd-color:red;
+$first-color:black;
+$second-color:white;
+$third-color:red;
 
 $height-auto:auto;
 $height-100-per:100%;
@@ -43,7 +43,7 @@ $height-100vh:100vh;
   
 
 #foz{
-  background:$1st-color;
+  background:$first-color;
   height:auto;
   position:absolute; 
   margin-top:100px;
@@ -61,7 +61,7 @@ $height-100vh:100vh;
   display:table;
   background:none;
   z-index:9999;
-  border:10px solid $2nd-color;
+  border:10px solid $second-color;
 }
 .bord-2p-black{
   border:2px solid black;
