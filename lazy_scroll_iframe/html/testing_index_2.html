@@ -56,7 +56,7 @@
 
 
   <div class="bigbubble bubble_1">
-        <div id="Specials" class="contentbubble phonepadder">
+        <div class="Specials contentbubble phonepadder">
 	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" ></object>
         </div>  
 	  
@@ -77,7 +77,7 @@
 
 
 
-      <div id="Specials" class="tabcontent-one bac1">
+      <div class="Specials tabcontent-one bac1">
         <div class="w3-half w3-margin-bottom custard">
           <div class="w3-container w3-white">
             <div class="menu53">Cubano<span class="rope">$6</span></div>
@@ -95,7 +95,7 @@
       </div>
 
 
-      <div id="Sandwiches" class="tabcontent-one bac2">
+      <div class="Sandwiches tabcontent-one bac2">
         <div class="w3-half w3-margin-bottom custard">
           <div class="w3-container w3-white">
             <div class="menu53">The Charm City<span class="rope">$6</span></div>
@@ -113,7 +113,7 @@
 	  
 	  
 
-      <div id="Sides" class="tabcontent-one bac3" style="display:block;">
+      <div class="Sides tabcontent-one bac3" style="display:block;">
           <div class="w3-container white">
             <div class="menu53">Hand-cut Fries <span class="rope">$6</span></div>
             <p class="nonada">w/ housemade ketchup</p>
@@ -196,7 +196,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementByClass(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 </script>
