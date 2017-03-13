@@ -30,7 +30,7 @@ $height-100vh:100vh;
   min-height: $bubble-min-height;
 }
 
-.bigbubble.bubble1 .contentbubble{
+.contentbubble{
   @include bubble-size-1;
 }
 
