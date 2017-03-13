@@ -196,7 +196,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementByClass(cityName).style.display = "block";
+    document.getElementByClassName(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 </script>
