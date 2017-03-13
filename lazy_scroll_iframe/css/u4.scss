@@ -31,9 +31,11 @@ $height-100vh:100vh;
 }
 
 .bubble2{
-  .contentbubble{
-  @include bubble-size-1;
-  border:30px solid green;
+  div{
+    .contentbubble{
+    @include bubble-size-1;
+    border:30px solid green;
+    }
   }
 }
 
