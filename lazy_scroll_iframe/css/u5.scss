@@ -92,9 +92,10 @@ $height-100vh:100vh;
 .bigbubble .info{
   background:pink;  
   width:100%;
-  display:block;
+  display:inline-block;
   margin:0 auto;
-  padding:0;}
+  padding:0;
+}
 
 
 .cont1{background-image: url("https://i.ytimg.com/vi/TchsZrs96HY/hqdefault.jpg");
