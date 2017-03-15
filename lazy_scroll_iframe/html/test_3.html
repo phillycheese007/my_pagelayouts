@@ -42,11 +42,15 @@ div.tab button.active {
 }
 #b{height:30vh;background:green;margin-top:calc(-30vh + -50px);}
 #c{margin-top:30px;position:absolute;}
+    
+#holding{
+  margin-top:100px;
+}   
 </style>
 </head>
 <body>
 
-<p>Click on the buttons inside the tabbed menu:</p>
+<div id="holding">
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'London')">London</button>
@@ -68,7 +72,10 @@ div.tab button.active {
   <div id="b">tokyo</div>
   <div id="c">Ptokyofdfsdf.</div> 
 </div>
-
+    </div> <!--end--holding -->
+    
+    
+    
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
