@@ -4,19 +4,6 @@
 
 
 
-@mixin link-style {
-  $text-decor-underline:underline;
-  text-decoration: $text-decor-underline;
-}
-
-@mixin bubble-size-1 {
-  $bubble-height:50vh;
-  height: $bubble-height;
-  $bubble-min-height:38vw;
-  min-height: $bubble-min-height;
-}
-
-
 
 
 
@@ -35,22 +22,16 @@
 .box-set {
   *zoom: 1;height:50px; position:relative;z-index:9;
 }
-.city{background:black}
-.shitty{background:none;}
+
 .box {
-  float: left;
+  float: left;background:green;
   margin: 1.858736059%;
   margin-top:0;margin-bottom:0;
   padding:0;
   text-align: center;
   width: 29.615861214%;
 }
-.bac1,
-.bac2,
-.bac3{
-  border:1px solid black;
-  height:100%;
-}
+
 
 
 
