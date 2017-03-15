@@ -20,11 +20,11 @@
   clear: both;
 }
 .box-set {
-  *zoom: 1;height:50px; position:relative;z-index:9;
+  *zoom: 1;height:50px; position:relative;z-index:9;background:blue;
 }
 
 .box {
-  float: left;background:green;
+  float: left;
   margin: 1.858736059%;
   margin-top:0;margin-bottom:0;
   padding:0;
