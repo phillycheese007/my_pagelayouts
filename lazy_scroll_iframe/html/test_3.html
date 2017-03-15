@@ -51,9 +51,9 @@ div.tab button.active {
 <div id="holding">
 
 <div class="tab">
-  <button class="tablinks-one" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks-one" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks-one" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks-one" onclick="open_city_one(event, 'London')">London</button>
+  <button class="tablinks-one" onclick="open_city_one(event, 'Paris')">Paris</button>
+  <button class="tablinks-one" onclick="open_city_one(event, 'Tokyo')">Tokyo</button>
 </div>
 
 <div id="London" class="tabcontent-one" style="display:block;">
@@ -77,8 +77,45 @@ div.tab button.active {
   <div id="c">Ptokyofdfsdf.</div> 
 </div>
 </div><!--end holding-->
+	
+
+	
+	
+	
+<div id="holding">
+
+<div class="tab">
+  <button class="tablinks-two" onclick="open_city_two(event, 'London')">London</button>
+  <button class="tablinks-two" onclick="open_city_two(event, 'Paris')">Paris</button>
+  <button class="tablinks-two" onclick="open_city_two(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="tabcontent-two" style="display:block;">
+  <div id="b">
+	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_threejs/apasta/examples/aaa_1.html" >         </object>
+  </div><!--end #b-->
+  <div id="c">londoinoofdfd.</div> 
+</div>
+
+<div id="Paris" class="tabcontent-two">
+  <div id="b">
+	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phtwo/html/testing_index_2.html" >         </object>
+  </div><!--end #b-->
+  <div id="c">Paris is the capital of France.</div> 
+</div>
+
+<div id="Tokyo" class="tabcontent-two">
+  <div id="b">
+	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/responsive_shapes/html/furniture_scenes/scene_7.html" >         </object>
+  </div><!--end #b-->
+  <div id="c">Ptokyofdfsdf.</div> 
+</div>
+</div><!--end holding-->
+	
+	
+	
 <script>
-function openCity(evt, cityName) {
+function open_city_one(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent-one");
     for (i = 0; i < tabcontent.length; i++) {
@@ -92,6 +129,24 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 </script>
-     
+
+	
+	
+	<script>
+function open_city_two(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-two");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "ntwo";
+    }
+    tablinks = document.getElementsByClassName("tablinks-two");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+	
 </body>
 </html> 
