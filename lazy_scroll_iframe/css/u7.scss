@@ -35,7 +35,8 @@ div.tab button.active {
 /* Style the tab content */
 .tabcontent-one,
 .tabcontent-two,
-.css{
+.css,
+.svg{
   display: none;
   padding: 0px;
 }
@@ -61,7 +62,8 @@ div.tab button.active {
   }
   .tabcontent-one,
   .tabcontent-two,
-  .css{
+  .css, 
+  .svg{
     display: none;
     padding: 0px;
     max-width:800px;
