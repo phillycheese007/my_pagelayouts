@@ -19,3 +19,8 @@ $A-color:green;$B-color:blue;$C-color:yellow;$D-color:brown;$E-color:lightblue;$
   @include big-bub-1;
   background:$B-color;
 }
+
+.C{
+  @include big-bub-1;
+  background:$C-color;
+}
