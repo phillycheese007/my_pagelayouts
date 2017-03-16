@@ -120,12 +120,9 @@ div.tab button.active {
   text-align: center;
   width: 29.615861214%;
 }
-.box:nth-child(1) > a {background:blue;}
-.box:nth-child(1) a{color:white;}
-.box:nth-child(2) > a {background:red;}
-.box:nth-child(1) a {color:lightyellow;}
-.box:nth-child(3) > a {background:orange;color:black;}
-.box:nth-child(1) a {color:black;}
+#holding_1 .box:nth-child(1) > a {background:blue;}
+#holding_1 .box:nth-child(2) > a {background:red;}
+#holding_1 .box:nth-child(3) > a {background:orange;}
 
 
 /*end function shitty*/
