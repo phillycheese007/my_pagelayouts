@@ -1,19 +1,21 @@
 ---
 #u8
 ---
-
-
 $A-color:green;$B-color:blue;$C-color:yellow;$D-color:brown;$E-color:lightblue;$F-color:orange;
-A{
-  height:100vh
-  background:$A-color;
-}
 
 
-.lilbox{
-  position:relative;
-  height:100vh;
+@mixin big-bub-1 {
+  $bubble-height:100vh;
+  height: $bubble-height;
   width:100%;
 }
 
+A{
+  @include big-bub-1;
+  background:$A-color;
+}
 
+A{
+  @include big-bub-1;
+  background:$B-color;
+}
