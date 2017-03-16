@@ -48,7 +48,7 @@ div.tab button.active {
   background:pink;
   margin-bottom:50px;
 }
-#holding{
+.holding{
   margin-top:55vw;
   margin-bottom:100px;
 } 
@@ -120,9 +120,9 @@ div.tab button.active {
   text-align: center;
   width: 29.615861214%;
 }
-#holding_1 .box:nth-child(1) > a {background:blue;}
-#holding_1 .box:nth-child(2) > a {background:red;}
-#holding_1 .box:nth-child(3) > a {background:orange;}
+#my_svg .box:nth-child(1) > a {background:blue;}
+#my_svg .box:nth-child(2) > a {background:red;}
+#my_svg .box:nth-child(3) > a {background:orange;}
 
 
 /*end function shitty*/
