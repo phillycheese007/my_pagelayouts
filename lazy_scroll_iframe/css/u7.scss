@@ -36,7 +36,8 @@ div.tab button.active {
 .tabcontent-one,
 .tabcontent-two,
 .css,
-.svg{
+.svg,
+.threejs{
   display: none;
   padding: 0px;
 }
@@ -63,7 +64,8 @@ div.tab button.active {
   .tabcontent-one,
   .tabcontent-two,
   .css, 
-  .svg{
+  .svg,
+  .threejs{
     display: none;
     padding: 0px;
     max-width:800px;
