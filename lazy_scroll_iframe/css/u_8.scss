@@ -3,6 +3,14 @@
 ---
 $A-color:green;$B-color:blue;$C-color:yellow;$D-color:brown;$E-color:lightblue;$F-color:orange;
 
+body,
+html{
+  margin:0;
+  padding:0;
+  background:$F-color;
+}
+
+
 
 @mixin big-bub-1 {
   $bubble-height:100vh;
