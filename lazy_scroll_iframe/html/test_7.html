@@ -93,44 +93,69 @@
 </div><!--end holding-->
 	
 
-<div id="my_css"  class="holding">
-
-<div class="tab">
-  <figure class="box">
-    <a href="javascript:void(0)" class="css_links active" onclick="open_css(event, 'css_1')">css_1</a>
-  </figure>
+  <div id="my_css"  class="holding">
+    <div class="tab">
+      <figure class="box">
+        <a href="javascript:void(0)" class="css_links active" onclick="open_css(event, 'css_1')">css_1</a>
+      </figure>	
+      <figure class="box">
+        <a href="javascript:void(0)" class="css_links" onclick="open_css(event, 'css_2')">css_2</a>
+      </figure>  
+      <figure class="box">
+        <a href="javascript:void(0)" class="css_links" onclick="open_css(event, 'css_3')">css_3</a>
+      </figure>
+    </div><!--end box-set-->
+    <div id="css_1" class="css content" style="display:block;">
+      <div id="b">
+        <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_threejs/apasta/examples/aaa_1.html" >         </object>
+      </div><!--end #b-->
+      <div id="c">londoinoofdfd.</div> 
+    </div>
+    <div id="css_2" class="css content">
+      <div id="b">
+        <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >         </object>
+      </div><!--end #b-->
+      <div id="c">Paris is the capital of France.<br>ffjfjjfjjfjfjff<br>fff<br>jjjjjjjjj<br>fffff</div> 
+    </div>
+    <div id="css_3" class="css content">
+      <div id="b">
+        <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/responsive_shapes/html/furniture_scenes/scene_7.html" >         </object>
+      </div><!--end #b-->
+      <div id="c">Ptokyofdfsdf.</div> 
+    </div>
+  </div><!--end holding-->
 	
-  <figure class="box">
-    <a href="javascript:void(0)" class="css_links" onclick="open_css(event, 'css_2')">css_2</a>
-  </figure>  
-
-  <figure class="box">
-    <a href="javascript:void(0)" class="css_links" onclick="open_css(event, 'css_3')">css_3</a>
-  </figure>
-</div><!--end box-set-->
-
-<div id="css_1" class="css content" style="display:block;">
-  <div id="b">
-	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_threejs/apasta/examples/aaa_1.html" >         </object>
-  </div><!--end #b-->
-  <div id="c">londoinoofdfd.</div> 
-</div>
-
-<div id="css_2" class="css content">
-  <div id="b">
-	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >         </object>
-  </div><!--end #b-->
-  <div id="c">Paris is the capital of France.<br>ffjfjjfjjfjfjff<br>fff<br>jjjjjjjjj<br>fffff</div> 
-</div>
-
-<div id="css_3" class="css content">
-  <div id="b">
-	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/responsive_shapes/html/furniture_scenes/scene_7.html" >         </object>
-  </div><!--end #b-->
-  <div id="c">Ptokyofdfsdf.</div> 
-</div>
-</div><!--end holding-->
-	
+  <div id="my_svg"  class="holding">
+    <div class="tab">
+      <figure class="box">
+        <a href="javascript:void(0)" class="svg_links active" onclick="open_svg(event, 'svg_1')">svg_1</a>
+      </figure>	
+      <figure class="box">
+        <a href="javascript:void(0)" class="svg_links" onclick="open_svg(event, 'svg_2')">svg_2</a>
+      </figure>  
+      <figure class="box">
+        <a href="javascript:void(0)" class="svg_links" onclick="open_svg(event, 'svg_3')">svg_3</a>
+      </figure>
+    </div><!--end box-set-->
+    <div id="svg_1" class="svg content" style="display:block;">
+      <div id="b">
+        <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_threejs/apasta/examples/aaa_1.html" >         </object>
+      </div><!--end #b-->
+      <div id="c">londoinoofdfd.</div> 
+    </div>
+    <div id="svg_2" class="svg content">
+      <div id="b">
+        <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >         </object>
+      </div><!--end #b-->
+      <div id="c">Paris is the capital of France.<br>ffjfjjfjjfjfjff<br>fff<br>jjjjjjjjj<br>fffff</div> 
+    </div>
+    <div id="svg_3" class="svg content">
+      <div id="b">
+        <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/responsive_shapes/html/furniture_scenes/scene_7.html" >         </object>
+      </div><!--end #b-->
+      <div id="c">Ptokyofdfsdf.</div> 
+    </div>
+  </div><!--end holding-->
 	
 <script>
 function open_city_one(evt, cityName) {
@@ -166,7 +191,7 @@ function open_city_two(evt, city_2_Name) {
 }
 </script>
 	
-	<script>
+<script>
 function open_css(evt, cssbit) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("css");
@@ -181,7 +206,21 @@ function open_css(evt, cssbit) {
     evt.currentTarget.className += " active";
 }
 </script>
-
+<script>
+function open_svg(evt, svgbit) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("svg");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("svg_links");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(svgbit).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
 	
 </body>
 </html> 
