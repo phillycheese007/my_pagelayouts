@@ -10,12 +10,12 @@ $A-color:green;$B-color:blue;$C-color:yellow;$D-color:brown;$E-color:lightblue;$
   width:100%;
 }
 
-A{
+.A{
   @include big-bub-1;
   background:$A-color;
 }
 
-B{
+.B{
   @include big-bub-1;
   background:$B-color;
 }
