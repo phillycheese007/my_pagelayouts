@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div id="holding">
+<div id="bub_one">
 
 <div class="box-set tab">
   <figure class="box">
@@ -53,7 +53,7 @@
 	
 
 	
-<div id="holding">
+<div id="bub_two">
 
 <div class="tab">
   <figure class="box">
@@ -80,7 +80,7 @@
   <div id="b">
 	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >         </object>
   </div><!--end #b-->
-  <div id="c">Paris is the capital of France.</div> 
+  <div id="c">Paris is the capital of France.<br>ffjfjjfjjfjfjff<br>fff<br>jjjjjjjjj<br>fffff</div> 
 </div>
 
 <div id="Tokyos" class="tabcontent-two">
@@ -98,7 +98,7 @@
 <script>
 function open_city_one(evt, cityName) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent-one");
+    tabcontent = document.getElementsByClassName("tabcontent-one"), ';
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
@@ -126,6 +126,27 @@ function open_city_two(evt, city_2_Name) {
     }
     document.getElementById(city_2_Name).style.display = "block";
     evt.currentTarget.className += " active";
+}
+</script>
+
+	<script>
+[1,2,3,4,5,6,7,8].map(function (id) {
+	var i, tabcontent, tablinks;
+
+  var tabcontent = document.getElementById("bub_content_" + id)
+
+  for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+  var tablinks = document.getElementById("bub_links_" + id)
+    
+  for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById("bub_content_" + id).style.display = "block";
+    evt.currentTarget.className += " active";
+ }
 }
 </script>
 	
