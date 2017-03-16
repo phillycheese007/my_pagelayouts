@@ -156,6 +156,38 @@
       <div id="c">Ptokyofdfsdf.</div> 
     </div>
   </div><!--end holding-->
+
+  <div id="my_threejs"  class="holding">
+    <div class="tab">
+      <figure class="box">
+        <a href="javascript:void(0)" class="threejs_links active" onclick="open_threejs(event, 'threejs_1')">threejs_1</a>
+      </figure>	
+      <figure class="box">
+        <a href="javascript:void(0)" class="threejs_links" onclick="open_threejs(event, 'threejs_2')">threejs_2</a>
+      </figure>  
+      <figure class="box">
+        <a href="javascript:void(0)" class="threejs_links" onclick="open_threejs(event, 'threejs_3')">threejs_3</a>
+      </figure>
+    </div><!--end box-set-->
+    <div id="threejs_1" class="threejs content" style="display:block;">
+      <div id="b">
+        <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_threejs/apasta/examples/aaa_1.html" >         </object>
+      </div><!--end #b-->
+      <div id="c">londoinoofdfd.</div> 
+    </div>
+    <div id="threejs_2" class="threejs content">
+      <div id="b">
+        <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_threejs/phone/html/testing_index_2.html" >         </object>
+      </div><!--end #b-->
+      <div id="c">Paris is the capital of France.<br>ffjfjjfjjfjfjff<br>fff<br>jjjjjjjjj<br>fffff</div> 
+    </div>
+    <div id="threejs_3" class="threejs content">
+      <div id="b">
+        <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/responsive_shapes/html/furniture_scenes/scene_7.html" >         </object>
+      </div><!--end #b-->
+      <div id="c">Ptokyofdfsdf.</div> 
+    </div>
+  </div><!--end holding-->
 	
 <script>
 function open_city_one(evt, cityName) {
@@ -221,6 +253,20 @@ function open_svg(evt, svgbit) {
     evt.currentTarget.className += " active";
 }
 </script>
-	
+<script>
+function open_threejs(evt, threejsbit) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("threejs");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("threejs_links");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(threejsbit).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
 </body>
 </html> 
