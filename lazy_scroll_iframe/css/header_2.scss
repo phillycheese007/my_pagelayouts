@@ -9,7 +9,3 @@ header.header_2 {
   border-bottom:2px solid white;
 }
 
-p:after {
-    content:attr(data-text1) "\A" attr(data-text2);
-    white-space:pre-wrap;
-}
