@@ -3,11 +3,17 @@
 ---
 
 
-$primary-color:green;
+$A-color:green;$B-color:blue;$C-color:yellow;$D-color:brown;$E-color:lightblue;$F-color:orange;
+A{
+  height:100vh
+  background:$A-color;
+}
+
 
 .lilbox{
   position:relative;
   height:100vh;
   width:100%;
-  background:$primary-color;
 }
+
+
