@@ -87,6 +87,41 @@ div.tab button.active {
 }
 
 
+@media screen and (min-width: 1000px) {
+  div.tab {
+    max-width:900px;
+    margin:0 auto;
+  }
+  .tabcontent-one,
+  .tabcontent-two,
+  .css, 
+  .svg,
+  .threejs{
+    display: none;
+    padding: 0px;
+    max-width:900px;
+    margin:0 auto;
+  }
+  #b{
+    height:40vw;
+    margin-top:calc(-40vw + -50px);
+  }
+  #c{
+    margin-top:50px;  
+    background:pink;
+    margin-bottom:50px;
+  }
+  .holding{
+    margin-top:45vw;
+    margin-bottom:100px;
+  } 	
+}
+
+
+
+
+
+
 .box-set,
 .box {
  margin:0;padding:0;
