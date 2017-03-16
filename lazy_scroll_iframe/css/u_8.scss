@@ -12,6 +12,12 @@ $A-color:green;$B-color:blue;$C-color:yellow;$D-color:brown;$E-color:lightblue;$
   padding:0;
 }
 
+.big_bub{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
 .A{
   @include big-bub-1;
   background:$A-color;
