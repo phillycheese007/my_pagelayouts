@@ -1,0 +1,8 @@
+---
+#u8
+---
+$1st_color
+
+.lilbox{
+  background:$1st_color;
+}
