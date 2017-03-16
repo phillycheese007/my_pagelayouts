@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+<link href="/my_pagelayouts/lazy_scroll_iframe/css/u7.css" rel="stylesheet" />
+
+<style>
+</style>
+</head>
+<body>
+
+<div id="holding">
+
+<div class="box-set tab">
+  <figure class="box">
+    <a href="javascript:void(0)" class="tablinks-one active" onclick="open_city_one(event, 'London')">London</a>
+  </figure>
+
+  <figure class="box">
+    <a href="javascript:void(0)" class="tablinks-one" onclick="open_city_one(event, 'Paris')">Paris</a>
+  </figure>
+
+  <figure class="box">
+    <a href="javascript:void(0)" class="tablinks-one" onclick="open_city_one(event, 'Tokyo')">Tokyo</a>
+  </figure>
+</div><!--end box-set-->
+
+
+<div id="London" class="tabcontent-one" style="display:block;">
+  <div id="b">
+	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/aaazzz_myportfolios/index.html" >         </object>
+  </div><!--end #b-->
+  <div id="c">londoinoofdfd.</div> 
+</div>
+
+<div id="Paris" class="tabcontent-one">
+  <div id="b">
+	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >         </object>
+  </div><!--end #b-->
+  <div id="c">Paris is the capital of France.<br>ffjfjjfjjfjfjff<br>fff<br>jjjjjjjjj<br>fffff</div> 
+</div>
+
+<div id="Tokyo" class="tabcontent-one">
+  <div id="b">
+	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/responsive_shapes/html/furniture_scenes/scene_7.html" >         </object>
+  </div><!--end #b-->
+  <div id="c">Ptokyofdfsdf.</div> 
+</div>
+</div><!--end holding-->
+	
+
+	
+<div id="holding">
+
+<div class="tab">
+  <figure class="box">
+    <a href="javascript:void(0)" class="tablinks-two active" onclick="open_city_two(event, 'Londons')">Londons</a>
+  </figure>
+	
+  <figure class="box">
+    <a href="javascript:void(0)" class="tablinks-two" onclick="open_city_two(event, 'Pariss')">Pariss</a>
+  </figure>  
+
+  <figure class="box">
+    <a href="javascript:void(0)" class="tablinks-two" onclick="open_city_two(event, 'Tokyos')">Tokyos</a>
+  </figure>
+</div><!--end box-set-->
+
+<div id="Londons" class="tabcontent-two" style="display:block;">
+  <div id="b">
+	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_threejs/apasta/examples/aaa_1.html" >         </object>
+  </div><!--end #b-->
+  <div id="c">londoinoofdfd.</div> 
+</div>
+
+<div id="Pariss" class="tabcontent-two">
+  <div id="b">
+	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >         </object>
+  </div><!--end #b-->
+  <div id="c">Paris is the capital of France.<br>ffjfjjfjjfjfjff<br>fff<br>jjjjjjjjj<br>fffff</div> 
+</div>
+
+<div id="Tokyos" class="tabcontent-two">
+  <div id="b">
+	  <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/responsive_shapes/html/furniture_scenes/scene_7.html" >         </object>
+  </div><!--end #b-->
+  <div id="c">Ptokyofdfsdf.</div> 
+</div>
+</div><!--end holding-->
+	
+
+	
+	
+	
+<script>
+function open_city_one(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-one");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks-one");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+	
+	
+	<script>
+function open_city_two(evt, city_2_Name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-two");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks-two");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(city_2_Name).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+	
+
+
+	
+</body>
+</html> 
