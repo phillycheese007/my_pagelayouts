@@ -1,8 +1,10 @@
 ---
 #u8
 ---
-$one_color:green;
+
+
+$primary-color
 
 .lilbox{
-  background:$one_color;
+  background:$primary-color;
 }
