@@ -5,7 +5,9 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
 
 
 
-
+.big_bub div {
+  transform-style: preserve-3d;
+}
 
 @mixin big-bub-1 {
   $bubble-height:200px;
@@ -13,26 +15,33 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
   width:600px;
   margin:0;
   padding:0;
+  
 }
 
 .big_bub{
   background:none;
   width:100%;
   margin:0;
+  margin-left:100px;
+  margin-top:100px;
   padding:0;
+  
 }
 
 .A1{
   @include big-bub-1;
   background:$A1-color;
+  transform:rotate(30deg);
 }
 
 .B1{
   @include big-bub-1;
   background:$B1-color;
+  transform:rotate(-30deg);
 }
 
 .C1{
   @include big-bub-1;
   background:$C1-color;
+  transform:rotate(30deg);
 }
