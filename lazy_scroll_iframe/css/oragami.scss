@@ -86,6 +86,7 @@ div {
                 inset 0 0 1em hsla(0,0%,0%,.05),
                 0 .1em .25em hsla(0,0%,0%,.5);
     position: relative;
+  transform:rotateY(22deg)
 }
 .paper:after,
 .paper:before {
