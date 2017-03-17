@@ -30,11 +30,10 @@
 .mushroom_2{
   position:fixed !important;
   z-index:9999 !important;
+  bottom:2vw !important;
   top:2vw !important;
   margin-top:0 !important;
-  left:2% !important;
-  bottom:2vw !important;
-  right:2% !important;
+  margin:0 auto !important;
   height:96vh  !important;
   width:96% !important;
   transform: translateX(0vw) rotateY(0deg) !important;
