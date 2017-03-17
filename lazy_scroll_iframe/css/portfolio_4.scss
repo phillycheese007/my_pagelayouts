@@ -29,6 +29,9 @@
   transform-style: flat !important;
   pointer-events: auto !important;
 }
+object{  
+  pointer-events: none !important;
+}
 .close_but{
   position:absolute;
   top:30px;
