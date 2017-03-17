@@ -54,7 +54,7 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
 .B1{
   @include big-bub-1;
   background:$B1-color;
-  transform:translate:rotate(-30deg) ;
+  transform:rotate(-30deg) ;
   
 }
 
