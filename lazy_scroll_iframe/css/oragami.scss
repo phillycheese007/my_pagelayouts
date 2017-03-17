@@ -38,22 +38,22 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
 
 .A1{
   @include big-bub-1;
-  background:$A1-color;
-  transform:rotateX(0deg) translateZ(0px);
+  background:$B1-color;
+  transform:rotateX(45deg) translateZ(40px);
+  transform-origin: 50% 50%
 }
 
 .B1{
   @include big-bub-1;
   background:$B1-color;
-  transform:rotateX(-45deg) translateZ(45px);
+  transform:rotateX(-45deg) translateZ(40px);
   transform-origin: 50% 50%
-  
 }
 
 .C1{
   @include big-bub-1;
   background:$C1-color;
-  transform:rotateX(45deg) translateZ(45px);
+  transform:rotateX(45deg) translateZ(40px);
   transform-origin: 50% 50%
 }
 
