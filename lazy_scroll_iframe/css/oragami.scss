@@ -45,7 +45,7 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
 .B1{
   @include big-bub-1;
   background:$B1-color;
-  transform:rotateX(-45deg) translateZ(0px);
+  transform:rotateX(-45deg) translateZ(50px);
   transform-origin: 50% 50%
   
 }
