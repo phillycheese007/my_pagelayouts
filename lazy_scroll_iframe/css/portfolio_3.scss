@@ -6,7 +6,7 @@
 @mixin zig-zag-1 {
   $bubble-height:60vh;
   height: $bubble-height;
-  width:70%;
+  width:65%;
   margin:0;
   padding:0;
   position: relative;
@@ -17,8 +17,7 @@
 
 .big_bub{  
   background:pink;
-  text-align:center;
-  width:90%;
+  width:85%;
   margin:0 auto;
   margin-top:100px;
   transform:skewY(-5deg);
