@@ -32,11 +32,18 @@
   </div>	
 	
 <script>
-$(document).ready(function(){
-    $("div1").click(function(){
-        $("div1").hide()
+  $(document).ready(function () {
+
+        $("#gap").click(
+            function () {
+                AlertSave();
+            }            
+        );
     });
-});
+
+function AlertSave() {
+   alert("Alert Message OnClick");
+}
 </script>
 	
 </body>
