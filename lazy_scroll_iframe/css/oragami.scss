@@ -1,7 +1,7 @@
 ---
 #oragami
 ---
-$A-color:green;$B-color:blue;$C-color:yellow;$D-color:brown;$E-color:lightblue;$F-color:orange;
+$A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightblue;$F1-color:orange;
 
 
 
@@ -21,17 +21,17 @@ $A-color:green;$B-color:blue;$C-color:yellow;$D-color:brown;$E-color:lightblue;$
   padding:0;
 }
 
-.A{
+.A1{
   @include big-bub-1;
-  background:$A-color;
+  background:$A1-color;
 }
 
-.B{
+.B1{
   @include big-bub-1;
-  background:$B-color;
+  background:$B1-color;
 }
 
-.C{
+.C1{
   @include big-bub-1;
-  background:$C-color;
+  background:$C1-color;
 }
