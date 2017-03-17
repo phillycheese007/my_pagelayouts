@@ -53,7 +53,7 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
 .C1{
   @include big-bub-1;
   background:$C1-color;
-  transform:rotateX(5deg) translateZ(-5px);
+  transform:rotateX(45deg) translateZ(0px);
   transform-origin: 50% 50%
 }
 
