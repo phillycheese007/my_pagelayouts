@@ -32,10 +32,14 @@
   </div>	
 	
 <script>
-$(document).ready(function(){
-    $("#gap"). click(function(){
-       $("#gap")[0].toggleClass("intro");
-    });
+$("#div2").click(function() {
+        $(this).toggleClass("intro");
+});
+
+//click event attached to cloned buttons
+$("div#div2").on("click", ".this2", function() {
+   alert("click attached to clones");
+
 });
 </script>
 </body>
