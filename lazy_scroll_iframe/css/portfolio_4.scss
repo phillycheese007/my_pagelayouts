@@ -21,8 +21,8 @@
   bottom:0vw !important;
   right:0vw !important;
   border:2px solid black !important;
-  height:96vh !important;
-  width:96vw !important;
+  height:100vh !important;
+  width:100vw !important;
   transform: translateX(0vw) rotateY(0deg) !important;
   transform-style: flat !important;
   pointer-events: auto !important;
@@ -35,6 +35,12 @@
   left:2vw !important;
   bottom:2vw !important;
   right:2vw !important;
+  border:2px solid black !important;
+  height:96vh !important;
+  width:96vw !important;
+  transform: translateX(0vw) rotateY(0deg) !important;
+  transform-style: flat !important;
+  pointer-events: auto !important;
   -webkit-box-shadow: 0px 0px 101px 17px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 101px 17px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 101px 17px rgba(0,0,0,0.75);
