@@ -67,7 +67,7 @@
   transform: skewX(40deg);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
   @mixin zig-zag-1 {
     $bubble-height:30vh;
     height: $bubble-height;
