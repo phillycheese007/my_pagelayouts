@@ -28,7 +28,16 @@
   border: 1px solid green;
   transform-style: flat !important;
 }
+.close_but{
+  position:absolute;
+  top:30px;
+  right:30px;
+  height:50px;
+  width:50px;
+  background:lightblue;
+  display:none;}
 
+.display_vis{display:block;}
 
 .big_bub{  
   background:pink;
