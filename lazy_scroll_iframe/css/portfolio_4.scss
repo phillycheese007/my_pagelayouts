@@ -127,7 +127,9 @@ object{
   border: 1px solid black;
   transform-style: preserve-3d;
 }
-
+.transform_flat{
+  transform-style: flat !important;
+}
 #div2 {
   @include zig-zag-1;
   background-color: red;
