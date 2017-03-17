@@ -27,6 +27,22 @@
   pointer-events: auto !important;
   background:lightblue;
 }
+
+.mushroomss{
+  position:fixed !important;
+  z-index:9999 !important;
+  top:0vw !important;
+  margin-top:0 !important;
+  left:0vw !important;
+
+  right:0vw !important;
+  width:100vw !important;
+  transform: translateX(0vw) rotateY(0deg) !important;
+  transform-style: flat !important;
+  pointer-events: auto !important;
+  background:purple;
+}
+
 .mushroom_2{
   position:absolute !important;
   z-index:9999 !important;
