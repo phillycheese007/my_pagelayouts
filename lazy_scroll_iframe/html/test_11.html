@@ -17,13 +17,13 @@
 <body>
   <div class="big_bub">
 	  
-    <div id="div1">
+    <div id="div1" class="pod">
 	    <div id="div2">HELLO<div class="close_but">&#10006;</div></div>
-      <div id="div3">HELLO</div>
-      <div id="div4">
+      <div id="div3" class="pod">HELLO</div>
+      <div id="div4" class="pod">
         <!--<object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" ></object> -->
       </div>
-      <div id="div5">
+      <div id="div5" class="pod">
         <object id="gap" width="100%" height="100%" data="https://phillycheese007.github.io/philipdusel/html/index.html" >
 	</object>
 	<div class="close_but">&#10006;</div>
@@ -66,7 +66,7 @@ $(".close_but").toggleClass("display_vis");
 <script>
   $(document).ready(function () {
 
-        $(".big_bub").find( "div" ).click(
+        $(".big_bub").find( ".pod" ).click(
             function () {
 $(".big_bub").toggleClass("mushroom");
 $("#div1").toggleClass("mushroom"); 
