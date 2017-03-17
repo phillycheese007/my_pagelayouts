@@ -17,16 +17,15 @@
 
 .big_bub{  
   background:pink;
-  width:70%;
+  width:80%;
   margin:0 auto;
   margin-top:100px;
-transform:skewY(-5deg);
-/*
-    -webkit-perspective: 450px;
+  transform:skewY(-5deg);
+/* -webkit-perspective: 450px;
   perspective: 450px;
   */
-
 }
+
 #div1 {
   position: relative;
   width: 100%;
