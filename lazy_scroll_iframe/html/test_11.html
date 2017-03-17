@@ -70,12 +70,13 @@ $(".close_but").toggleClass("display_vis");
 
         $(".big_bub").find( ".pod" ).click(
             function () {
-    
-$("#gap").toggleClass("mushroom_2");
-$("#gap").toggleClass("mushroom");    
+$(".big_bub").toggleClass("mushroom");
+$("#div1").toggleClass("mushroom"); 
+$("#gap").toggleClass("mushroom"); 	    
+	
+$(this).toggleClass("mushroom_2");
 $("#gap").toggleClass("mushroom_3"); 
-$("#gap").toggleClass("pop");
-$(".close_but").toggleClass("display_vis");  
+$(".close_but").toggleClass("display_vis");
             }            
         );
     });
