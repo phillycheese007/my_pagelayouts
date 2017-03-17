@@ -1,0 +1,68 @@
+---
+#eee
+---
+
+
+@mixin zig-zag-1 {
+  $bubble-height:60vh;
+  height: $bubble-height;
+  width:60%;
+  margin:0 auto;
+  padding:0;
+  position: relative;
+  border: 1px solid black;
+}
+
+
+
+.big_bub{  
+  background:pink;
+  width:100%;
+  margin:0 auto;
+  margin-top:100px;
+  transform:skewY(-5deg);
+/* -webkit-perspective: 450px;
+  perspective: 450px;
+  */
+}
+
+#div1 {
+  position: relative;
+  text-align:center;
+  width: 70%;
+  transform: translateX(15vw) rotateY(12deg);
+  border: 1px solid black;
+  transform-style: preserve-3d;
+}
+
+#div2 {
+  @include zig-zag-1;
+  background-color: red;
+  -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(-40deg);
+  transform: skewX(-40deg);
+
+}
+#div3 {
+  @include zig-zag-1;
+  background-color: blue;
+  -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(40deg);
+  transform: skewX(40deg);
+}
+
+#div4 {
+  @include zig-zag-1;
+  background-color: red;
+  -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(-40deg);
+  transform: skewX(-40deg);
+}
+
+#div5 {
+  @include zig-zag-1;
+  background-color: blue;
+  -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(40deg);
+  transform: skewX(40deg);
+}
