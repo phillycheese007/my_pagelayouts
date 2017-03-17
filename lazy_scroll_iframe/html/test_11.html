@@ -4,11 +4,13 @@
 <TITLE>Your Title Here</TITLE>
 <!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/u_8.css" rel="stylesheet" />-->
 <!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/glitch.css" rel="stylesheet" />-->
+	
+	
 <link href="/my_pagelayouts/lazy_scroll_iframe/css/portfolio_4.css" rel="stylesheet" />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <style>
-
+	.intro{border:30px solid green;background:blue;height:100px;width:700px;}
  
   
 </style>
@@ -28,6 +30,14 @@
     </div>
   
   </div>	
+	
+<script>
+$(document).ready(function(){
+    $("#gap"). click(function(){
+        $(this).toggleClass("intro");
+    });
+});
+</script>
 </body>
 </html>
  
