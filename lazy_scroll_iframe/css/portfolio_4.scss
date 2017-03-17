@@ -61,21 +61,21 @@
   box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
 }
 .mushroom_3{
-  position:fixed !important;
+  position:absolute !important;
   z-index:9999 !important;
-  top:0vw !important;
+  bottom:2% !important;
+  top:2% !important;
   margin-top:0 !important;
-  left:0vw !important;
-  bottom:0vw !important;
-  right:0vw !important;
-  height:96vh  !important;
-  width:100% !important;
+  margin:0 auto !important;
+  left:2% !important;
+  height:100vh  !important;
+  width:96% !important;
   transform: translateX(0vw) rotateY(0deg) !important;
   transform-style: flat !important;
   pointer-events: auto !important;
-  -webkit-box-shadow: 0px 0px 101px 17px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 101px 17px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 101px 17px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
 }
 object{  
   pointer-events: none !important;
