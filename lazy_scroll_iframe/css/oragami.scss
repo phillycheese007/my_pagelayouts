@@ -27,7 +27,7 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
   margin-left:100px;
   margin-top:100px;
   padding:0;
-  transform:rotateY(74deg);
+  transform:rotateY(44deg);
 
 }
 
@@ -46,7 +46,7 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
 .B1{
   @include big-bub-1;
   background:$B1-color;
-  transform:rotateX(80deg) translateZ(100px);
+  transform:rotateX(90deg) translateZ(100px);
   
 }
 
