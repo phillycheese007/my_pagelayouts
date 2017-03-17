@@ -4,100 +4,24 @@
 <TITLE>Your Title Here</TITLE>
 <link href="/my_pagelayouts/lazy_scroll_iframe/css/u_8.css" rel="stylesheet" />
 <link href="/my_pagelayouts/lazy_scroll_iframe/css/glitch.css" rel="stylesheet" />
-<!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/oragami.css" rel="stylesheet" />-->
+<link href="/my_pagelayouts/lazy_scroll_iframe/css/oragami.css" rel="stylesheet" />
 
 
 <style>
-* {
-  box-sizing: border-box;
-}
-h1,
-h2,
-p {
-  margin-top: 0;
-  margin-bottom: 1em;
-  padding: 0 50px;
-}
-body {
-  max-width: 960px;
-  background-color: #000;
-}
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  background-color: green;
-  color: #fff;
-  cursor: pointer;
-}
-.folds {
-  perspective: 2000px;
-  perspective-origin: 50% 0%;
-}
-.folds .fold {
-  height: 400px;
-  background-color: #666;
-  transform-style: preserve-3d;
-  transform-origin: center top;
-  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
-}
-.folds .fold .fold {
-  background-color: #ddd;
-}
-.folds .fold .content {
-  height: 400px;
-}
-.folds > .fold {
-  transform: rotate3d(1, 0, 0, -90deg);
-}
-.folds > .fold .fold {
-  transform: rotate3d(1, 0, 0, 179.9deg);
-}
-.moveable {
-  background-color: #fff;
-  padding: 50px 0;
-  border-top: 3px solid #ccc;
-  transform: translate3d(0, -400px, 0);
-  transition: transform 0.5s cubic-bezier(0.7, 0, 0.525, 0.915);
-}
-#toggle:checked ~ .button {
-  background-color: red;
-}
-#toggle:checked ~ .container .folds .fold {
-  background-color: #fff;
-  transform: none;
-}
-#toggle:checked ~ .container .moveable {
-  transform: translate3d(0, 400px, 0);
-  transition-timing-function: cubic-bezier(0.4, 0.042, 0.32, 0.925);
-}
+
   .bub{transform:rotateY(30deg);}
+  
 </style>
 </head>
 <body>
 
-<div class="bub">
-<input type="checkbox" id="toggle" hidden="hidden"/><label class="button" for="toggle">Toggle</label>
-<div class="container">
-  <div class="folds">
-    <div class="fold">
-      <div class="content">
-        <img src="http://cdn.unleashthefanboy.com/wp-content/uploads/2012/05/ironman_banner.jpg" />
-        <h1>Iron Man</h1>
-      </div>
-      <div class="fold">
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit minus cumque quis similique alias vel neque necessitatibus quas possimus maxime tenetur. Reiciendis tempora consectetur sit eos ipsam omnis iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta rem ratione mollitia rerum recusandae illum aliquam architecto porro nulla voluptate numquam nisi placeat officia magni consequuntur accusamus debitis dolores qui.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="moveable">
-    <h2>Hello Berlin!</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sit minus cumque quis similique alias vel neque necessitatibus quas possimus maxime tenetur. Reiciendis tempora consectetur sit eos ipsam omnis iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta rem ratione mollitia rerum recusandae illum aliquam architecto porro nulla voluptate numquam nisi placeat officia magni consequuntur accusamus debitis dolores qui.</p>
-  </div>
-</div> 
-  </div><!--end bubb-->
+<div id="div1">
+  <div id="div2">HELLO</div>
+  <div id="div3">HELLO</div>
+  <div id="div4">HELLO</div>
+  <div id="div5">HELLO</div>
+</div>
+  
 </body>
 </html>
  
