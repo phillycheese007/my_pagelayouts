@@ -42,7 +42,7 @@
 
 }
 #div3 {
-  @include zig-zag-1;;
+  @include zig-zag-1;
   background-color: blue;
   -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
   transform: rotateX(40deg);
