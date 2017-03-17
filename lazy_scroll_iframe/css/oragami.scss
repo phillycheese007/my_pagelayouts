@@ -60,11 +60,9 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
   @include big-bub-1;
   background:$D1-color;
   transform:rotateX(-45deg) translateZ(50px);
-  transform-origin: 50% 50%
 }
 .E1{
   @include big-bub-1;
   background:$E1-color;
   transform:rotateX(45deg) translateZ(50px);
-  transform-origin: 50% 50%
 }
