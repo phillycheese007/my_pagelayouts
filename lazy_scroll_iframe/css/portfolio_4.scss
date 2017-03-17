@@ -66,3 +66,15 @@
   transform: rotateX(40deg);
   transform: skewX(40deg);
 }
+
+@media only screen and (max-width: 500px) {
+  @mixin zig-zag-1 {
+    $bubble-height:30vh;
+    height: $bubble-height;
+    width:60%;
+    margin:0 auto;
+    padding:0;
+    position: relative;
+    border: 1px solid red;
+  }
+}
