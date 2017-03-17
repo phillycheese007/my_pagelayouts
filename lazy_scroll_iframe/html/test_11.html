@@ -32,16 +32,13 @@
   </div>	
 	
 <script>
-$("#div2").click(function() {
-        $("#div2").toggleClass("intro");
-});
-
-//click event attached to cloned buttons
-$("div#div2").on("click", ".this2", function() {
-   alert("click attached to clones");
-
+$(document).ready(function(){
+    $("div2").click(function(){
+        $("div2").toggleClass("intro");
+    });
 });
 </script>
+	
 </body>
 </html>
  
