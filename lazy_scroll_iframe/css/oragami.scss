@@ -1,0 +1,37 @@
+---
+#oragami
+---
+$A-color:green;$B-color:blue;$C-color:yellow;$D-color:brown;$E-color:lightblue;$F-color:orange;
+
+
+
+
+
+@mixin big-bub-1 {
+  $bubble-height:200px;
+  height: $bubble-height;
+  width:600px;
+  margin:0;
+  padding:0;
+}
+
+.big_bub{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+.A{
+  @include big-bub-1;
+  background:$A-color;
+}
+
+.B{
+  @include big-bub-1;
+  background:$B-color;
+}
+
+.C{
+  @include big-bub-1;
+  background:$C-color;
+}
