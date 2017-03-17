@@ -7,7 +7,7 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
 
 .big_bub div {
   transform-style: preserve-3d;
-  transform-origin: 45% 20%;
+  transform-origin: 45% -20%;
 }
 
 @mixin big-bub-1 {
