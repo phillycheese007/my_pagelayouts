@@ -25,11 +25,11 @@ $A1-color:green;$B1-color:blue;$C1-color:yellow;$D1-color:brown;$E1-color:lightb
 .slab_test .right, .slab_test .left { width: 14vw; height: 5vw; left: -2vw; }
 .slab_test .top, .slab_test .bottom { width: 10vw; height: 14vw; top: -4.5vw; }
 .slab_test .front { transform: rotateY(0deg) translateZ(7vw); background: red; }
-.slab_test .back { transform: rotateX(60deg) translateZ(7vw); background: red; }
-.slab_test .right { transform: rotateY(30deg) translateZ(5vw); background: green; }
-.slab_test .left { transform: rotateY(-30deg) translateZ(5vw); background: green; }
-.slab_test .top { transform: rotateX(30deg) translateZ(2.5vw); background: blue; }
-.slab_test .bottom { transform: rotateX(-30deg) translateZ(2.5vw); background: blue; }
+.slab_test .back { transform: rotateX(30deg) translateZ(7vw); background: orange; }
+.slab_test .right { transform: rotateY(-30deg) translateZ(5vw); background: green; }
+.slab_test .left { transform: rotateY(30deg) translateZ(5vw); background: pink; }
+.slab_test .top { transform: rotateX(-30deg) translateZ(2.5vw); background: lightblue; }
+.slab_test .bottom { transform: rotateX(30deg) translateZ(2.5vw); background: blue; }
 
 
 .big_bub{
