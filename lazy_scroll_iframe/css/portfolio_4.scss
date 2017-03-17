@@ -34,10 +34,13 @@
   top:0vw !important;
   margin-top:0 !important;
   left:0vw !important;
-  bottom:0vw !important;
   right:0vw !important;
+  height:auto !important;
+  width:100vw !important;
+  transform: translateX(0vw) rotateY(0deg) !important;
+  transform-style: flat !important;
   pointer-events: auto !important;
-  background:purple;
+  background:lightblue;
 }
 
 .mushroom_2{
