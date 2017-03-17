@@ -105,7 +105,7 @@ object{
 .display_bloc{
   display:block;
   transform: translateX(0vw) rotateY(0deg) !important;
-
+  transform:skewY(0deg)!important;
 }
 
 .big_bub{  
