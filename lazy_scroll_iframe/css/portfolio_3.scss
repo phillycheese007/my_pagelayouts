@@ -6,8 +6,8 @@
 @mixin zig-zag-1 {
   $bubble-height:60vh;
   height: $bubble-height;
-  width:65%;
-  margin:0;
+  width:60%;
+  margin:0 auto;
   padding:0;
   position: relative;
   border: 1px solid black;
@@ -29,7 +29,7 @@
 #div1 {
   position: relative;
   text-align:center;
-  width: 90%;
+  width: 70%;
   transform: translateX(10vw) rotateY(12deg);
   border: 1px solid black;
   transform-style: preserve-3d;
