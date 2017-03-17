@@ -77,4 +77,35 @@
     position: relative;
     border: 1px solid red;
   }
+  #div2 {
+  @include zig-zag-1;
+  background-color: red;
+  -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(-40deg);
+  transform: skewX(-40deg);
+
+  }
+  #div3 {
+  @include zig-zag-1;
+  background-color: blue;
+  -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(40deg);
+  transform: skewX(40deg);
+  }
+
+  #div4 {
+  @include zig-zag-1;
+  background-color: red;
+  -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(-40deg);
+  transform: skewX(-40deg);
+  }
+
+  #div5 {
+  @include zig-zag-1;
+  background-color: blue;
+  -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(40deg);
+  transform: skewX(40deg);
+  }
 }
