@@ -103,12 +103,12 @@ object{
 
 .display_vis{display:block;}
 .display_bloc{
-  position:fixed;
   display:block;
   transform: translateX(0vw) rotateY(0deg) !important;
   transform:skewY(0deg)!important;
 }
 .display_bloc_2{
+  position:fixed;
   display:block;
   transform: translateX(0vw) rotateY(0deg) !important;
   transform:skewY(0deg)!important;
