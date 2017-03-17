@@ -1,6 +1,20 @@
 ---
 #eee
 ---
+
+
+@mixin zig-zag-1 {
+  $bubble-height:50vh;
+  height: $bubble-height;
+  width:50%;
+  margin:0;
+  padding:0;
+  position: relative;
+  border: 1px solid black;
+}
+
+
+
 .big_bub{  
   background:pink;
   width:70%;
@@ -20,10 +34,7 @@
 }
 
 #div2 {
-  height:100vh;
-  width:150px;
-  position: relative;
-  border: 1px solid black;
+  @include zig-zag-1;
   background-color: red;
   -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
   transform: rotateX(-40deg);
@@ -31,10 +42,7 @@
 
 }
 #div3 {
-  height:100vh;
-  width:150px;
-  position: relative;
-  border: 1px solid black;
+  @include zig-zag-1;;
   background-color: blue;
   -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
   transform: rotateX(40deg);
@@ -42,10 +50,7 @@
 }
 
 #div4 {
-  height:100vh;
-  width:150px;
-  position: relative;
-  border: 1px solid black;
+  @include zig-zag-1;
   background-color: red;
   -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
   transform: rotateX(-40deg);
@@ -53,10 +58,7 @@
 }
 
 #div5 {
-  height:100vh;
-  width:150px;
-  position: relative;
-  border: 1px solid black;
+  @include zig-zag-1;
   background-color: blue;
   -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
   transform: rotateX(40deg);
