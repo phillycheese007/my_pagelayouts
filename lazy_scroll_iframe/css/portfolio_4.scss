@@ -112,7 +112,9 @@ object{
 }
 .display_bloc_2{
   position:fixed!important;
-  top:0vh !important;
+  z-index:99999 !important;
+  top:0vh !important;  
+  margin-top:0 !important;
   bottom:0vh!important;
   left:0vw !important;
   right:0vw !important;
