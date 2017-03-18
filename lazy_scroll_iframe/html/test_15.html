@@ -113,12 +113,16 @@ var scroll = $(window).scrollTop();
     function () {
 
 
-
+			   
 if ($(this).siblings().hasClass("height")) {
   $(this).siblings().removeClass("height");
-  $(this).siblings().removeClass("width");
-  $(this).siblings().addClass("transform");
 }
+if ($(this).siblings().hasClass("width")) {
+  $(this).siblings().removeClass("width");
+}
+if ($(this).siblings().hasClass("transform")) {
+  $(this).siblings().removeClass("transform");
+}	    
       $("#bake").toggleClass("perspective");
       $("#cake").toggleClass("skew");
       $(this).toggleClass("div_clicked");
