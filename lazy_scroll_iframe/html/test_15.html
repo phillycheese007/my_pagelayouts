@@ -118,6 +118,14 @@ var scroll = $(window).scrollTop();
 			   
 if ($(this).siblings().hasClass("height")) {
   $(this).siblings().removeClass("height");
+ $(this).siblings().click(
+	 function(){
+      $(this).toggleClass("top");
+      $(this).toggleClass("height");
+      $(this).toggleClass("width");
+      $(this).toggleClass("transform"); 
+		     }            
+  );	
 }
 if ($(this).siblings().hasClass("width")) {
   $(this).siblings().removeClass("width");
