@@ -39,7 +39,7 @@
   width:100vw !important;
   transform: translateX(0vw) rotateY(0deg) !important;
   transform-style: flat !important;
-  pointer-events: none !important;
+  pointer-events: auto !important;
   background:lightblue;
 }
 
@@ -55,7 +55,7 @@
   width:96% !important;
   transform: translateX(0vw) rotateY(0deg) !important;
   transform-style: flat !important;
-  pointer-events: none !important;
+  pointer-events: auto !important;
   -webkit-box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
