@@ -87,12 +87,13 @@ $(".close_but").toggleClass("display_vis");
 </script>
 
 <script>
+        $(".big_bub").find( ".pod" ).click(
+            function () {
 $(window).scroll(function() {
-    $('#myElement').css('top', $(this).scrollTop() + "px");
-});
-$(window).scroll(function() {
-    $('.pod').css('top', $(this).scrollTop() + "px");
+    $(this).css('top', $(this).scrollTop() + "px");
 });	
+		    
+    });		    
 </script>
 	
 </body>
