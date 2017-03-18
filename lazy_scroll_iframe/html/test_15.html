@@ -111,8 +111,8 @@ var scroll = $(window).scrollTop();
 	
 	 $( ".close_but" ). click(
     function () {  
-      $("#bake").addClass("perspective"); 
-      $("#cake").addClass("skew");
+      $("#bake").toggleClass("perspective"); 
+      $("#cake").toggleClass("skew");
     }            
   ); 
 	
@@ -131,8 +131,8 @@ if ($(this).siblings().hasClass("transform")) {
   $(this).siblings().removeClass("transform");
 }	 
 
-      $("#bake").removeClass("perspective"); 
-      $("#cake").removeClass("skew");
+      $("#bake").toggleClass("perspective"); 
+      $("#cake").toggleClass("skew");
 
 	    
  
