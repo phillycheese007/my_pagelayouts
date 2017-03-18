@@ -87,6 +87,7 @@ var scroll = $(window).scrollTop();
       $(".pud").toggleClass("height");
       $(".pud").toggleClass("width");
       $(".pud").toggleClass("transform");
+  $(this)[0].scrollIntoView();
 
     }            
   );	
@@ -95,11 +96,7 @@ var scroll = $(window).scrollTop();
 
 </script>
 	
-<script>
-$("#cake").find( ".pud" ).on("click", function() {
-  $(this)[0].scrollIntoView();
-});
-</script>	
+
 </body>
 </html>
  
