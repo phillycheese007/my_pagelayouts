@@ -73,7 +73,7 @@ footer{height:200px;background:yellow;}
   <div class="pud pud_1"></div>	
   <div class="pud pud_2"></div>
   <div class="pud pud_1"></div>	
-  <div class="pud pud_2"></div>
+  <div class="pud pud_2 cd"></div>
 </div>
 
 <footer>
@@ -109,7 +109,20 @@ var scroll = $(window).scrollTop();
 
 </script>
 
+<script>
+$(document).ready(function () {
 
+	
+  $(".cd").click(
+    function () {
+   document.body.scrollTop = document.body.scrollHeight;
+
+    }            
+  );	
+	
+});
+
+</script>
 	
 </body>
 </html>
