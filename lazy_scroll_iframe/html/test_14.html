@@ -49,8 +49,8 @@ footer{height:200px;background:yellow;}
   transition:all 1.4s;
 }
 .position{position:fixed;z-index:9999;transition:all .75s;pointer-events: auto !important;}
-.object{pointer-events: auto !important;}
-#gap{pointer-events: auto !important;}
+.pointer_events{pointer-events: auto !important;}
+
 
 </style>
 </head>
@@ -96,7 +96,7 @@ var scroll = $(window).scrollTop();
       $(this).toggleClass("height");
       $(this).toggleClass("width");
       $(this).toggleClass("transform");
-
+      $("#cake").find( ".pud" ).find( "#gap" ).toggleClass("pointer_events");
 
     }            
   );	
