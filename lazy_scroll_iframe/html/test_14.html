@@ -97,7 +97,7 @@ var scroll = $(window).scrollTop();
 	
 <script>
 $("#cake").find( ".pud" ).on("click", function() {
-    $(window).scrollTop(0);
+  $(this)[0].scrollIntoView();
 });
 </script>	
 </body>
