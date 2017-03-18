@@ -109,6 +109,8 @@ var scroll = $(window).scrollTop();
 	
   $("#cake").find( ".pud" ).click(
     function () {
+      $(this).toggleClass("position");
+
       $("#bake").toggleClass("perspective");
       $("#cake").toggleClass("skew");
       $(this).toggleClass("div_clicked");
