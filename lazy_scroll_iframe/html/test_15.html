@@ -21,7 +21,13 @@ padding:0;
   transform: rotateX(40deg);
   transform-style: preserve-3d;
 }
-
+#cake_click{
+  transform: rotateX(0deg);
+  transform-style:flat;	
+}
+#bake_click{
+  perspective:300px;	
+}
 .pud{
   transition: all 0.75s ease;
   height: 50vh;
@@ -107,6 +113,8 @@ var scroll = $(window).scrollTop();
 	
   $("#cake").find( ".pud" ).click(
     function () {
+      $("#cake").toggleClass("cake_click");
+      $("#bake").toggleClass("bake_click");
       $(this).toggleClass("div_clicked");
 
       $(this).toggleClass("top");
