@@ -1,0 +1,116 @@
+
+<html>
+<head>
+<TITLE>Your Title Here</TITLE>
+<!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/u_8.css" rel="stylesheet" />-->
+<!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/glitch.css" rel="stylesheet" />-->	
+<link href="/my_pagelayouts/lazy_scroll_iframe/css/portfolio_5.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<style>
+
+body,
+html{
+margin:0;
+padding:0;
+}
+
+.pud{
+  transition: all 0.5s ease;
+  height: 50vh;
+  width:60vw; 
+  margin:0 auto;
+  padding: 0; 
+  position: relative;
+}
+	
+.pud_1{
+  background:red;
+  -webkit-transform: rotateX(40deg);
+  transform: rotateX(40deg); transform: skewX(40deg);
+}
+	
+.pud_2{
+  background:blue;
+  -webkit-transform: rotateX(-40deg);
+  transform: rotateX(-40deg); transform: skewX(-40deg);
+}
+	
+.div_clicked{
+  background:green;
+  transition: all 0.5s ease;	
+  position:fixed;
+  z-index:99999;
+  top:0;right:0;left:0;
+  height:100vh;
+  width:100%;
+  margin:0;
+  padding:0;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg); transform: skewX(0deg);
+}
+
+	
+footer{height:200px;background:yellow;}
+	
+</style>
+</head>
+<body>
+
+<div id="cake">
+  <div class="pud pud_1"></div>	
+  <div class="pud pud_2"></div>
+  <div class="pud pud_1"></div>	
+  <div class="pud pud_2 cd"></div>
+</div>
+
+<footer>
+  <ul>
+    <li>
+	    tetris
+    </li> 
+    <li>
+	    bongo
+    </li> 
+    <li>
+	    rover
+    </li> 
+    <li>
+	    run
+    </li> 
+  </ul>
+</footer>
+
+<script>
+$(document).ready(function () {
+var scroll = $(window).scrollTop();
+	
+  $("#cake").find( ".pud" ).click(
+    function () {
+      $(this).toggleClass("div_clicked");
+      $("html").scrollTop(scroll);
+    }            
+  );	
+	
+});
+
+</script>
+
+<script>
+$(document).ready(function () {
+
+	
+  $(".cd").click(
+    function () {
+   document.body.scrollTop = document.body.scrollHeight;
+
+    }            
+  );	
+	
+});
+
+</script>
+	
+</body>
+</html>
+ 
