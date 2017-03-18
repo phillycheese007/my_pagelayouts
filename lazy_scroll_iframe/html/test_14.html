@@ -39,7 +39,10 @@ padding:0;
 
 	
 footer{height:200px;background:yellow;}
-	.h{height:100vh;}	
+	.height{height:100vh;}	
+	.width{width:100vw;}
+	.position{position:fixed;}
+	
 </style>
 </head>
 <body>
@@ -75,8 +78,9 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
       $(this).toggleClass("div_clicked");
-      $(".pud").toggleClass("h");
-
+      $(".pud").toggleClass("height");
+      $(".pud").toggleClass("width");
+      $(".pud").toggleClass("position");
     }            
   );	
 	
