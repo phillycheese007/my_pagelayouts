@@ -89,9 +89,10 @@ $(".close_but").toggleClass("display_vis");
 <script>
         $(".big_bub").find( ".pod" ).click(
             function () {
+			$(this).css("position", "fixed");
+    
 $(window).scroll(function() {
 
-	$(".pod").css("position", "fixed");
     $(".pod").css("top", "0px");	
 });	
 		    
