@@ -68,9 +68,9 @@ $(".close_but").toggleClass("display_vis");
 
 
 <script>
-  $(document).ready(function () {
-
-        $(".big_bub").find( ".pod" ).click(
+$(document).ready(function () {
+  var scroll = $(window).scrollTop();
+  $(".big_bub").find( ".pod" ).click(
             function () {
 
 $("#div1").toggleClass("mushroom_5"); 
@@ -80,23 +80,14 @@ $("#div1").toggleClass("mushroom_5");
 $(this).toggleClass("mushroom_4");
 		    
 $(".close_but").toggleClass("display_vis");
+      $("html").scrollTop(scroll);
             }            
         );		  
     });
 
 </script>
 
-<script>
-        $(".big_bub").find( ".pod" ).click(
-            function () {
-    
-$(window).scroll(function() {
 
-    $(".pod").css('top', $(this).scrollTop() + "px");
-});	
-		    
-});	    
-</script>
 	
 </body>
 </html>
