@@ -74,12 +74,12 @@ transform: rotateX(40deg); transform: skewX(40deg);
 
 <script>
 $(document).ready(function () {
-  var tempScrollTop = $(window).scrollTop();
+var scroll = $(window).scrollTop();
 	
   $("#cake").find( ".pud" ).click(
     function () {
       $(this).toggleClass("div_clicked");
-      $(window).scrollTop(tempScrollTop);
+      $("html").scrollTop(scroll);
     }            
   );	
 	
