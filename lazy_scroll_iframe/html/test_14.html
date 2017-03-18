@@ -42,7 +42,10 @@ footer{height:200px;background:yellow;}
 	.height{height:100vh;transition:all 1s;}
 	.top{top:0vw;transition:all 1s;}
 	.width{width:100vw;transition:all 1s;}
-	.position{position:fixed;z-index:99999;transition:all 1s;}
+	.transform{  -webkit-transform: rotateX(0deg);transform: rotateX(0deg);
+	  transform: skewX(0deg);transition:all 1s;
+	}
+	.position{position:fixed;z-index:9999;transition:all 1s;}
 	
 </style>
 </head>
@@ -83,6 +86,8 @@ var scroll = $(window).scrollTop();
       $(".pud").toggleClass("top");
       $(".pud").toggleClass("height");
       $(".pud").toggleClass("width");
+      $(".pud").toggleClass("transform");
+
     }            
   );	
 	
