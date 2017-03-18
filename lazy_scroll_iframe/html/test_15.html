@@ -122,7 +122,16 @@ var scroll = $(window).scrollTop();
       $(this).toggleClass("transform");
       $("#cake").find( ".pud" ).find( "#gap" ).toggleClass("pointer_events");
       $(this).find( ".close_but" ).toggleClass("display_vis");
+$(this).siblings( ".pud" ).click(
+    function () {
+$(this).siblings( ".pud" ).toggleClass("top");   
+$(this).siblings( ".pud" ).toggleClass("height");
+$(this).siblings( ".pud" ).toggleClass("width");
+$(this).siblings( ".pud" ).toggleClass("transform");
 
+    }            
+  );
+	    
     }            
   );	
 	
