@@ -165,7 +165,7 @@ object{
 }
 #div3 {
   @include zig-zag-1;
-  background-color: blue;
+  background-color: none;
   -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
   transform: rotateX(40deg);
   transform: skewX(40deg);
@@ -181,7 +181,7 @@ object{
 
 #div5 {
   @include zig-zag-1;
-  background-color: blue;
+  background-color: none;
   -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
   transform: rotateX(40deg);
   transform: skewX(40deg);
