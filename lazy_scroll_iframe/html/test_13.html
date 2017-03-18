@@ -1,0 +1,79 @@
+
+<html>
+<head>
+<TITLE>Your Title Here</TITLE>
+<!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/u_8.css" rel="stylesheet" />-->
+<!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/glitch.css" rel="stylesheet" />-->
+	
+	
+<link href="/my_pagelayouts/lazy_scroll_iframe/css/portfolio_5.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<style>
+
+body,
+html{
+margin:0;
+padding:0;
+}
+
+#pud_1{
+  background:green;
+  height:100vh;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+#div5 { 
+height: 60vh;
+width: 60%; 
+margin: 0 auto;
+padding: 0; 
+position: relative;
+background-color: none; -webkit-transform: rotateX(40deg);
+/* Chrome, Safari, Opera  */ transform: rotateX(40deg); transform: skewX(40deg); }
+</style>
+</head>
+<body>
+
+  <div class="pud_1">
+  </div>	
+	
+
+
+
+<script>
+  $(document).ready(function () {
+
+        $(".big_bub").find( ".pod" ).click(
+            function () {
+
+$("#div1").toggleClass("mushroom_5"); 
+ 
+    $("#gap").toggleClass("obj_bone"); 
+
+$(this).toggleClass("mushroom_4");
+		    
+$(".close_but").toggleClass("display_vis");
+            }            
+        );		  
+    });
+
+</script>
+
+<script>
+        $(".big_bub").find( ".pod" ).click(
+            function () {
+    
+$(window).scroll(function() {
+
+    $(".pod").css('top', $(this).scrollTop() + "px");
+});	
+		    
+});	    
+</script>
+	
+</body>
+</html>
+ 
