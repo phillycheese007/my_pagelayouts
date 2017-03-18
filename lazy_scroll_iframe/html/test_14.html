@@ -75,7 +75,7 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
       $(this).toggleClass("div_clicked");
-      $("html").scrollTop(scroll);
+      $(".pud").css("height", "100vh");
     }            
   );	
 	
@@ -83,20 +83,6 @@ var scroll = $(window).scrollTop();
 
 </script>
 
-<script>
-$(document).ready(function () {
-
-	
-  $(".cd").click(
-    function () {
-   document.body.scrollTop = document.body.scrollHeight;
-
-    }            
-  );	
-	
-});
-
-</script>
 	
 </body>
 </html>
