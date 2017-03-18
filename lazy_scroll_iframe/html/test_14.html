@@ -83,10 +83,10 @@ var scroll = $(window).scrollTop();
     function () {
       $(this).toggleClass("div_clicked");
 
-      $(".p_3").toggleClass("top");
-      $(".p_3").toggleClass("height");
-      $(".p_3").toggleClass("width");
-      $(".p_3").toggleClass("transform");
+      $(this).toggleClass("top");
+      $(this).toggleClass("height");
+      $(this).toggleClass("width");
+      $(this).toggleClass("transform");
 
 
     }            
@@ -98,7 +98,7 @@ var scroll = $(window).scrollTop();
 <script>
 
 $(document).ready(function(){
-    $('.p_3').on('click', function(){
+    $("#cake").find( ".pud" ).on('click', function(){
         $('html,body').animate({scrollTop: $(this).offset().top}, 800);
     }); 
 });  
