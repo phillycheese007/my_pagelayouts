@@ -37,7 +37,7 @@ background:blue;
 transform: rotateX(-40deg); transform: skewX(-40deg);
 }
 .div_clicked{
-  background:green;opacity:.5;
+  background:green;
   position:fixed;
   top:0;right:0;left:0;bottom:0;
   height:100vh;
@@ -72,7 +72,7 @@ transform: rotateX(40deg); transform: skewX(40deg);
 <script>
 $(document).ready(function () {
 
-  $("#cake").find( ".pud" ).click(
+  $("#cake").find( ".pud_1" ).click(
     function () {
       $(this).toggleClass("div_clicked");
     }            
