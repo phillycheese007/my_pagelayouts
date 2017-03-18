@@ -116,8 +116,8 @@ var scroll = $(window).scrollTop();
 
 if ($(this).siblings().hasClass("height")) {
   $(this).siblings().removeClass("height");
-  $(this).siblings().toggleClass("width");
-  $(this).siblings().toggleClass("transform");
+  $(this).siblings().removeClass("width");
+  $(this).siblings().removeClass("transform");
 }
       $("#bake").toggleClass("perspective");
       $("#cake").toggleClass("skew");
