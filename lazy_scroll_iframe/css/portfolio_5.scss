@@ -71,6 +71,9 @@
   height:100vh !important;
   width:100% !important;
    transform:skewY(5deg)!important;
+  -webkit-box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
   
 }
 .mushroom_5{
