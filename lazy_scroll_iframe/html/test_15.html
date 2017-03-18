@@ -19,15 +19,9 @@ padding:0;
 }
 #cake{
   transform: rotateX(40deg);
+}
 
-}
-#cake_click{
-  transform: rotateX(0deg);
-  transform-style:flat;	
-}
-#bake_click{
-  perspective:0px;
-}
+
 .pud{
   transition: all 0.75s ease;
   height: 50vh;
@@ -52,6 +46,9 @@ padding:0;
 
 	
 footer{height:200px;background:yellow;}
+	
+.perspective{perspective:300px;}
+
 .height{height:100vh;transition:all .75s;}
 .top{top:0vw;transition:all .75s;}
 .width{width:100vw;transition:all 1.4s;}
@@ -74,7 +71,7 @@ footer{height:200px;background:yellow;}
 </style>
 </head>
 <body>
-<div id="bake">
+<div id="bake" class="perspective">
 <div id="cake">
 	
   <div class="pud pud_1 p_1"><div class="close_but">&#10006;</div></div>	
@@ -113,8 +110,7 @@ var scroll = $(window).scrollTop();
 	
   $("#cake").find( ".pud" ).click(
     function () {
-      $("#cake").toggleClass("cake_click");
-      $("#bake").toggleClass("bake_click");
+      $("#bake").toggleClass("perspective");
       $(this).toggleClass("div_clicked");
 
       $(this).toggleClass("top");
