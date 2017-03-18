@@ -125,11 +125,18 @@ if ($(this).siblings().hasClass("transform")) {
 }	 
     $(this).click(
     function () {  
-      $("#bake").toggleClass("perspective");
-	    
+      $("#bake").removeClass("perspective"); 
       $("#cake").toggleClass("skew");
     }            
   );  
+	    
+	 $( ".close_but" ). click(
+    function () {  
+      $("#bake").addClass("perspective"); 
+      $("#cake").toggleClass("skew");
+    }            
+  );  
+	    
       $(this).toggleClass("div_clicked");
 
       $(this).toggleClass("top");
