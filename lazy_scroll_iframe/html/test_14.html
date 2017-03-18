@@ -39,10 +39,10 @@ padding:0;
 
 	
 footer{height:200px;background:yellow;}
-	.height{height:100vh;transition:all 10s;}
-	.top{top:0vw;transition:all 11s;}
-	.width{width:100vw;transition:all 11s;}
-	.position{position:fixed;}
+	.height{height:100vh;transition:all 1s;}
+	.top{top:0vw;transition:all 1s;}
+	.width{width:100vw;transition:all 1s;}
+	.position{position:fixed;transition:all 1s;}
 	
 </style>
 </head>
@@ -82,6 +82,7 @@ var scroll = $(window).scrollTop();
       $(".pud").toggleClass("position");
       $(".pud").toggleClass("top");
       $(".pud").toggleClass("height");
+      $(".pud").toggleClass("width");
     }            
   );	
 	
