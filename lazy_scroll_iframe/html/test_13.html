@@ -24,6 +24,7 @@ padding:0;
   margin:0;
   padding:0;
 }
+.div_clicked
 
 #div5 { 
 height: 60vh;
@@ -48,16 +49,14 @@ background-color: none; -webkit-transform: rotateX(40deg);
 <script>
   $(document).ready(function () {
 
-        $(".big_bub").find( ".pod" ).click(
+        $(".big_bub").find( ".pud_1" ).click(
             function () {
 
-$("#div1").toggleClass("mushroom_5"); 
- 
-    $("#gap").toggleClass("obj_bone"); 
 
-$(this).toggleClass("mushroom_4");
+
+$(this).toggleClass("div_clicked");
 		    
-$(".close_but").toggleClass("display_vis");
+
             }            
         );		  
     });
