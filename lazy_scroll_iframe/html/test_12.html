@@ -80,6 +80,11 @@ $(this).toggleClass("mushroom_4");
 $(".close_but").toggleClass("display_vis");
             }            
         );
+	  
+$(window).scroll(function() {
+    $('.pop').css('top', $(this).scrollTop() + "px");
+});
+	  
     });
 
 </script>
