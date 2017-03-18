@@ -111,7 +111,13 @@ var scroll = $(window).scrollTop();
 	
   $("#cake").find( ".pud" ).click(
     function () {
-$(this).siblings().hide()
+$(this).siblings().toggleClass()
+
+
+
+if ($(this).siblings().hasClass("height")) {
+  $(this).siblings().removeClass("height");
+}
       $("#bake").toggleClass("perspective");
       $("#cake").toggleClass("skew");
       $(this).toggleClass("div_clicked");
