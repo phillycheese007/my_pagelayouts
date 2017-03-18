@@ -122,9 +122,14 @@ if ($(this).siblings().hasClass("width")) {
 }
 if ($(this).siblings().hasClass("transform")) {
   $(this).siblings().removeClass("transform");
-}	    
+}	 
+    $(this).click(
+    function () {  
       $("#bake").toggleClass("perspective");
+	    
       $("#cake").toggleClass("skew");
+    }            
+  );  
       $(this).toggleClass("div_clicked");
 
       $(this).toggleClass("top");
