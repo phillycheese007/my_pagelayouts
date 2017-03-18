@@ -39,7 +39,7 @@ padding:0;
 
 	
 footer{height:200px;background:yellow;}
-	
+	.h{height:100vh;}	
 </style>
 </head>
 <body>
@@ -76,6 +76,8 @@ var scroll = $(window).scrollTop();
     function () {
       $(this).toggleClass("div_clicked");
       $(".pud").css("height", "100vh");
+      $(".pud").toggleClass("h");
+
     }            
   );	
 	
