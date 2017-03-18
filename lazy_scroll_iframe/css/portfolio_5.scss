@@ -77,7 +77,12 @@
 .mushroom_5{
   width:100% !important;
   position:absolute  !important;left:0  !important;
-  margin:0 !important
+  margin:0 !important;
+  left:0vw !important;
+  bottom:0vw !important;
+  right:0vw !important;
+  height:100vh !important;
+  width:100vw !important;
 }
 object{  
   pointer-events: none !important;
