@@ -124,9 +124,9 @@ var scroll = $(window).scrollTop();
       $(this).find( ".close_but" ).toggleClass("display_vis");
 $(this).click(
     function () {
-$(this).siblings( ".pud" ).toggleClass("top");   
-$(this).siblings( ".pud" ).toggleClass("height");
-$(this).siblings( ".pud" ).toggleClass("width");
+$(this).siblings( ".pud" ).removeClass("top");   
+$(this).siblings( ".pud" ).removeClass("height");
+$(this).siblings( ".pud" ).removeClass("width");
 $(this).siblings( ".pud" ).toggleClass("transform");
 
     }            
