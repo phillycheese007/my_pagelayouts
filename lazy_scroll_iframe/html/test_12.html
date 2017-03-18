@@ -91,6 +91,8 @@ $(".close_but").toggleClass("display_vis");
             function () {
 $(window).scroll(function() {
     $(".pod").css('top', $(this).scrollTop() + "px");
+    $(".pod").css("position", "fixed");
+    $(".pod").css("top", "0px");	
 });	
 		    
 });	    
