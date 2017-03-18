@@ -111,7 +111,7 @@ var scroll = $(window).scrollTop();
 	
   $("#cake").find( ".pud" ).click(
     function () {
-
+$(this).siblings().hide()
       $("#bake").toggleClass("perspective");
       $("#cake").toggleClass("skew");
       $(this).toggleClass("div_clicked");
@@ -124,14 +124,7 @@ var scroll = $(window).scrollTop();
       $(this).find( ".close_but" ).toggleClass("display_vis");
 
 
-  $(this).siblings( ".pud" ).click(
-    function () {
-$(this).siblings( ".pud" ).toggleClass("top");   
-$(this).siblings( ".pud" ).toggleClass("height");
-$(this).siblings( ".pud" ).toggleClass("width");
-$(this).siblings( ".pud" ).toggleClass("transform");
-    }            
-  );
+
 	    
     }            
   );	
