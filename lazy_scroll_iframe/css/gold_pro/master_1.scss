@@ -31,6 +31,16 @@
 
 
     /*---------------------------------------------------*/
+@mixin box-shadow{
+-webkit-box-shadow: 0px 0px 74px 30px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 74px 30px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 74px 30px rgba(0,0,0,0.75);
+}
+    /*---------------------------------------------------*/
+
+
+
+    /*---------------------------------------------------*/
 $color_1:white;
 $color_2:black;
 $color_3:blue;
@@ -132,6 +142,7 @@ margin-bottom:20vh;
   display:block;
   z-index:9999;
   pointer-events: auto !important;
+   @include box-shadow;
 }
 	
 .position_2{
