@@ -1,7 +1,8 @@
 ---
 #master1
 ---
-@import 'reset';
+@import "_reset.scss";
+
 
 // generic transform
 @mixin transform($transforms) {
