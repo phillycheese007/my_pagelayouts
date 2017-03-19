@@ -48,8 +48,10 @@ var scroll = $(window).scrollTop();
 
       $(this).toggleClass("top");
       $(this).toggleClass("width");
-      $(this).siblings().toggleClass("marg_bot");
-
+	    
+      $(this).siblings().toggleClass("height");
+      $(this).siblings().toggleClass("width");
+	    
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
