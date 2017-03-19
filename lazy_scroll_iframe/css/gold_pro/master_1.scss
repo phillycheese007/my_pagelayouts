@@ -145,6 +145,8 @@ footer#two{
 
 @media screen and (max-width: 580px) {
   #cake{background:green;position:absolute;right:0;width:100vw;height:100vh;}
+  footer#one{display:visible;}
+
 }
 
 @media screen and (orientation: portrait) and (max-device-width: 580px) {
