@@ -60,10 +60,7 @@ var scroll = $(window).scrollTop();
 	
   $("#cake").find( ".pud" ).click(
     function () {
-      $("#cake").toggleClass("skew");
-      $("#bake").toggleClass("width_2");
 
-      $("#bake").toggleClass("perspective");
 	    
       $(this).toggleClass("top");
 
@@ -84,7 +81,8 @@ var scroll = $(window).scrollTop();
       $("#cake").find( ".pud" ).find( "#gap" ).toggleClass("pointer_events");
       $(this).find( ".close_but" ).toggleClass("display_vis");
       
-
+      $("#cake").toggleClass("skew");
+      $("#bake").toggleClass("perspective");
 
     }            
   );	
