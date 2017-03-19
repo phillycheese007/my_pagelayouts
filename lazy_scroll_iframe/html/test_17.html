@@ -51,7 +51,14 @@ html,
   margin-top: 100px; 
 }
 	
-footer{position:absolute;bottom:0;height:200px;width:100%;background:yellow;}
+#footer {
+  background:yellow;
+  position: relative;
+  margin-top: -180px; /* negative value of footer height */
+  height: 180px;
+  width:100%;
+  clear: both;
+} 
 	
 .perspective{perspective:900px;}
 .skew{transform: skewY(-5deg);}
