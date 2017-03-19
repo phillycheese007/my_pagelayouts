@@ -59,6 +59,14 @@ html{
   min-height:100%;
   width:100%;
 }
+
+#cake{ 
+  background:$color_3;
+  min-height:100%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px; 
+}
 	
 .pud{
   @include transitions(all $anim_speed_3 ease);
@@ -89,15 +97,7 @@ html{
 .p_4{
 margin-bottom:20vh;
 }	
-	
-#cake{ 
-  background:$color_3;
-  min-height:100%;
-  width: 94%;
-  margin: 0 auto;
-  margin-top: 100px; 
-}
-		
+			
 .perspective{perspective:900px;}
 .skew{transform: skewY(-5deg);}
 
