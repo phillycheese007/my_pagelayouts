@@ -5,7 +5,7 @@
     /*---------------------------------------------------*/
 $color_1:white;
 $color_2:black;
-$color_3:white;
+$color_3:blue;
 // scale
 @mixin scale($scale) {
   @include transform(scale($scale));
@@ -48,6 +48,7 @@ html{
 	
 .pud_1{
   background:$color_1;
+  border:1px solid $color_3;
   @include transitions(all 1.5s ease);
   @include skew(45, 0);
   @include rotate(45, 0);
