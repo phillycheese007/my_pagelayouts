@@ -119,9 +119,7 @@ html{
   margin-bottom:20vh;
 }	
 			
-.perspective{
-  perspective:900px;
-}
+.perspective{perspective:900px;}
 
 .skew{
   @include skew(-5, 0);
