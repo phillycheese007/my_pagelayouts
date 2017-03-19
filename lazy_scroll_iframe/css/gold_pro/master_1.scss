@@ -116,7 +116,7 @@ margin-bottom:20vh;
 }
 .width{
   @include transitions(all $anim_speed_3 ease);
-  width:96vw;left:3vw;
+  width:96vw;left:2vw;
 }
 .transform{  
   @include transitions(all $anim_speed_3 ease);
