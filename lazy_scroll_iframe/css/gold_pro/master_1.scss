@@ -1,6 +1,8 @@
 ---
 #master1
 ---
+@import 'reset';
+
 // generic transform
 @mixin transform($transforms) {
   -moz-transform: $transforms;
