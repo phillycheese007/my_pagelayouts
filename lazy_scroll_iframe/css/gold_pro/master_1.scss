@@ -26,25 +26,12 @@
 @mixin skew ($x, $y) {
    @include transform(skew(#{$x}deg, #{$y}deg));
 }
-//transform origin
-@mixin transform-origin ($origin) {
-    moz-transform-origin: $origin;
-	     -o-transform-origin: $origin;
-	    -ms-transform-origin: $origin;
-	-webkit-transform-origin: $origin;
-          transform-origin: $origin;
-}
+
 
 
 .test {
   @include skew(-45, 0);
   @include rotate(-45);
-  position: absolute;
-  top: 25%;
-  bottom: 25%;
-  left: 25%;
-  right: 25%;
-  background-color: rgba(20,20,20,.5);
 }
 
 body,
