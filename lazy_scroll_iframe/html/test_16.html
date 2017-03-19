@@ -120,9 +120,8 @@ var scroll = $(window).scrollTop();
 
       $("#cake").find( ".pud" ).find( "#gap" ).toggleClass("pointer_events");
       $(this).find( ".close_but" ).toggleClass("display_vis");
-      $("#bake").toggleClass("perspective");
+      
       $("#cake").toggleClass("skew");
-          $(this).delay(9000).toggleClass("position");
 
  
 
@@ -135,7 +134,8 @@ var scroll = $(window).scrollTop();
 </script>
 <script>	
     $("#cake").find( ".pud" ).on('click', function(){
-    $('#cake').addClass('icing', 14000).promise().done(function(){
+    $("#bake").toggleClass("perspective").promise().done(function(){
+          $(this).delay(9000).toggleClass("position");
 
     });
 });
