@@ -126,7 +126,7 @@ margin-bottom:20vh;
 }
 .width{
   @include transitions(all $anim_speed_3 ease);
-  width:96vw;
+  width:96vw;margin:0 auto !important;
 }
 .transform{  
   @include transitions(all $anim_speed_3 ease);
@@ -139,20 +139,12 @@ margin-bottom:20vh;
 .position{
   @include transitions(all $anim_speed_3 ease);
   position:fixed;
-  display:block;
+ /* display:block; */
   z-index:9999;
   pointer-events: auto !important;
    @include box-shadow;
 }
-	
-.position_2{
-  @include transitions(all $anim_speed_3 ease);
-  position:fixed;
-  display:block;
-  z-index:9;
-  pointer-events: auto !important;
-}	
-	
+		
 .pointer_events{
   pointer-events: auto !important;
 }
