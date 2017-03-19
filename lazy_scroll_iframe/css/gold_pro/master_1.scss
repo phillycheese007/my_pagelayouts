@@ -108,15 +108,15 @@ margin-bottom:20vh;
 
 .height{
   @include transitions(all $anim_speed_3 ease);
-  height:90vh;
+  height:96vh;
 }
 .top{
   @include transitions(all $anim_speed_3 ease);
-  top:5vw;
+  top:3vh;
 }
 .width{
   @include transitions(all $anim_speed_3 ease);
-  width:90vw;left:4vw;
+  width:96vw;left:3vw;
 }
 .transform{  
   @include transitions(all $anim_speed_3 ease);
