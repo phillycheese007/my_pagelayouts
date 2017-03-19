@@ -2,6 +2,16 @@
 #master1
 ---
 
+@mixin my-transform() {
+  -webkit-transform: rotateX(-40deg); transform: skewX(-40deg);
+     -moz-transform:  rotateX(-40deg); transform: skewX(-40deg);
+      -ms-transform:  rotateX(-40deg); transform: skewX(-40deg);
+          transform:  rotateX(-40deg); transform: skewX(-40deg);
+}
+
+.box { @include my-transform(); }
+
+
 body,
 html{
   margin:0;
@@ -108,7 +118,7 @@ footer{
   margin-top:20vh;
   background:purple;
   clear:both;
-  transform: rotateX(40deg); transform: skewX(40deg);
+  transform: rotateX(0deg); transform: skewX(0deg);
 
 }
 	
