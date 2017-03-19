@@ -59,15 +59,19 @@ footer{height:200px;background:yellow;}
   transform: skewX(0deg);
   transition:all 1.4s;
 }
+	
+.margin_bot{margin-bottom:100vh;}
+	
 .position{
   position:fixed;display:block;
   z-index:9999;
-	margin-bottom:100vh;
-  transition:position 3s;pointer-events: auto !important;}
+  transition:all 3s;pointer-events: auto !important;}
+	
 .position_2{
   position:fixed;display:block;
   z-index:9;
   transition:all 1s;pointer-events: auto !important;}	
+	
 .pointer_events{pointer-events: auto !important;}
 
 .close_but { 
@@ -133,8 +137,9 @@ var scroll = $(window).scrollTop();
       
       $("#cake").toggleClass("skew");
       $("#bake").toggleClass("perspective");
- 
-      $(this).toggleClass("position");	
+
+      $(this).toggleClass("margin_bot");	
+      $(this).toggleClass("position");
       $("#cake").toggleClass("position_2");	
 
 
