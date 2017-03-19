@@ -141,9 +141,9 @@ var scroll = $(window).scrollTop();
 
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
-        $(this).toggleClass("position").promise().done(function(){
-          $('html,body').animate({scrollTop: $(this).offset().top}, 800);    
-	}); 
+        $('html,body').animate({scrollTop: $(this).offset().top}, 800).promise().done(function(){
+      $(this).toggleClass("position");	
+    }); 
     }); 
 });  
 
