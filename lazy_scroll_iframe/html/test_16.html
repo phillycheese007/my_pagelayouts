@@ -140,9 +140,8 @@ var scroll = $(window).scrollTop();
 
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
-        $('html,body').animate({scrollTop: $(this).offset().top}, 800).promise().done(function(){
-          $(this).delay(6000).toggleClass("position");
-      }); 	
+        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+	
     }); 
 });  
 
