@@ -142,8 +142,11 @@ footer#two{
   background:red;
   clear:both;
 }
-@media screen and (max-width: 580px) {
+@media screen and (min-width: 580px) {
   footer#two{display:none;}
+}
+@media screen and (max-width: 580px) {
+  footer#one{display:none;}
   #cake{background:green;position:absolute;right:0;width:100vw;height:100vh;}
 }
 
