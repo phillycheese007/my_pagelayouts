@@ -123,8 +123,8 @@ margin-bottom:20vh;
 .display_vis { display: block; }
 
 footer{
-  @include skew(0, 0);
-  @include rotate(0, 0);
+  @include skew(45, 0);
+  @include rotate(45, 0);
   width:100%;
   height:100px;
   margin-top:20vh;
