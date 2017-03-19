@@ -144,8 +144,13 @@ footer#two{
 }
 
 @media screen and (max-width: 580px) {
-  #cake{background:green;position:absolute;right:0;width:100vw;height:100vh;}
-
+  footer#two{display:none;}
+  #cake{background:green;height:auto}
+  .pud{width:35vw;height:45vh;margin:0 auto;}
+  .skew{transform: skewY(-1deg);}
+  .perspective{perspective:none;}
+  .width{width:116vw;transition:all .5s;} 
+  .height{height:120vh;transition:all .5s;} 
 }
 
 @media screen and (orientation: portrait) and (max-device-width: 580px) {
