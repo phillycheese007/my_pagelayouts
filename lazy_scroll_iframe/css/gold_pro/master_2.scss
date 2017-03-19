@@ -129,7 +129,7 @@ html{
 }
 .width{
   @include transitions(all $anim_speed_1 ease);
-  width:90vw;left:5vw;margin:0 auto;
+  width:90%;margin-left:5%;
 }
 
 .transform{  
