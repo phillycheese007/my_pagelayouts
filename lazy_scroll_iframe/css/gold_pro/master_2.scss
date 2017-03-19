@@ -138,7 +138,7 @@ html{
   @include rotate(0, 0);
 }
 
-.marg_bot{margin-bottom:calc(60vh + 3px);}
+.marg_bot{margin-bottom:calc(10vh + 3px);}
 		
 .position{
   @include transitions(all $anim_speed_3 ease);
