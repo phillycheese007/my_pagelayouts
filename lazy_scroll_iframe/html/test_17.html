@@ -17,37 +17,7 @@ html{
   padding:0;
   height:100%;
 }
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
-    margin: 0 0 100px; /* bottom = footer height */
-}
-footer {
-    position: absolute;background:orange;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-}
-	
-#gordo {min-height: 100%;}
 
-#bake{padding-bottom: 180px;}
-#footer {background:orange;position: relative;width:100%;
-	margin-top: -180px; /* negative value of footer height */
-	height: 180px;
-	clear:both;} 
-
-/*Opera Fix*/
-body:before {/* thanks to Maleika (Kohoutec)*/
-content:"";
-height:100%;
-float:left;
-width:0;
-margin-top:-32767px;/* thank you Erik J - negate effect of float*/
-}
 
 	
 .pud{
@@ -131,6 +101,7 @@ margin-top:-32767px;/* thank you Erik J - negate effect of float*/
   .width{width:116vw;transition:all .5s;} 
   .height{height:120vh;transition:all .5s;} 
 }	
+	footer{width:100%;height:100px;background:purple;}
 </style>
 </head>
 <body>
@@ -152,10 +123,10 @@ margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 </div>
 </div>
 
-
+    <footer></footer>
 </div>
 
-    <footer></footer>
+
 	
 <script>
 $(document).ready(function () {
