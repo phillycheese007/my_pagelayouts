@@ -1,1 +1,176 @@
 
+<html>
+<head>
+<TITLE>Your Title Here</TITLE>
+<!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/u_8.css" rel="stylesheet" />-->
+<!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/glitch.css" rel="stylesheet" />-->	
+<link href="/my_pagelayouts/lazy_scroll_iframe/css/portfolio_5.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<style>
+
+body,
+html{
+margin:0;
+padding:0;
+}
+
+.pud{
+  transition: all 3s ease;
+  height: 50vh;
+  width:60vw; 
+  margin:0 auto;
+  padding: 0; 
+  position: relative;
+}
+	
+.pud_1{
+  background:red;
+  transition: all 3s ease;
+  -webkit-transform: rotateX(40deg);
+  transform: rotateX(40deg); transform: skewX(40deg); 
+}
+	
+.pud_2{
+  background:blue;
+  transition: all 3s ease;
+  -webkit-transform: rotateX(-40deg);
+  transform: rotateX(-40deg); transform: skewX(-40deg);
+}
+	
+#cake{ 
+  background: pink;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px; 
+}
+	
+footer{height:200px;background:yellow;}
+	
+.perspective{perspective:900px;}
+.skew{transform: skewY(-5deg);}
+
+.height{height:100vh;transition:all .73s;}
+.top{top:0vw;transition:all .73s;}
+.width{width:100vw;transition:all 1.4s;}
+.transform{  
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  transform: skewX(0deg);
+  transition:all 1.4s;
+}
+	
+.margin_bot{margin-bottom:100vh;}
+	
+.position{
+  position:fixed;display:block;
+  z-index:9999;
+  transition:all 3s;pointer-events: auto !important;}
+	
+.position_2{
+  position:fixed;display:block;
+  z-index:9;
+  transition:all 1s;pointer-events: auto !important;}	
+	
+.pointer_events{pointer-events: auto !important;}
+
+.close_but { 
+  position: absolute; z-index: 99999; 
+  top: 90px; right: 90px; height: 50px;
+  width: 50px; line-height: 50px; font-size: 40px; background: lightblue; display: none; 
+}
+.close_but:hover { cursor: pointer; transition: background-color 1s ease; background-color: red; }
+.display_vis { display: block; }
+
+</style>
+</head>
+<body>
+<div id="bake" class="perspective">
+<div id="cake" class="skew">
+	
+  <div class="pud pud_1 p_1"><div class="close_but">&#10006;</div></div>	
+  <div class="pud pud_2 p_2"><div class="close_but">&#10006;</div></div>
+  <div class="pud pud_1 p_3"><div class="close_but">&#10006;</div>        
+        <object id="gap" width="100%" height="100%"  data="https://phillycheese007.github.io/philipdusel/html/index.html" >
+	</object>
+  </div>	
+  <div class="pud pud_2 p_4 cd">
+    <div class="close_but">&#10006;</div>
+  </div>
+	
+</div>
+</div>
+	
+<footer>
+  <ul>
+    <li>
+	    tetris
+    </li> 
+    <li>
+	    bongo
+    </li> 
+    <li>
+	    rover
+    </li> 
+    <li>
+	    run
+    </li> 
+  </ul>
+</footer>
+
+<script>
+$(document).ready(function () {
+var scroll = $(window).scrollTop();
+	
+  $("#cake").find( ".pud" ).click(
+    function () {
+
+      $(this).toggleClass("top");
+
+
+  
+if ($(this).hasClass("position")) {
+      $(this).toggleClass("height");
+      $(this).toggleClass("position");
+}
+else{	
+	
+      $(this).delay(2000).toggleClass("height").promise().done(function(){
+      $(this).toggleClass("position");
+      });
+}
+
+      $(this).toggleClass("width");
+      $(this).toggleClass("transform");
+
+
+      $("#cake").find( ".pud" ).find( "#gap" ).toggleClass("pointer_events");
+      $(this).find( ".close_but" ).toggleClass("display_vis");
+      
+      $("#cake").toggleClass("skew");
+      $("#bake").toggleClass("perspective");
+
+	
+
+
+    }            
+  );	
+	
+});
+
+</script>
+<script>
+
+$(document).ready(function(){
+    $("#cake").find( ".pud" ).on('click', function(){
+        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+
+    }); 
+});  
+
+</script>
+	
+
+</body>
+</html>
+ 
