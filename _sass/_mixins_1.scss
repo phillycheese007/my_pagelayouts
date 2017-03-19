@@ -11,11 +11,11 @@
 }
 
 // generic transform
-@mixin transitions($transitions) {
-  -moz-transition: $transitions;
-  -o-transition: $transitions;
-  -ms-transition: $transitions;
-  -webkit-transition: $transitions;
-  transition: $transitions;
-}
 
+@mixin transitions ($transition) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -ms-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
