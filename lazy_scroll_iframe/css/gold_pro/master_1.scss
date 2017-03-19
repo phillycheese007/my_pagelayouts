@@ -9,10 +9,7 @@
 	-webkit-transform: $transforms;
           transform: $transforms;
 }
-// rotate
-@mixin rotate ($deg) {
-  @include transform(rotate(#{$deg}deg));
-}
+
  
 // scale
 @mixin scale($scale) {
@@ -26,7 +23,10 @@
 @mixin skew ($x, $y) {
    @include transform(skew(#{$x}deg, #{$y}deg));
 }
-
+// rotate
+@mixin rotate ($x, $y) {
+   @include transform(rotate(#{$x}deg, #{$y}deg));
+}
 
 
 
@@ -55,14 +55,14 @@ html{
   background:red;
   transition: all 1.5s ease;
   @include skew(45, 0);
-  @include rotate(45);
+  @include rotate(45, 0);
 }
 	
 .pud_2{
   background:blue;
   transition: all 1.5s ease;
   @include skew(-45, 0);
-  @include rotate(-45);
+  @include rotate(-45, 0);
 }
 
 .p_4{
