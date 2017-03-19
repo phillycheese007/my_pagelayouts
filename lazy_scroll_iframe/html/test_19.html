@@ -52,10 +52,7 @@ var scroll = $(window).scrollTop();
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
-        $(this).toggleClass("position");
-	      
-        $(this).siblings().toggleClass("height");
-        $(this).siblings().toggleClass("width");
+        $(this).toggleClass("position");     
       }
       else{	
         $(this).delay(800).toggleClass("height").promise().done(function(){
