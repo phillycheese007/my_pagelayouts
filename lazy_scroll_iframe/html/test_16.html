@@ -123,10 +123,7 @@ var scroll = $(window).scrollTop();
       $("#bake").toggleClass("perspective");
       $("#cake").toggleClass("skew");
 
-    $("#cake").toggleClass("skew", 9000).promise().done(function(){
-          $(this).toggleClass("position");
-
-    });
+ 
 
 
     }            
@@ -143,6 +140,8 @@ var scroll = $(window).scrollTop();
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
         $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+          $(this).toggleClass("position");
+
     }); 
 });  
 
