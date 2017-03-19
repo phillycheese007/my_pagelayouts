@@ -49,7 +49,6 @@ html{
 .pud_1{
   background:$color_1;
   border:1px solid $color_2;
-  border-bottom:0px;
   @include transitions(all 1.5s ease);
   @include skew(45, 0);
   @include rotate(45, 0);
