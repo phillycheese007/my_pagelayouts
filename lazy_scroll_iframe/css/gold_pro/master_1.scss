@@ -210,6 +210,6 @@ footer#one{
     @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
       /* For landscape layouts only */
     }
- @media only screen and (min-device-width: 481px) and (max-device-width: 900px) and (orientation:landscape) {
+ @media screen and (min-device-width: 481px) and (max-device-width: 900px) {
   .pud{width:35vw;height:45vh;margin:0 auto;}
  }
