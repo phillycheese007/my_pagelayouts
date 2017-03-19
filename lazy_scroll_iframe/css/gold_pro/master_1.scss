@@ -194,7 +194,6 @@ footer#one{
 
 /* styles for mobile browsers smaller than 480px; (iPhone) */
 @media only screen and (max-device-width:480px){
-  footer#two{display:none;}
   #cake{background:green;height:auto}
   .pud{width:35vw;height:45vh;margin:0 auto;}
   .skew{transform: skewY(-1deg);}
