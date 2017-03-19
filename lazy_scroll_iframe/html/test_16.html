@@ -122,7 +122,7 @@ var scroll = $(window).scrollTop();
       $("#bake").toggleClass("perspective");
       $("#cake").toggleClass("skew");
 
-    $(this).toggleClass("transform", 9000).promise().done(function(){
+    $("#cake").toggleClass("skew").promise().done(function(){
           $(this).toggleClass("position");
 
     });
