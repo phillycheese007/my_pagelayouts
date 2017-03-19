@@ -128,7 +128,9 @@ var scroll = $(window).scrollTop();
       $(this).toggleClass("top");
 
 if ($(this).hasClass("height")) {
-alert("done")
+      $(this).delay(200).toggleClass("height").promise().done(function(){
+      $(this).toggleClass("position");
+      alert("done");
 }    else
 {
 	
