@@ -136,17 +136,14 @@ footer#one{
   clear:both;
 }
 footer#two{
-  width:100%;
+  width:100%;display:none;
   height:100px;
   margin-top:20vh;
   background:red;
   clear:both;
 }
-@media screen and (min-width: 580px) {
-  footer#two{display:none;}
-}
+
 @media screen and (max-width: 580px) {
-  footer#one{display:none;}
   #cake{background:green;position:absolute;right:0;width:100vw;height:100vh;}
 }
 
@@ -158,7 +155,8 @@ footer#two{
   .perspective{perspective:none;}
   .width{width:116vw;transition:all .5s;} 
   .height{height:120vh;transition:all .5s;} 
-  footer{width:100%;height:100px;margin-top:20vh;background:purple;clear:both}
+  footer#one{display:none;}
+  footer#two{display:block;}
 }
 
 
