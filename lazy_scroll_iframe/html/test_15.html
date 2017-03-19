@@ -109,32 +109,8 @@ footer{height:200px;background:yellow;}
 $(document).ready(function () {
 var scroll = $(window).scrollTop();
 	
-
-	
   $("#cake").find( ".pud" ).click(
     function () {
-
-
-			   
-
-	 
-
-      $("#bake").toggleClass("perspective"); 
-      $("#cake").toggleClass("skew");
-
-	    
- 
-      $(this).siblings("pud").addClass("beef");
-     if (!$(this).siblings("pud").hasClass("beef")) {    
-	       $(this).siblings("pud").click(
-    function () {
-      $(this).toggleClass("top");
-      $(this).toggleClass("height");
-      $(this).toggleClass("width");
-      $(this).toggleClass("transform");
-	        }            
-  );	
-     }
       $(this).toggleClass("div_clicked");
 
       $(this).toggleClass("top");
@@ -144,9 +120,6 @@ var scroll = $(window).scrollTop();
       $("#cake").find( ".pud" ).find( "#gap" ).toggleClass("pointer_events");
       $(this).find( ".close_but" ).toggleClass("display_vis");
 
-
-
-	    
     }            
   );	
 	
