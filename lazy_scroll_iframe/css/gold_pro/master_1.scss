@@ -4,22 +4,6 @@
 @import "mixins_1";
 
 
-// scale
-@mixin scale($scale) {
-  @include transform(scale($scale));
-} 
-// translate
-@mixin translate ($x, $y) {
-   @include transform(translate($x, $y));
-}
-// skew
-@mixin skew ($x, $y) {
-   @include transform(skew(#{$x}deg, #{$y}deg));
-}
-// rotate
-@mixin rotate ($x, $y) {
-   @include transform(rotate(#{$x}deg, #{$y}deg));
-}
 
 
 body,
