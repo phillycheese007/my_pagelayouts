@@ -129,9 +129,6 @@ margin-bottom:20vh;
 .display_vis { display: block; }
 
 footer{
-    transform-style:flat;
-  @include skew(12, 0);
-  @include rotate(-12, 0);
   width:100%;
   height:100px;
   margin-top:20vh;
