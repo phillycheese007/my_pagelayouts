@@ -12,7 +12,8 @@
 <style>
 
 body,
-html{
+html,
+#gordo{
   margin:0;
   padding:0;
 	height:100%;
@@ -49,7 +50,7 @@ html{
   margin-top: 100px; 
 }
 	
-footer{position:absolute;bottom:0;margin-bottom:-60vh;height:200px;width:100%;background:yellow;}
+footer{position:absolute;bottom:0;height:200px;width:100%;background:yellow;}
 	
 .perspective{perspective:900px;}
 .skew{transform: skewY(-5deg);}
@@ -102,6 +103,8 @@ footer{position:absolute;bottom:0;margin-bottom:-60vh;height:200px;width:100%;ba
 </style>
 </head>
 <body>
+<div id="gordo">
+
 <div id="bake" class="perspective">
 <div id="cake" class="skew">
 	
@@ -116,6 +119,8 @@ footer{position:absolute;bottom:0;margin-bottom:-60vh;height:200px;width:100%;ba
   </div>
 
 </div>
+</div>
+
 <footer>
   <ul>
     <li>
@@ -133,8 +138,6 @@ footer{position:absolute;bottom:0;margin-bottom:-60vh;height:200px;width:100%;ba
   </ul>
 </footer>
 </div>
-	
-
 
 <script>
 $(document).ready(function () {
