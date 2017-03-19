@@ -121,12 +121,15 @@ html{
 			
 /* .perspective{perspective:900px;} */
 
-.skew{transform: skewY(-5deg);}
+.skew{
+  @include skew(-5, 0);
+}
 
 .height{
   @include transitions(all $anim_speed_3 ease);
   height:96vh;
 }
+
 .top{
   @include transitions(all $anim_speed_3 ease);
   top:2vh;
@@ -140,9 +143,7 @@ html{
   @include skew(0, 0);
   @include rotate(0, 0);
 }
-	
-.margin_bot{margin-bottom:100vh;}
-	
+		
 .position{
   @include transitions(all $anim_speed_3 ease);
   position:fixed;
@@ -151,7 +152,9 @@ html{
   pointer-events: auto !important;
    @include box-shadow;
 }
-		
+
+.margin_bot{margin-bottom:100vh;}
+
 .pointer_events{
   pointer-events: auto !important;
 }
