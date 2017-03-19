@@ -1,0 +1,186 @@
+---
+#master2
+---
+
+    /*---------------------------------------------------*/
+@import "mixins_1";
+    /*---------------------------------------------------*/
+
+
+
+
+    /*---------------------------------------------------*/
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+} 
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+// rotate
+@mixin rotate ($x, $y) {
+   @include transform(rotate(#{$x}deg, #{$y}deg));
+}
+    /*---------------------------------------------------*/
+
+
+
+    /*---------------------------------------------------*/
+@mixin box-shadow{
+-webkit-box-shadow: 0px 0px 188px 155px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 188px 155px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 188px 155px rgba(0,0,0,0.75);
+}
+    /*---------------------------------------------------*/
+
+
+
+    /*---------------------------------------------------*/
+$color_1:white;
+$color_2:black;
+$color_3:blue;
+$color_4:lightblue;
+$color_5:orange;
+
+$anim_speed_1: .25s;
+$anim_speed_2: .5s;
+$anim_speed_3: .75s;
+    /*---------------------------------------------------*/
+
+
+
+
+    /*---------------------------------------------------*/
+body,
+html{
+  margin:0;
+  padding:0;
+  height:100%;
+  background:$color_1;
+}
+
+#gordo{
+  background:$color_4;
+  height:100%;
+  min-height:100%;
+  width:100%;
+}
+
+#bake{ 
+  background:$color_5;
+}
+
+#cake{ 
+  background:$color_3;
+  min-height:100%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px; 
+}
+	
+.pud{
+  @include transitions(all $anim_speed_3 ease);
+  height: 48vh;
+  width:58vw; 
+  margin:0 auto;
+  margin-bottom:3px;/*border*/
+  padding: 0; 
+  position: relative;
+}
+	
+.pud_1{
+  background:$color_1;
+ /* border:1px solid $color_2; */
+  @include transitions(all $anim_speed_3 ease);
+  @include skew(45, 0);
+  @include rotate(45, 0);
+}
+	
+.pud_2{
+  background:$color_1;
+ /* border:1px solid $color_2; */
+  @include transitions(all $anim_speed_3 ease);
+  @include skew(-45, 0);
+  @include rotate(-45, 0);
+}
+
+.p_4{
+  margin-bottom:20vh;
+}	
+			
+.perspective{perspective:900px;}
+
+.skew{
+ transform:skewY(-5deg);
+}
+
+.height{
+  @include transitions(all $anim_speed_3 ease);
+  height:96vh;
+}
+
+.top{
+  @include transitions(all $anim_speed_3 ease);
+  top:2vh;
+}
+.width{
+  @include transitions(all $anim_speed_3 ease);
+  width:96vw;margin-left:1vw;
+}
+.transform{  
+  @include transitions(all $anim_speed_3 ease);
+  @include skew(0, 0);
+  @include rotate(0, 0);
+}
+		
+.position{
+  @include transitions(all $anim_speed_3 ease);
+  position:fixed;
+ /* display:block; */
+  z-index:9999;
+  pointer-events: auto !important;
+   @include box-shadow;
+}
+
+.pointer_events{
+  pointer-events: auto !important;
+}
+
+.close_but { 
+  position: absolute; z-index: 99999; 
+  top: 90px; right: 90px; height: 50px;
+  width: 50px; line-height: 50px; font-size: 40px; background: lightblue; display: none; 
+}
+.close_but:hover { cursor: pointer; transition: background-color 1s ease; background-color: red; }
+.display_vis { display: block; }
+
+footer#one{
+  width:100%;
+  height:100px;
+  margin-top:20vh;
+  background:purple;
+  clear:both;
+}
+
+
+@media screen and (max-width: 480px) {
+  #cake{background:green;height:auto}
+  .pud{width:35vw;height:45vh;margin:0 auto;}
+  .skew{transform: skewY(-1deg);}
+  .perspective{perspective:none;}
+  .width{width:116vw;transition:all .5s;} 
+  .height{height:120vh;transition:all .5s;} 
+}
+
+@media screen and (min-width: 481px) and (max-width:960px) {
+  .pud{width:50vw;height:45vh;margin:0 auto;}
+  .width{width:100vw;transition:all .5s;} 
+  .height{height:100vh;transition:all .5s;} 
+  .skew{transform: skewY(-4deg);}
+}
+
