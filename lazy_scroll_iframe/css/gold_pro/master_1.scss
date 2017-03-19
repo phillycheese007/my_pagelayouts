@@ -116,7 +116,7 @@ html{
 }
 
 .p_4{
-margin-bottom:20vh;
+  margin-bottom:20vh;
 }	
 			
 /* .perspective{perspective:900px;} */
@@ -133,7 +133,7 @@ margin-bottom:20vh;
 }
 .width{
   @include transitions(all $anim_speed_3 ease);
-  width:96vw;margin-left:2vw !important;
+  width:96vw;margin-left:1vw !important;
 }
 .transform{  
   @include transitions(all $anim_speed_3 ease);
