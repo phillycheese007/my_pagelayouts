@@ -2,8 +2,10 @@
 #master1
 ---
 @import "mixins_1";
-
-
+    /*---------------------------------------------------*/
+$1_a_color:white;
+$2_b_color:black;
+$3_c_color:white;
 // scale
 @mixin scale($scale) {
   @include transform(scale($scale));
@@ -27,6 +29,7 @@ html{
   margin:0;
   padding:0;
   height:100%;
+  background:$1_a_color;
 }
 
 #gordo{
@@ -44,14 +47,14 @@ html{
 }
 	
 .pud_1{
-  background:red;
+  background:$1_a_color;
   @include transitions(all 1.5s ease);
   @include skew(45, 0);
   @include rotate(45, 0);
 }
 	
 .pud_2{
-  background:blue;
+  border:1px solid black;
   @include transitions(all 1.5s ease);
   @include skew(-45, 0);
   @include rotate(-45, 0);
@@ -62,7 +65,7 @@ margin-bottom:20vh;
 }	
 	
 #cake{ 
-  background: pink;
+  background:$1_a_color;
   min-height:100%;
   width: 100%;
   margin: 0 auto;
