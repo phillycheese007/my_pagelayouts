@@ -134,7 +134,7 @@ var scroll = $(window).scrollTop();
 </script>
 <script>	
     $("#cake").find( ".pud" ).on('click', function(){
-    $('#cake').toggleClass('icing', 14000).promise().done(function(){
+    $('#cake').addClass('icing', 14000).promise().done(function(){
           $(this).delay(9000).toggleClass("position");
 
     });
