@@ -130,6 +130,10 @@ html{
 }
 .width{
   @include transitions(all $anim_speed_3 ease);
+  width:100vw;
+}
+.width_2{
+  @include transitions(all $anim_speed_3 ease);
   width:96vw;
 }
 .transform{  
