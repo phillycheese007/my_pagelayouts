@@ -131,7 +131,7 @@ function myfunc() {
 }
 
       $(this).toggleClass("top");
-      $(this).toggleClass("height");
+      $(this).toggleClass("height").promise().done(function(){alert("done")});
       $(this).toggleClass("width");
       $(this).toggleClass("transform");
 
