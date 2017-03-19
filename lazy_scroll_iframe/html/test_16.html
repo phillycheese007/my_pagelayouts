@@ -127,12 +127,9 @@ var scroll = $(window).scrollTop();
 
       $(this).toggleClass("top");
 
-if ($(this).hasClass("height")) {
-      $(this).delay(200).toggleClass("height").promise().done(function(){
-      $(this).toggleClass("position");
-      alert("done");
-}    else
-{
+
+  
+
 	
 	
       $(this).delay(2000).toggleClass("height").promise().done(function(){
@@ -141,7 +138,7 @@ if ($(this).hasClass("height")) {
 	     // alert("done");
       });
 	
-}
+
       $(this).toggleClass("width");
       $(this).toggleClass("transform");
 
