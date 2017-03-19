@@ -173,11 +173,8 @@ footer#one{
 }
 @media screen and (min-width: 481px) and (max-width:960px) {
   #cake{background:green;height:auto}
-  .pud{width:35vw;height:45vh;margin:0 auto;}
-  .skew{transform: skewY(-1deg);}
-  .perspective{perspective:none;}
-  .width{width:116vw;transition:all .5s;} 
-  .height{height:120vh;transition:all .5s;} 
+  .pud{width:50vw;height:45vh;margin:0 auto;}
+  .skew{transform: skewY(-4deg);}
 }
 
 
