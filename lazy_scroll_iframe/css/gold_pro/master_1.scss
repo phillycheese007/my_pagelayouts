@@ -37,8 +37,8 @@
 
 
 .test {
-  @include skew(25,10);
-  @include transform-origin(top left);
+  @include skew(-45);
+  @include rotate(-45);
   position: absolute;
   top: 25%;
   bottom: 25%;
