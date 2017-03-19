@@ -73,6 +73,8 @@ footer{height:200px;background:yellow;}
 }
 .close_but:hover { cursor: pointer; transition: background-color 1s ease; background-color: red; }
 .display_vis { display: block; }
+	.static {position: static !important;}
+
 </style>
 </head>
 <body>
@@ -142,7 +144,7 @@ var scroll = $(window).scrollTop();
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
         $('html,body').animate({scrollTop: $(this).offset().top}, 800).promise().done(function(){
-      $(this).toggleClass("position");	
+      $(this).addClass("static").toggleClass("position");	
     }); 
     }); 
 });  
