@@ -137,12 +137,6 @@ html{
   @include skew(0, 0);
   @include rotate(0, 0);
 }
-
-.marg_bot{
-  display:none;
-  margin-bottom:3vh;
-  margin-top:3vh;
-}
 		
 .position{
   @include transitions(all $anim_speed_3 ease);
