@@ -155,7 +155,7 @@ html{
 .close_but { 
   position: absolute; z-index: 99999; 
   top: 90px; right: 90px; height: 50px;
-  width: 50px; line-height: 50px; font-size: 40px; background: lightblue; display: none; 
+  width: 50px; line-height: 50px; font-size: 50px; background: lightblue; display: none; 
 }
 .close_but:hover { cursor: pointer; transition: background-color 1s ease; background-color: red; }
 .display_vis { display: block; }
