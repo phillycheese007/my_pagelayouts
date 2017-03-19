@@ -69,10 +69,14 @@ html{
   height:100%;
   min-height:100%;
   width:100%;
+  margin:0;
+  padding:0;
 }
 
 #bake{ 
-
+  background:$color_5;
+  margin:0;
+  padding:0;
 }
 
 #cake{ 
@@ -81,6 +85,8 @@ html{
   width: 100%;
   margin: 0 auto;
   margin-top: 100px; 
+  margin:0;
+  padding:0;
 }
 	
 .pud{
