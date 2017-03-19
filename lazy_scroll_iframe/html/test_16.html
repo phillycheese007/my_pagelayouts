@@ -59,7 +59,10 @@ footer{height:200px;background:yellow;}
   transform: skewX(0deg);
   transition:all 1.4s;
 }
-.position{position:fixed;z-index:9999;transition:all 3s;pointer-events: auto !important;}
+.position{position:fixed;z-index:9999;transition:all 3s;pointer-events: auto !important;height:100vh;top:0vw;width:100vw;  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  transform: skewX(0deg);
+  transition:all 1.4s;}
 .pointer_events{pointer-events: auto !important;}
 
 .close_but { 
@@ -113,10 +116,8 @@ var scroll = $(window).scrollTop();
     function () {
       $(this).toggleClass("div_clicked");
 
-      $(this).toggleClass("top");
-      $(this).toggleClass("height");
-      $(this).toggleClass("width");
-      $(this).toggleClass("transform");
+
+	    
 
       $("#cake").find( ".pud" ).find( "#gap" ).toggleClass("pointer_events");
       $(this).find( ".close_but" ).toggleClass("display_vis");
@@ -137,8 +138,7 @@ var scroll = $(window).scrollTop();
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
         $('html,body').animate({scrollTop: $(this).offset().top}, 800).promise().done(function(){
-          $(this).delay(6000).css("position", "fixed");
-
+          $(this).delay(6000).toggleClass("position");
       }); 	
     }); 
 });  
