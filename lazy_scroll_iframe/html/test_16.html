@@ -142,7 +142,7 @@ var scroll = $(window).scrollTop();
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
         $('html,body').animate({scrollTop: $(this).offset().top}, 800).promise().done(function(){
-      $('html,body').toggleClass("position");	
+      $(this).toggleClass("position");	
     }); 
     }); 
 });  
