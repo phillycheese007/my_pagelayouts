@@ -2,14 +2,14 @@
 #master1
 ---
 
-@mixin my-transform() {
+@mixin my-transform {
   -webkit-transform: rotateX(-40deg); transform: skewX(-40deg);
      -moz-transform:  rotateX(-40deg); transform: skewX(-40deg);
       -ms-transform:  rotateX(-40deg); transform: skewX(-40deg);
           transform:  rotateX(-40deg); transform: skewX(-40deg);
 }
 
-.box { @include my-transform(); }
+.box { @include my-transform; }
 
 
 body,
