@@ -4,30 +4,7 @@
 @import "s";
 
 
-// generic transform
-@mixin transform($transforms) {
-  -moz-transform: $transforms;
-  -o-transform: $transforms;
-  -ms-transform: $transforms;
-  -webkit-transform: $transforms;
-  transform: $transforms;
-}
-// scale
-@mixin scale($scale) {
-  @include transform(scale($scale));
-} 
-// translate
-@mixin translate ($x, $y) {
-   @include transform(translate($x, $y));
-}
-// skew
-@mixin skew ($x, $y) {
-   @include transform(skew(#{$x}deg, #{$y}deg));
-}
-// rotate
-@mixin rotate ($x, $y) {
-   @include transform(rotate(#{$x}deg, #{$y}deg));
-}
+
 
 
 
