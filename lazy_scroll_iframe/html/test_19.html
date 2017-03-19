@@ -61,6 +61,8 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
       $("#cake").toggleClass("skew");
+      $("#cake").toggleClass("width");
+
       $("#bake").toggleClass("perspective");
 	    
       $(this).toggleClass("top");
