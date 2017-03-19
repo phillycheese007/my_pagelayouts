@@ -1,9 +1,7 @@
 ---
 #master1
 ---
-@import "s";
-
-
+@import "mixins_1";
 
 
 // scale
@@ -37,7 +35,7 @@ html{
 }
 	
 .pud{
-  transition: all 1.5s ease;
+  @include transitions(all 1.5s ease);
   height: 50vh;
   width:60vw; 
   margin:0 auto;
