@@ -128,17 +128,15 @@ var scroll = $(window).scrollTop();
       $(this).toggleClass("top");
 
 
-  
-if ($(this).hasClass("position")) {
-      $(this).toggleClass("height");
-      $(this).toggleClass("position");
-}
-else{	
-	
-      $(this).delay(2000).toggleClass("height").promise().done(function(){
-      $(this).toggleClass("position");
-      });
-}
+      if ($(this).hasClass("position")) {
+        $(this).toggleClass("height");
+        $(this).toggleClass("position");
+      }
+      else{	
+        $(this).delay(2000).toggleClass("height").promise().done(function(){
+          $(this).toggleClass("position");
+        });
+      }
 
       $(this).toggleClass("width");
       $(this).toggleClass("transform");
