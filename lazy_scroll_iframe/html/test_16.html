@@ -133,14 +133,12 @@ if ($(this).hasClass("position")) {
 
       $(this).toggleClass("position");
 }
-	
+else{	
 	
       $(this).delay(2000).toggleClass("height").promise().done(function(){
       $(this).toggleClass("position");
-
-	     // alert("done");
       });
-	
+}
 
       $(this).toggleClass("width");
       $(this).toggleClass("transform");
