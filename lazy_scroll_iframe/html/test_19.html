@@ -47,7 +47,7 @@ var scroll = $(window).scrollTop();
     function () {
 
       $(this).toggleClass("top");
-
+      $(this).toggleClass("width");
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
@@ -59,7 +59,6 @@ var scroll = $(window).scrollTop();
         });
       }
 
-      $(this).toggleClass("width");
       $(this).toggleClass("transform");
 
 
