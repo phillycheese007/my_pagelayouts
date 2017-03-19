@@ -29,10 +29,6 @@
 
 
 
-.test {
-  @include skew(-45, 0);
-  @include rotate(-45);
-}
 
 body,
 html{
@@ -58,15 +54,15 @@ html{
 .pud_1{
   background:red;
   transition: all 1.5s ease;
-  -webkit-transform: rotateX(40deg);
-  transform: rotateX(40deg); transform: skewX(40deg); 
+  @include skew(45, 0);
+  @include rotate(45);
 }
 	
 .pud_2{
   background:blue;
   transition: all 1.5s ease;
-  -webkit-transform: rotateX(-40deg);
-  transform: rotateX(-40deg); transform: skewX(-40deg);
+  @include skew(-45, 0);
+  @include rotate(-45);
 }
 
 .p_4{
