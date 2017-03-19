@@ -125,7 +125,10 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 
-
+function myfunc() {
+      $(this).toggleClass("position");
+    //some code goes here
+}
 
       $(this).toggleClass("top");
       $(this).toggleClass("height");
@@ -139,8 +142,8 @@ var scroll = $(window).scrollTop();
       $("#cake").toggleClass("skew");
       $("#bake").toggleClass("perspective");
 
-      $(this).toggleClass("position");
-      $(this).toggleClass("margin_bot");	
+        setTimeout(myfunc, 5000)
+	
 
 
     }            
