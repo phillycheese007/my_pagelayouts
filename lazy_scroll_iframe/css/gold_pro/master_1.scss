@@ -116,7 +116,7 @@ html{
 .perspective{perspective:900px;}
 
 .skew{
-  @include skew(-5, 0);
+ transform:skewY(-5deg);
 }
 
 .height{
