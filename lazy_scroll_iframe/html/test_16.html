@@ -121,7 +121,6 @@ var scroll = $(window).scrollTop();
       $(this).toggleClass("height");
       $(this).toggleClass("width");
       $(this).toggleClass("transform");
-      $(this).toggleClass("position");
 
 
       $("#cake").find( ".pud" ).find( "#gap" ).toggleClass("pointer_events");
@@ -142,7 +141,7 @@ var scroll = $(window).scrollTop();
 
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
-        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+        $('html,body').animate({scrollTop: $(this).offset().top}, 800).toggleClass("position");
 	
     }); 
 });  
