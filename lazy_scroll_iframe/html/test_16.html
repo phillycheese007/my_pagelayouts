@@ -125,15 +125,21 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 
-
-
       $(this).toggleClass("top");
-	    
+
+if ($(this).hasClass("height")) {
+alert("done")
+}    else
+{
+	
+	
       $(this).delay(2000).toggleClass("height").promise().done(function(){
       $(this).toggleClass("position");
 
 	     // alert("done");
       });
+	
+}
       $(this).toggleClass("width");
       $(this).toggleClass("transform");
 
