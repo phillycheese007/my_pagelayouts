@@ -128,7 +128,6 @@ html{
   top:2vh;
 }
 .width{
-  @include transitions(all $anim_speed_1 ease);
   width:90vw;left:5vw;
 }
 
