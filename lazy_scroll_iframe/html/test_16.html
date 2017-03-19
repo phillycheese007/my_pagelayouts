@@ -132,18 +132,22 @@ var scroll = $(window).scrollTop();
 });
 
 </script>
-	
+<script>	
+    $("#cake").find( ".pud" ).on('click', function(){
+    $('#cake').toggleClass('icing', 14000).promise().done(function(){
+          $(this).toggleClass("position");
 
+    });
+});
 	
-
+</script>
 	
 <script>
 
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
-        $('html,body').animate({scrollTop: $(this).offset().top}, 800).promise().done(function(){
-          $(this).delay( 9000 ).toggleClass("position");
-      }); 
+        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+
     }); 
 });  
 
