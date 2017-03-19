@@ -12,14 +12,35 @@
 <style>
 
 body,
-html,
-#gordo{
+html{
   margin:0;
   padding:0;
   height:100%;
-  min-height:100%;
 }
 
+	
+#gordo {min-height: 100%;}
+<!--[if !IE 7]>
+	<style type="text/css">
+		#gordo {display:table;height:100%}
+	</style>
+<![endif]-->
+#bake{padding-bottom: 180px;}
+#footer {position: relative;
+	margin-top: -180px; /* negative value of footer height */
+	height: 180px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+	
 .pud{
   transition: all 1.5s ease;
   height: 50vh;
@@ -133,22 +154,9 @@ footer {
 
 </div>
 
-<footer>
-  <ul>
-    <li>
-	    tetris
-    </li> 
-    <li>
-	    bongo
-    </li> 
-    <li>
-	    rover
-    </li> 
-    <li>
-	    run
-    </li> 
-  </ul>
-</footer>
+<div id="footer">
+
+</div>
 	
 <script>
 $(document).ready(function () {
