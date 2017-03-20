@@ -65,8 +65,8 @@ var scroll = $(window).scrollTop();
       $("object").toggleClass("pointer_events_auto");
 
 
-      $(this).toggleClass("top_and_width");
-	    
+      $(this).toggleClass("top_and_width_and_transform");
+      $(this).toggleClass("transform");	    
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
@@ -86,7 +86,7 @@ var scroll = $(window).scrollTop();
         });
       }
 
-      $(this).toggleClass("transform");
+
 
 
       $(this).find( ".close_but" ).toggleClass("display_vis");
