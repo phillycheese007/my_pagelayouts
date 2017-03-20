@@ -132,7 +132,8 @@ html{
 .skew{
  transform:skewY(-5deg);
 }
-/* .height{
+
+.height{
   @include transitions(all $anim_speed_3 ease);
   height:96%;
 }
@@ -141,13 +142,9 @@ html{
   @include transitions(all $anim_speed_0 );
   top:2%;bottom:2%;
 }
-*/
 
-.top_and_height{
-  @include transitions(height $anim_speed_3 ease, top $anim_speed_0, bottom $anim_speed_0 );
-  top:2%;bottom:2%;
-  height:96%;
-}
+
+
 
 .width{
   @include transitions(all $anim_speed_1 ease);
