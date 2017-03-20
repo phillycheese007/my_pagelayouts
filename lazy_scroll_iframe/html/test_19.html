@@ -67,12 +67,7 @@ var scroll = $(window).scrollTop();
         $(this).toggleClass("position");     
 	      
 	      
-$('html, body, #cake, #bake').on({
-    'mousewheel': function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-})
+
 	      
 	        
       }
@@ -118,7 +113,19 @@ $(document).ready(function(){
 
 </script>
 	
-
+<script>	
+$(document).ready(function(){
+  $("#cake").find( ".pud" ).click(
+    function () {
+$('html').on({
+    'mousewheel': function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+})
+    }); 
+});
+</script>	
 </body>
 </html>
  
