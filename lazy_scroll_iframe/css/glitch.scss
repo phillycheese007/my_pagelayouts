@@ -9,7 +9,9 @@ body{
 /*begin - glitch text */
 
 .glitch{
+  background:green;
   color:white;/* background:blue; */
+  height:100%;width:100%;
   font-size:4vw;
   position:relative;
 }
