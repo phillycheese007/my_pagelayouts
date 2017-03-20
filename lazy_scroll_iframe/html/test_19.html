@@ -60,21 +60,9 @@ var scroll = $(window).scrollTop();
     function () {
 
 	    
-$('.beefy').on( 'mousewheel DOMMouseScroll', function (e) { 
-  
-  var e0 = e.originalEvent;
-  var delta = e0.wheelDelta || -e0.detail;
 
-  this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-  e.preventDefault();  
-});   
 
 	
-	    
-	          $(this).find("object").toggleClass("beefy");
-
-    
-      $("#gap").toggleClass("pointer_events_auto");
 
       $(this).toggleClass("top");
       $(this).toggleClass("width");	    
@@ -107,6 +95,7 @@ $('.beefy').on( 'mousewheel DOMMouseScroll', function (e) {
 	    
       $("#bake").toggleClass("perspective");
 	    
+      $("#bake").toggleClass("overflow");
 
 
 
