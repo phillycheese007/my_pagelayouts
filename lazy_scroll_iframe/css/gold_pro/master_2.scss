@@ -64,6 +64,10 @@ html{
   background:$color_3;
 }
 
+object{  
+  pointer-events: none !important;
+}
+
 #gordo{
   background:$color_4;
   height:100%;
