@@ -127,7 +127,6 @@ html{
 
 
 .opacity_zero{
-  @include transitions(all $anim_speed_0);
   opacity:0;
 }
 
