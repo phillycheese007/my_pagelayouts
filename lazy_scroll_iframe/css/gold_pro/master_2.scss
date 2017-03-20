@@ -174,9 +174,10 @@ html{
 }
 
 .overflow{
-  @include transitions(all $anim_speed_1 ease);
-  height:100vh;overflow:hidden
+  @include transitions(all $anim_speed_3 ease-in);
+  height:100vh;overflow:hidden;
 }
+
 .close_but { 
   background: lightblue;
   display: none; 
