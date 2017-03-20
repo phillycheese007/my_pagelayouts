@@ -163,6 +163,11 @@ html{
 .pointer_events_auto{border:10px solid yellow;
   pointer-events: auto !important;
 }
+
+.pointer_events_none{border:10px solid yellow;
+  pointer-events: none !important;
+}
+
 .padd_bott{
   @include transitions(all $anim_speed_2 ease);
   padding-bottom:30vh;
