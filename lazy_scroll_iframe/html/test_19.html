@@ -70,6 +70,7 @@ $(this).on( 'mousewheel DOMMouseScroll', function (e) {
 }); 
 	    
       $("#gap").toggleClass("pointer_events_auto");
+      $("html,body,#gordo,#bake,#cake").toggleClass("pointer_events_none");
 
       $(this).toggleClass("top");
       $(this).toggleClass("width");	    
