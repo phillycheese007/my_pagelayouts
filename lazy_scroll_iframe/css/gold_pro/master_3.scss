@@ -51,6 +51,7 @@ $anim_speed_0: 0s;
 $anim_speed_1: .25s;
 $anim_speed_2: .5s;
 $anim_speed_3: .75s;
+$anim_speed_5: 5s;
     /*---------------------------------------------------*/
 
 
@@ -126,7 +127,7 @@ html{
 .marg_2{margin-top:50px;}
 
 .opacity_zero{
-  @include transitions(all $anim_speed_1 ease);
+  @include transitions(all $anim_speed_5 ease);
   opacity:0;
 }
 
