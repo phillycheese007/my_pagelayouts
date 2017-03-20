@@ -59,6 +59,16 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 
+	    
+$(this).on( 'mousewheel DOMMouseScroll', function (e) { 
+  
+  var e0 = e.originalEvent;
+  var delta = e0.wheelDelta || -e0.detail;
+
+  this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+  e.preventDefault();  
+}); 
+	    
 
       $(this).toggleClass("top");
       $(this).toggleClass("width");	    
@@ -114,16 +124,8 @@ $(document).ready(function(){
 
 </script>	
 	
-<script>	
-$('.pud.width').on( 'mousewheel DOMMouseScroll', function (e) { 
-  
-  var e0 = e.originalEvent;
-  var delta = e0.wheelDelta || -e0.detail;
 
-  this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-  e.preventDefault();  
-});
-</script>	
+	
 </body>
 </html>
  
