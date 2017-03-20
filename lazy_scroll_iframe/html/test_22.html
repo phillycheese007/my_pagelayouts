@@ -61,8 +61,6 @@ var scroll = $(window).scrollTop();
     function () {
 
 
-
-            $(this).siblings().toggleClass("opacity_zero");    
      
 	    
 	    
@@ -125,7 +123,9 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#cake").find( ".pud" ).on('click', function(){
     $(this).delay(0).promise().done(function(){
-      $("html,body").toggleClass("overflow");		
+      $("html,body").toggleClass("overflow");
+            $(this).siblings().toggleClass("opacity_zero");    
+
     });
   }); 
 });  
