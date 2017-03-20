@@ -147,13 +147,19 @@ html{
   width:96%;margin-left:2%;
 }
 
+.transform{  
+  @include transitions(all $anim_speed_3 ease);
+  @include skew(0, 0);
+  @include rotate(0, 0);
+}
+
 */
 
 .top_and_width_and_transform{
-  @include transitions(width $anim_speed_3 ease );
-  @include transitions(margin-left $anim_speed_3 ease );
-  @include transitions(top $anim_speed_3 ease );
-  @include transitions(bottom $anim_speed_3 ease );
+  @include transitions(width $anim_speed_1 ease );
+  @include transitions(margin-left $anim_speed_1 ease );
+  @include transitions(top $anim_speed_0 ease );
+  @include transitions(bottom $anim_speed_0 ease );
   @include transitions(skew $anim_speed_3 ease);
   @include transitions(rotate $anim_speed_3 ease);
 
@@ -164,11 +170,7 @@ html{
 }
 
 
-.transform{  
-  @include transitions(all $anim_speed_3 ease);
-  @include skew(0, 0);
-  @include rotate(0, 0);
-}
+
 		
 .position{
   @include transitions(all $anim_speed_3 ease);
