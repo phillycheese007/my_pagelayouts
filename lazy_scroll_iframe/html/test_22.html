@@ -60,11 +60,10 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 
-	   
+      $(this).toggleClass("marg_1");
+
         $(this).delay(100).promise().done(function(){
-		
-          $(this).siblings().toggleClass("display_none");    
-	
+            $(this).siblings().toggleClass("display_none");    
         });
 	    
 	    
