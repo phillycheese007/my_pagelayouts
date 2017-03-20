@@ -65,6 +65,15 @@ var scroll = $(window).scrollTop();
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
         $(this).toggleClass("position");     
+	      
+	      
+$('html, body, #cake, #bake').on({
+    'mousewheel': function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+})
+	      
 	        
       }
       else{	
@@ -89,12 +98,7 @@ var scroll = $(window).scrollTop();
 	    
 
 
-$('html, body, #cake, #bake').on({
-    'mousewheel': function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-})
+
 	    
 
     }            
