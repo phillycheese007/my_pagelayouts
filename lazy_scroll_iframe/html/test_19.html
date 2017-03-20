@@ -69,6 +69,7 @@ $(this).on( 'mousewheel DOMMouseScroll', function (e) {
   e.preventDefault();  
 }); 
 	    
+      $("#gap").toggleClass("pointer_events_auto");
 
       $(this).toggleClass("top");
       $(this).toggleClass("width");	    
