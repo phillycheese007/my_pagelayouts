@@ -61,7 +61,13 @@ var scroll = $(window).scrollTop();
     function () {
 
 	   
-
+        $(this).delay(400).promise().done(function(){
+		
+          $(this).siblings().toggleClass("display_none");    
+	
+        });
+	    
+	    
       $("object").toggleClass("pointer_events_auto");
 
 
@@ -78,8 +84,7 @@ var scroll = $(window).scrollTop();
       else{	
         $(this).delay(400).toggleClass("height").promise().done(function(){
           $(this).toggleClass("position");
-          $(this).siblings().toggleClass("display_none");    
-	
+		
         });
       }
 
