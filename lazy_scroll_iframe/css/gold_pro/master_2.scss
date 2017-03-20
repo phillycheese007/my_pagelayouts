@@ -113,7 +113,7 @@ html{
   margin-bottom:20vh;
 }	
 			
-.perspective{perspective:900px;height:100vh;overflow:hidden}
+.perspective{perspective:900px;}
 
 .marg_1{margin-bottom:50px;}
 .marg_2{margin-top:50px;}
@@ -158,6 +158,9 @@ html{
   padding-bottom:30vh;
 }
 
+.overflow_hidd{
+height:100vh;overflow:hidden
+}
 .close_but { 
   background: lightblue;
   display: none; 
