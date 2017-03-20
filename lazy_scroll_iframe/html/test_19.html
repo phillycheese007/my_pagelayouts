@@ -70,7 +70,7 @@ var scroll = $(window).scrollTop();
       }
       else{	
         $(this).delay(800).toggleClass("height").promise().done(function(){
-
+          $(this).toggleClass("position");
 		
         });
       }
