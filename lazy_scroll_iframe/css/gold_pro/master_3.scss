@@ -51,7 +51,6 @@ $anim_speed_0: 0s;
 $anim_speed_1: .25s;
 $anim_speed_2: .5s;
 $anim_speed_3: .75s;
-$anim_speed_5: 5s;
     /*---------------------------------------------------*/
 
 
@@ -123,11 +122,11 @@ html{
 			
 .perspective{perspective:900px;}
 
-.marg_1{margin-bottom:500px;}
+.marg_1{margin-bottom:50px;}
+.marg_2{margin-top:50px;}
 
-
-.opacity_zero{
-  opacity:0;
+.no_scroll{
+  border:20px solid green;
 }
 
 .skew{
@@ -183,6 +182,10 @@ html{
 .overflow{
   @include transitions(all $anim_speed_3 ease-in);
   height:100vh;overflow:hidden;
+}
+
+.opacity_zero{
+  opacity:0;
 }
 
 .close_but { 
