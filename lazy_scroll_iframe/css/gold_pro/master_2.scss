@@ -63,7 +63,9 @@ html{
   height:100%;
   background:$color_3;
 }
-
+.beefy{
+	border:30px solid red;
+}
 object{  
   pointer-events: none !important;
 }
