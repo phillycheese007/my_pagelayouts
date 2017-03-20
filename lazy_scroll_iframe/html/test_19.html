@@ -61,7 +61,7 @@ var scroll = $(window).scrollTop();
 
       $(this).toggleClass("top");
       $(this).toggleClass("width");
-      $(this).siblings().toggleClass("marg_top");
+      $(this).siblings()..nextAll().toggleClass("marg_top");
 	    
 
       if ($(this).hasClass("position")) {
