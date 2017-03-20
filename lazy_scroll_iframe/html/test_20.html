@@ -79,7 +79,7 @@ var scroll = $(window).scrollTop();
 	        
       }
       else{	
-        $(this).delay(800).toggleClass("height").promise().done(function(){
+        $(this).delay(700).toggleClass("height").promise().done(function(){
           $(this).toggleClass("position");
 		
         $(this).siblings().toggleClass("opacity_zero");     
@@ -113,7 +113,7 @@ var scroll = $(window).scrollTop();
 
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
-        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+        $('html,body').animate({scrollTop: $(this).offset().top}, 700);
 
     }); 
 });  
