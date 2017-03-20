@@ -73,6 +73,7 @@ var scroll = $(window).scrollTop();
         $(this).toggleClass("position");     
 	      
 	      
+      $("html,body").toggleClass("overflow");
 
 	      
 	        
@@ -81,7 +82,6 @@ var scroll = $(window).scrollTop();
         $(this).delay(800).toggleClass("height").promise().done(function(){
           $(this).toggleClass("position");
 		
-      $("html,body").toggleClass("overflow");
 
 		
         });
