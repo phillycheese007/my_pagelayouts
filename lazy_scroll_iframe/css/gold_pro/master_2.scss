@@ -143,7 +143,7 @@ html{
 		
 .position{
   @include transitions(all $anim_speed_3 ease);
-  position:fixed;
+  position:fixed;margin-bottom:50vh;margin-top:50vh;
  /* display:block; */
   z-index:9999;
   pointer-events: auto !important;
