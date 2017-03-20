@@ -118,13 +118,16 @@ $(document).ready(function(){
 <script>	
 $(document).ready(function(){
     
+    $("#cake").find( ".pud" ).on('click', function(){
+        $('#el').toggleClass('beefy');
 $('.beefy').on({
     'mousewheel': function(e) {
         e.preventDefault();
         e.stopPropagation();
     }
 })
-
+    }); 
+    
 });
 </script>	
 </body>
