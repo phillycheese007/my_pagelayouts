@@ -60,21 +60,12 @@ var scroll = $(window).scrollTop();
     function () {
 
       $(this).toggleClass("top");
-      $(this).toggleClass("width");
-
-	    
+      $(this).toggleClass("width");	    
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
         $(this).toggleClass("position");     
-	      
-$('html, body, #cake, #bake, #gordo').on({
-    'mousewheel': function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-})  
-	      
+	        
       }
       else{	
         $(this).delay(800).toggleClass("height").promise().done(function(){
