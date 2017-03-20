@@ -72,8 +72,12 @@ var scroll = $(window).scrollTop();
         $(this).delay(800).toggleClass("height").promise().done(function(){
           $(this).toggleClass("position");
 		
-      $("#cake").toggleClass("overflow_hidd");
-
+$('html, body, #cake, #bake').on({
+    'mousewheel': function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+})
 		
         });
       }
