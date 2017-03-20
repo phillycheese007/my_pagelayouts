@@ -123,8 +123,8 @@ html{
 			
 .perspective{perspective:900px;}
 
-.marg_1{margin-bottom:50px;}
-.marg_2{margin-top:50px;}
+.marg_1{margin-bottom:500px;}
+.marg_2{margin-top:500px;}
 
 .opacity_zero{
   @include transitions(all $anim_speed_0);
