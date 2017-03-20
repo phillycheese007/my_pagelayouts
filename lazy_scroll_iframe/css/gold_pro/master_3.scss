@@ -127,7 +127,7 @@ html{
 .marg_2{margin-top:50px;}
 
 .opacity_zero{
-  @include transitions(all $anim_speed_5 ease);
+  @include transitions(all $anim_speed_2 ease);
   opacity:0;
 }
 
