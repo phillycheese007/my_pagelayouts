@@ -160,7 +160,7 @@ html{
 
 .overflow_hidd{
   @include transitions(all $anim_speed_3 ease);
-position:fixed;
+  position:fixed;
 }
 .close_but { 
   background: lightblue;
