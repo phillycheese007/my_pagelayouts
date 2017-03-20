@@ -149,12 +149,16 @@ html{
 
 */
 
-.top_and_width{
+.top_and_width_and_transform{
   @include transitions(width $anim_speed_3 ease );
   @include transitions(margin-left $anim_speed_3 ease );
   @include transitions(top $anim_speed_3 ease );
   @include transitions(bottom $anim_speed_3 ease );
+  @include transitions(skew $anim_speed_3 ease);
+  @include transitions(rotate $anim_speed_3 ease);
 
+  @include skew(0, 0);
+  @include rotate(0, 0);
   top:2%;bottom:2%;
   width:96%;margin-left:2%;
 }
