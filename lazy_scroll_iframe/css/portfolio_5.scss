@@ -50,40 +50,7 @@
 }
 
 
-.mushroom_3{
-  position:fixed !important;
-  z-index:9999 !important;
-  bottom:0 !important;
-  top:0 !important;
-  margin-top:0 !important;
-  margin:0 auto !important;
-  left:0 !important;
-  height:100% !important;
-  width:100% !important;
-  transform: translateX(0vw) rotateY(0deg) !important;
-  transform-style: flat !important;
-  pointer-events: auto !important;
-  -webkit-box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
-}
-.mushroom_4{
-  z-index:9999 !important;
-  height:100vh !important;
-  width:100% !important;
-   transform:skewY(5deg)!important;
-  -webkit-box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 101px 39px rgba(0,0,0,0.75);
-  
-}
-.mushroom_5{
-  width:100% !important;
-  position:absolute  !important;
-    left:0vw !important;
-  transform: translateX(0vw) rotateY(0deg)!important;
 
-}
 object{  
   pointer-events: none !important;
 }
