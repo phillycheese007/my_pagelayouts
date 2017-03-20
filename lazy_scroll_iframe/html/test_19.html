@@ -71,6 +71,9 @@ var scroll = $(window).scrollTop();
         $(this).delay(800).toggleClass("height").promise().done(function(){
           $(this).toggleClass("position");
 		
+      $("body, html").toggleClass("overflow_hidd");
+
+		
         });
       }
 
@@ -85,7 +88,6 @@ var scroll = $(window).scrollTop();
 	    
       $("#bake").toggleClass("perspective");
 	    
-      $("body, html").toggleClass("overflow_hidd");
 
 
 
