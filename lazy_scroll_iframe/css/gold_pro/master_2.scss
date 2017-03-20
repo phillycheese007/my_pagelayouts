@@ -137,7 +137,7 @@ html{
 }
 
 .top{
-  @include transitions(all $anim_speed_3 ease);
+  @include transitions(all $anim_speed_1 ease);
   top:2%;bottom:2%;
 }
 .width{
