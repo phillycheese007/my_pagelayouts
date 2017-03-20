@@ -1,5 +1,4 @@
 
-
 <html>
 <head>
 <TITLE>Your Title Here</TITLE>
@@ -35,7 +34,7 @@
 	
   <div class="pud pud_1 p_3">
     <div class="close_but">&#10006;</div>        
-    <object id="gap" width="100%" height="100%"  data="https://phillycheese007.github.io/responsive_shapes/html/furniture_scenes/scene_7.html" >
+    <object id="gap" width="100%" height="100%"  data="https://phillycheese007.github.io/philipdusel/html/index.html" >
     </object>
   </div>	
   <div class="pud pud_2 p_4 cd">
@@ -60,10 +59,9 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 
+	    
 
-     
-	    
-	    
+
       $("object").toggleClass("pointer_events_auto");
 
 
@@ -72,15 +70,19 @@ var scroll = $(window).scrollTop();
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
-        $(this).toggleClass("position");     
+        $(this).toggleClass("position");    
+	      
+        $(this).siblings().toggleClass("opacity_zero");     
+
       
-	       
-	        
       }
       else{	
-        $(this).delay(400).toggleClass("height").promise().done(function(){
-          $(this).toggleClass("position"); 
-
+        $(this).delay(800).toggleClass("height").promise().done(function(){
+          $(this).toggleClass("position");
+		
+        $(this).siblings().toggleClass("opacity_zero"); 
+		
+		
         });
       }
 
@@ -118,18 +120,17 @@ $(document).ready(function(){
 </script>	
 	
 
-
 	
 <script>
 $(document).ready(function(){
   $("#cake").find( ".pud" ).on('click', function(){
-    $(this).delay(80).promise().done(function(){
-      $("html,body").toggleClass("overflow");
-
+    $(this).delay(0).promise().done(function(){
+      $("html,body").toggleClass("overflow");		
     });
   }); 
 });  
-</script>
+</script>	
+	
 
 </body>
 </html>
