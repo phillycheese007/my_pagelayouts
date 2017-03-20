@@ -59,6 +59,8 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 
+      $('html,body').toggleClass("beefy");
+
       $(this).toggleClass("top");
       $(this).toggleClass("width");	    
 
@@ -115,14 +117,14 @@ $(document).ready(function(){
 	
 <script>	
 $(document).ready(function(){
-  $("#cake").find( ".pud" ).on('click', function(){
-$('#cake,html,body,#bake,#gordo').on({
+    
+$('#beefy').on({
     'mousewheel': function(e) {
         e.preventDefault();
         e.stopPropagation();
     }
 })
-    }); 
+
 });
 </script>	
 </body>
