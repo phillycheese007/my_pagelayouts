@@ -60,9 +60,7 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 
-	    
-      $(this).toggleClass("marg_1");     
-      $(this).siblings().toggleClass("display_none");    
+	   
 
       $("object").toggleClass("pointer_events_auto");
 
@@ -80,9 +78,8 @@ var scroll = $(window).scrollTop();
       else{	
         $(this).delay(400).toggleClass("height").promise().done(function(){
           $(this).toggleClass("position");
-		
-
-		
+          $(this).siblings().toggleClass("display_none");    
+	
         });
       }
 
