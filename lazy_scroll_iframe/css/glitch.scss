@@ -1,6 +1,8 @@
 ---
 #glitchy
 ---
+$glitch_background:black;
+
 body{
   background:black;
   font-family: 'Varela', sans-serif;
@@ -9,7 +11,7 @@ body{
 /*begin - glitch text */
 
 .glitch{
-  background:green;
+  background:$glitch_background;
   color:white;/* background:blue; */
   height:auto;width:100%;
   font-size:9vh;
@@ -33,7 +35,7 @@ body{
   text-shadow:-1px 0 red;
   top:0;
   color:white;
-  background:black;
+  background:$glitch_background;
   overflow:hidden;
   clip:rect(0,900px,0,0); 
   animation:noise-anim 2s infinite linear alternate-reverse;
@@ -55,7 +57,7 @@ body{
   text-shadow:1px 0 blue; 
   top:0;
   color:white;
-  background:black;
+  background:$glitch_background;
   overflow:hidden;
   clip:rect(0,900px,0,0); 
   animation:noise-anim-2 3s infinite linear alternate-reverse;
