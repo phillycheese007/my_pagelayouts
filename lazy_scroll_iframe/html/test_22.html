@@ -82,6 +82,7 @@ var scroll = $(window).scrollTop();
         $(this).delay(400).toggleClass("height").promise().done(function(){
           $(this).toggleClass("position");
           $(this).siblings().toggleClass("marg_2");    
+          $(this).siblings().toggleClass("opacity_zero");    
 
         });
       }
