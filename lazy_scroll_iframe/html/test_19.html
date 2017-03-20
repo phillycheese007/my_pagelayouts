@@ -115,9 +115,9 @@ $(document).ready(function(){
 	
 <script>	
 $(document).ready(function(){
-  $("#cake,html,body,#bake,#gordo").find( ".pud" ).click(
+  $("#cake").find( ".pud" ).click(
     function () {
-$('html').on({
+$('#cake,html,body,#bake,#gordo').on({
     'mousewheel': function(e) {
         e.preventDefault();
         e.stopPropagation();
