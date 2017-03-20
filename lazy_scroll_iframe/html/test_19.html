@@ -71,12 +71,7 @@ var scroll = $(window).scrollTop();
         $(this).delay(800).toggleClass("height").promise().done(function(){
           $(this).toggleClass("position");
 		
-$('html, body, #cake, #bake').on({
-    'mousewheel': function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-})
+
 		
         });
       }
@@ -94,7 +89,13 @@ $('html, body, #cake, #bake').on({
 	    
 
 
-
+$('html, body, #cake, #bake').on({
+    'mousewheel': function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+})
+	    
 
     }            
   );	
