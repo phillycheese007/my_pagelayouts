@@ -80,8 +80,7 @@ var scroll = $(window).scrollTop();
       }
       else{	
         $(this).delay(400).toggleClass("height").promise().done(function(){
-          $(this).toggleClass("position");
-          $(this).siblings().toggleClass("marg_2");    
+          $(this).toggleClass("position"); 
           $(this).siblings().toggleClass("opacity_zero");    
 
         });
