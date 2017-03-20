@@ -119,13 +119,18 @@ $(document).ready(function(){
 
 </script>	
 	
-<script>   
+
+	
+<script>
 $(document).ready(function(){
-    $("#cake").find( ".pud" ).on('click', function(){
-$("html,body").toggleClass("overflow");
-    }); 
+  $("#cake").find( ".pud" ).on('click', function(){
+    $(this).delay(1800).promise().done(function(){
+      $("html,body").toggleClass("overflow");		
+    });
+  }); 
 });  
-</script>
+</script>	
+	
 
 </body>
 </html>
