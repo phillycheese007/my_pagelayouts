@@ -73,7 +73,6 @@ var scroll = $(window).scrollTop();
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
         $(this).toggleClass("position");     
-        $(this).siblings().toggleClass("opacity_zero");    
       
 	       
 	        
@@ -81,7 +80,6 @@ var scroll = $(window).scrollTop();
       else{	
         $(this).delay(400).toggleClass("height").promise().done(function(){
           $(this).toggleClass("position"); 
-          $(this).siblings().toggleClass("opacity_zero");    
 
         });
       }
