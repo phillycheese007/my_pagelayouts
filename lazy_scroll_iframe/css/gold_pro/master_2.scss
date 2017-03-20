@@ -159,7 +159,8 @@ html{
 }
 
 .overflow_hidd{
-height:100vh;overflow:hidden
+  @include transitions(all $anim_speed_3 ease);
+posiiton:fixed;
 }
 .close_but { 
   background: lightblue;
