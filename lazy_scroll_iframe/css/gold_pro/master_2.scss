@@ -66,10 +66,10 @@ html{
 .beefy{
 	border:30px solid red;
 }
-object{  
+/* object{  
   pointer-events: none !important;
 }
-
+*/
 #gordo{
   background:$color_4;
   height:100%;
@@ -160,8 +160,8 @@ object{
    @include box-shadow;
 }
 
-.pointer_events{
-  pointer-events: auto !important;
+.pointer_events_none{
+  pointer-events: none !important;
 }
 .padd_bott{
   @include transitions(all $anim_speed_2 ease);
