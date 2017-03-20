@@ -132,27 +132,33 @@ html{
 .skew{
  transform:skewY(-5deg);
 }
-/* .height{
+ .height{
   @include transitions(all $anim_speed_3 ease);
   height:96%;
 }
-
+/*
 .top{
   @include transitions(all $anim_speed_0 );
   top:2%;bottom:2%;
-}
-*/
-
-.top_and_height{
-  @include transitions(all $anim_speed_3 ease );
-  top:2%;bottom:2%;
-  height:96%;
 }
 
 .width{
   @include transitions(all $anim_speed_1 ease);
   width:96%;margin-left:2%;
 }
+
+*/
+
+.top_and_width{
+  @include transitions(width $anim_speed_3 ease );
+  @include transitions(margin-left $anim_speed_3 ease );
+  @include transitions(top $anim_speed_3 ease );
+  @include transitions(bottom $anim_speed_3 ease );
+
+  top:2%;bottom:2%;
+  width:96%;margin-left:2%;
+}
+
 
 .transform{  
   @include transitions(all $anim_speed_3 ease);
