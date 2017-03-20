@@ -105,10 +105,19 @@ var scroll = $(window).scrollTop();
 
 </script>
 
-	
+<script>
+
+$(document).ready(function(){
+    $("#cake").find( ".pud" ).on('click', function(){
+        $('html,body').animate({scrollTop: $(this).offset().top}, 800);
+
+    }); 
+});  
+
+</script>	
 	
 <script>	
-$('.no_scroll').on( 'mousewheel DOMMouseScroll', function (e) { 
+$('.pud').on( 'mousewheel DOMMouseScroll', function (e) { 
   
   var e0 = e.originalEvent;
   var delta = e0.wheelDelta || -e0.detail;
