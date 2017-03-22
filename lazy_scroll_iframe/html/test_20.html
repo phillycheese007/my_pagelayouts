@@ -58,7 +58,6 @@ $(document).ready(function () {
 
         $(this).promise().done(function(){
          // $(this).toggleClass("position");
-          $("#gordo").toggleClass("position");
 
 
         });
@@ -88,7 +87,12 @@ $(document).ready(function () {
 
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
-
+	    
+        $(this).delay(900).promise().done(function(){
+         // $(this).toggleClass("position");
+          $("#gordo").toggleClass("position");
+        });
+	    
         $('html,body').animate({scrollTop: $(this).offset().top}, 800);
 
     }); 
