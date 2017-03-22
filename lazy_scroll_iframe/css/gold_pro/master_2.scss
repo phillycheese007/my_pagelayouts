@@ -164,6 +164,12 @@ html{
   height:96%; 
 }
 
+.top{
+  @include transitions(all $anim_speed_0 );
+  top:2%;margin-top:2%;
+}
+
+
 .position{
   @include transitions(all $anim_speed_3 ease);
   position:fixed;
