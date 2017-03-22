@@ -47,6 +47,8 @@ $color_3:blue;
 $color_4:lightblue;
 $color_5:orange;
 
+$header_color:$color_2;
+
 $anim_speed_0: 0s;
 $anim_speed_1: .25s;
 $anim_speed_2: .5s;
@@ -124,6 +126,10 @@ html{
   @include transitions(all $anim_speed_1 ease);
   @include skew(-45, 0);
   @include rotate(-45, 0);
+}
+
+.p_0{
+  background: $header_color;
 }
 
 .p_4{
