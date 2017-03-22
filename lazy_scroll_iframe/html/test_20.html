@@ -62,7 +62,7 @@ $(document).ready(function () {
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
-        $(this).toggleClass("position");
+        $(this).delay(900).toggleClass("position");
         $("footer").show();
 
 
@@ -71,7 +71,7 @@ $(document).ready(function () {
         $(this).toggleClass("height");
 
         $(this).promise().done(function(){
-          $(this).toggleClass("position");
+          $(this).delay(900).toggleClass("position");
         $("footer").delay(300).hide();
 
         });
