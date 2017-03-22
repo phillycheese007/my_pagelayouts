@@ -75,9 +75,7 @@ html{
   height:100%;
   background:$color_2;
 }
-.beefy{
-	border:30px solid red;
-}
+
  object{  
   pointer-events: none !important;
 }
@@ -107,10 +105,10 @@ html{
   height: 48vh;
   width:58vw; 
   margin:0 auto;
-  margin-bottom:3px;/*border*/
+  margin-bottom:5px;/*border*/
   padding: 0; 
   position: relative;
-  border: 2px solid $color_2;
+  border: 2px solid $color_1;
 }
 	
 .pud_1{
