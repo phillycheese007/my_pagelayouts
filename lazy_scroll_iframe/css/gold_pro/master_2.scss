@@ -28,7 +28,17 @@
 }
     /*---------------------------------------------------*/
 
-
+.foo{
+  border:10px solid red;
+  @include transitions(all $anim_speed_3 ease);
+  height: 48vh;
+  width:58vw; 
+  margin:0 auto;
+  margin-bottom:7px;/*border*/
+  padding: 0; 
+  position: relative;
+  border:2px solid $color_1;
+]
 
     /*---------------------------------------------------*/
 @mixin box-shadow{
