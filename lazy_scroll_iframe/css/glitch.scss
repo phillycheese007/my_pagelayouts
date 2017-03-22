@@ -12,16 +12,16 @@ body{
 .header_2{
   height:100%;
   width:100%;
-  background:blue;
+  background:blue;margin:0;padding:0;
 }
 
 
 .glitch{
   background:$glitch_background;
   color:white;/* background:blue; */
-  height:auto;width:100%;margin:0;padding:0;
+  height:auto;width:100%;
   font-size:8.4vh;
-  position:absolute;
+  position:relative;
   text-indent:2vw;
 }
 
