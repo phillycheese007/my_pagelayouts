@@ -80,7 +80,17 @@ var scroll = $(window).scrollTop();
 
 </script>
 
-	
+<script>
+
+$(document).ready(function(){
+    $("#cake").find( ".pud" ).on('click', function(){
+        $('html,body').animate({scrollTop: $(this).offset(22).top}, 800);
+
+    }); 
+});  
+
+</script>
+		
 
 </body>
 </html>
