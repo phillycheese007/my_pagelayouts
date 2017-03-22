@@ -51,6 +51,8 @@ var scroll = $(window).scrollTop();
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
         $(this).toggleClass("position");
+        $(this).siblings().toggleClass("opacity_zero");
+
       }
       else{	
         $(this).toggleClass("height");
