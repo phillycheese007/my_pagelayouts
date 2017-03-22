@@ -63,12 +63,8 @@ $(document).ready(function () {
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
 	      
-        $(this).delay(900).promise().done(function(){
-          $(this).toggleClass("position");
+        $(this).toggleClass("position");
         $("footer").hide();
-
-        });
-
 
       }
       else{	
