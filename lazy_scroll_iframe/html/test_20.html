@@ -63,6 +63,7 @@ $(document).ready(function () {
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
         $(this).toggleClass("position");
+        $("footer").hide();
 
 
       }
@@ -71,7 +72,7 @@ $(document).ready(function () {
 
         $(this).promise().done(function(){
           $(this).toggleClass("position");
-
+        $("footer").show();
 
         });
       }
