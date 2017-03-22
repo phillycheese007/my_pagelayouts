@@ -58,6 +58,8 @@ $(document).ready(function () {
   $("#cake").find( ".pud" ).click(
     function () {
 
+      $('html,body').animate({scrollTop: $(this).offset().top}, 400);
+
       $("object").toggleClass("pointer_events_auto");
       $(this).toggleClass("height");     
       $(this).toggleClass("position");
@@ -70,8 +72,6 @@ $(document).ready(function () {
       $(this).find( ".close_but" ).toggleClass("display_vis");
       
 
-
-
     }            
   );	
 	
@@ -81,22 +81,7 @@ $(document).ready(function () {
 
 
 	
-<script>
 
-$(document).ready(function(){
-    $("#cake").find( ".pud" ).on('click', function(){
-	    
-        $(this).delay(200).promise().done(function(){
-         // $(this).toggleClass("position");
-        //  $(this).siblings().toggleClass("opacity_zero");
-        });
-	    
-        $('html,body').animate({scrollTop: $(this).offset().top}, 400);
-
-    }); 
-});  
-
-</script>
 	
 
 	
