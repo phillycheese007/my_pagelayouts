@@ -19,14 +19,14 @@ body{
   }
 }
 
-.rr{margin-top:5vh;}
+.rr{margin-top:25vh;}
 
 .glitch{
   background:$glitch_background;
   color:white;/* background:blue; */
   height:auto;width:100%;
   font-size:7vh;
-  position:absolute;
+  position:relative;
   margin:0;padding:0;
 }
 
