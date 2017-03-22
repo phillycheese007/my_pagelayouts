@@ -118,7 +118,7 @@ html{
   padding: 0; 
   position: relative;
   border:2px solid $color_1;padding:0;
-	transform:rotateY(0deg) skewY(0deg);
+	transform:skewY(0deg) rotateY(0deg) ;
 }
 
 .pud_1{
