@@ -55,6 +55,7 @@ $anim_speed_3: .75s;
 
 
 .foo{
+  border:10px solid red;
   @include transitions(all $anim_speed_1 ease);
   height: 48vh;
   width:58vw; 
