@@ -73,7 +73,7 @@ $(document).ready(function () {
         $(this).promise().done(function(){
           $(this).toggleClass("position");
 
-
+		
         $("footer").hide();
 
         });
@@ -113,6 +113,15 @@ $(document).ready(function(){
 
     }); 
 });  
+
+</script>
+	
+<script>
+var $div = $("<div>", {id: "foo", "class": "a"});
+$("#cake").find( ".pud" ).click(function(){
+$("#cake").append($div);
+	
+	/* ... */ });
 
 </script>
 	
