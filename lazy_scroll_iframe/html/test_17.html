@@ -84,7 +84,6 @@ var scroll = $(window).scrollTop();
     function () {
 
         $(".p_hid").toggleClass("display_none");
-        $(".p_hid").delay(900).toggleClass("height2");
 
         $(this).toggleClass("top");
 
@@ -96,6 +95,8 @@ var scroll = $(window).scrollTop();
         $(this).toggleClass("height");
 
         $(this).promise().done(function(){
+        $(".p_hid").delay(900).toggleClass("height2");
+
           $(this).toggleClass("position");
         });
       }
