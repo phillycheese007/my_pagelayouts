@@ -119,14 +119,21 @@ var scroll = $(window).scrollTop();
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
         $('html,body').animate({scrollTop: $(this).offset().top}, 800);
-$( this ).next().prepend( $( ".foo" ) );
 
     }); 
 });  
 
 </script>
 		
+<script>
 
+$(document).ready(function(){
+$( ".p_2" ).next().prepend( $( ".foo" ) );
+
+
+});  
+
+</script>
 </body>
 </html>
  
