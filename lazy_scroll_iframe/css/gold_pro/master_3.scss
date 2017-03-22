@@ -47,12 +47,10 @@ $color_3:blue;
 $color_4:lightblue;
 $color_5:orange;
 
-$header_background_color:black;
-
 $anim_speed_0: 0s;
-$anim_speed_1: .15s;
-$anim_speed_2: .25s;
-$anim_speed_3: .35s;
+$anim_speed_1: .25s;
+$anim_speed_2: .5s;
+$anim_speed_3: .75s;
     /*---------------------------------------------------*/
 
 
@@ -118,11 +116,7 @@ html{
   @include rotate(-45, 0);
 }
 
-.p_0{
-  background:$header_background_color;
-}
-
-.p_5{
+.p_4{
   margin-bottom:20vh;
 }	
 			
@@ -130,10 +124,6 @@ html{
 
 .marg_1{margin-bottom:50px;}
 .marg_2{margin-top:50px;}
-
-.opacity_zero{
-  opacity:0;
-}
 
 .no_scroll{
   border:20px solid green;
@@ -168,7 +158,11 @@ html{
   @include skew(0, 0);
   @include rotate(0, 0);
 }
-	
+		
+.opacity_zero{
+  opacity:0;
+}
+
 .pointer_events_auto{
   pointer-events: auto !important;
 }
