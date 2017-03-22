@@ -24,9 +24,9 @@ body{
   background:$glitch_background;
   color:white;/* background:blue; */
   height:auto;width:100%;
-  // font-size:7vh;
+  font-size:7vh;
   position:relative;
-  margin:0;padding:0;
+  margin:0 !important;padding:0 !important;
 }
 
 @keyframes noise-anim{
