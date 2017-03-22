@@ -138,9 +138,14 @@ html{
   height:96%; 
 }
 
-.top{
-  @include transitions(all $anim_speed_0 );
+.position{
+  @include transitions(all $anim_speed_3 ease);
+  position:fixed;
   top:2%;
+ /* display:block; */
+  z-index:9999;
+  pointer-events: auto !important;
+   @include box-shadow;
 }
 
 .width{
@@ -154,15 +159,7 @@ html{
   @include rotate(0, 0);
 }
 		
-.position{
-  @include transitions(all $anim_speed_3 ease);
-  position:fixed;
-  top:2%;
- /* display:block; */
-  z-index:9999;
-  pointer-events: auto !important;
-   @include box-shadow;
-}
+
 
 .pointer_events_auto{
   pointer-events: auto !important;
