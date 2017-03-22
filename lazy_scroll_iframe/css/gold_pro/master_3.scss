@@ -73,7 +73,7 @@ html{
   margin:0;
   padding:0;
   height:100%;
-  background:$color_3;
+  background:$color_2;
 }
 .beefy{
 	border:30px solid red;
@@ -91,11 +91,11 @@ html{
 }
 
 #bake{ 
-  background:$color_3;
+  background:$color_2;
 }
 
 #cake{ 
-  background:$color_3;
+  background:$color_2;
   min-height:100%;
   width: 100%;
   margin: 0 auto;
@@ -110,6 +110,7 @@ html{
   margin-bottom:3px;/*border*/
   padding: 0; 
   position: relative;
+  border: 2px solid $color_2;
 }
 	
 .pud_1{
