@@ -72,18 +72,18 @@ html{
 }
 
 #gordo{
-  background:$color_4;
+  background:$color_2;
   height:100%;
   min-height:100%;
   width:100%;
 }
 
 #bake{ 
-  background:$color_3;
+  background:$color_2;
 }
 
 #cake{ 
-  background:$color_3;
+  background:$color_2;
   min-height:100%;
   width: 100%;
   margin: 0 auto;
@@ -95,9 +95,10 @@ html{
   height: 48vh;
   width:58vw; 
   margin:0 auto;
-  margin-bottom:3px;/*border*/
+  margin-bottom:7px;/*border*/
   padding: 0; 
   position: relative;
+  border:2px solid $color_1;
 }
 	
 .pud_1{
