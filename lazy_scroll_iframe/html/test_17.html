@@ -53,7 +53,9 @@ var scroll = $(window).scrollTop();
         $(this).toggleClass("position");
       }
       else{	
-        $(this).delay(800).toggleClass("height").promise().done(function(){
+        $(this).toggleClass("height");
+
+        $(this).delay(800).promise().done(function(){
           $(this).toggleClass("position");
         });
       }
