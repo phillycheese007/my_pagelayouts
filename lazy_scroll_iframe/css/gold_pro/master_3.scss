@@ -130,7 +130,6 @@ html{
   margin-bottom:20vh;
 }	
 			
-.perspective{perspective:900px;}
 
 .marg_1{margin-bottom:100vh;}
 .marg_2{margin-top:100vh;}
@@ -139,7 +138,13 @@ html{
   border:20px solid green;
 }
 
+.perspective{
+ @include transitions(all $anim_speed_1 ease);
+  perspective:900px;
+}
+
 .skew{
+ @include transitions(all $anim_speed_1 ease);
  transform:skewY(-5deg);
 }
 
