@@ -12,7 +12,6 @@ body{
 .header_2{
   height:100%;
   width:100%;
-  position:absolute;top:0;
   background:blue;margin:0;padding:0;
 }
 
@@ -23,7 +22,7 @@ body{
   height:auto;width:100%;
   font-size:8vh;
   position:relative;
-  text-indent:2vw;
+  text-indent:2vw;margin:0;padding:0;
 }
 
 @keyframes noise-anim{
