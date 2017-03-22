@@ -81,6 +81,7 @@ var scroll = $(window).scrollTop();
     function () {
 
 
+        $(this).toggleClass("top");
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
@@ -89,7 +90,7 @@ var scroll = $(window).scrollTop();
       else{	
         $(this).toggleClass("height");
 
-        $(this).promise().done(function(){
+        $(this).delay(800).promise().done(function(){
           $(this).toggleClass("position");
         });
       }
