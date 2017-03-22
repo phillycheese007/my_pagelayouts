@@ -54,7 +54,7 @@ $anim_speed_3: .75s;
     /*---------------------------------------------------*/
 
 
-#foo{
+.foo{
   @include transitions(all $anim_speed_1 ease);
   height: 48vh;
   width:58vw; 
