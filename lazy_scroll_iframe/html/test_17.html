@@ -83,7 +83,6 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 
-        $(".p_hid").toggleClass("display_none");
 
         $(this).toggleClass("top");
 
@@ -91,22 +90,19 @@ var scroll = $(window).scrollTop();
         $(this).toggleClass("height");
         $(this).toggleClass("position");
 	      
-       $(".p_hid").toggleClass("height2");
-
+        $("footer").show();
 	      
       }
       else{	
         $(this).toggleClass("height");
 	      
+        $("footer").hide();
 
 	      
         $(this).promise().done(function(){
           $(this).toggleClass("position");
         });
 	      
-        $(this).delay(0).promise().done(function(){
-       $(".p_hid").toggleClass("height2");
-        });
 	      
       }
 
