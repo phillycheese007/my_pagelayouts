@@ -119,7 +119,7 @@ $(document).ready(function(){
 <script>
 var $div = $("<div>", {id: "foo", "class": "pud"});
 $("#cake").find( ".pud" ).click(function(){
-$("#cake").append($div);
+$(this).append($div);
 	
 	/* ... */ });
 
