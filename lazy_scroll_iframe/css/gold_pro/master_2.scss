@@ -43,7 +43,6 @@
 
 
 .p_hid{
-  @include transitions(all $anim_speed_3 ease);
   height: 100vh;
   width:58vw; 
   margin:0 auto;
