@@ -51,7 +51,7 @@ var scroll = $(window).scrollTop();
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
         $(this).toggleClass("position");
-        $(this).siblings().toggleClass("opacity_zero");
+        $(this).siblings().toggleClass("marg_1");
 
       }
       else{	
@@ -59,7 +59,7 @@ var scroll = $(window).scrollTop();
 
         $(this).promise().done(function(){
           $(this).toggleClass("position");
-          $(this).siblings().toggleClass("opacity_zero");
+          $(this).siblings().toggleClass("marg_1");
 
         });
       }
