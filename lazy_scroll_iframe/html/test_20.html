@@ -61,8 +61,15 @@ $(document).ready(function () {
       $('html,body').animate({scrollTop: $(this).offset().top}, 400);
 
       $("object").toggleClass("pointer_events_auto");
-      $(this).toggleClass("height");     
-      $(this).toggleClass("position");
+	    
+	    
+        $(this).toggleClass("height").delay(200).promise().done(function(){
+         // $(this).toggleClass("position");
+        //  $(this).siblings().toggleClass("opacity_zero");
+	    $(this).toggleClass("position");
+
+        });
+	    
       $(this).toggleClass("width");
       $(this).toggleClass("transform");
       $("#cake").toggleClass("skew");
