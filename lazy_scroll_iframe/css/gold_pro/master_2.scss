@@ -28,17 +28,10 @@
 }
     /*---------------------------------------------------*/
 
-.foo{
-  border:10px solid red;
-  height: 48vh;
-  width:58vw; 
-  margin:0 auto;
-  margin-bottom:7px;/*border*/
-  padding: 0; 
-  position: relative;
-  display:inline-block;
-  clear:both;
-  transform:rotateY(-45deg) skewY(-45deg);
+.header_2{
+  height:100%;
+  width:100%;
+  background:blue;
 }
 
 
