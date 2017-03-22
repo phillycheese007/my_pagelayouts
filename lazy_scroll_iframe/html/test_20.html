@@ -59,35 +59,18 @@ $(document).ready(function () {
     function () {
 
       $("object").toggleClass("pointer_events_auto");
-
-      if ($(this).hasClass("position")) {
-        $(this).toggleClass("height");
-	      
-        $(this).toggleClass("position");
-        $("footer").hide();
-
-      }
-      else{	
-        $(this).toggleClass("height");
-
-        $(this).promise().done(function(){
-          $(this).toggleClass("position");
-
-		
-        $("footer").hide();
-
-        });
-      }
-
+      $(this).toggleClass("height");     
+      $(this).toggleClass("position");
+      $(this).toggleClass("height");
       $(this).toggleClass("width");
       $(this).toggleClass("transform");
-
+      $("#cake").toggleClass("skew");
+      $("#bake").toggleClass("perspective");
 
       $("#cake").find( ".pud" ).find( "#gap" ).toggleClass("pointer_events");
       $(this).find( ".close_but" ).toggleClass("display_vis");
       
-      $("#cake").toggleClass("skew");
-      $("#bake").toggleClass("perspective");
+
 
 
     }            
