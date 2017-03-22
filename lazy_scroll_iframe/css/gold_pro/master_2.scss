@@ -135,7 +135,7 @@ html{
 
 .height{
   @include transitions(all $anim_speed_0 );
-  height:96%; margin-top:2%;
+  height:96%; 
 }
 
 .top{
