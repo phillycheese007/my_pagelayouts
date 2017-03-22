@@ -29,15 +29,6 @@
     /*---------------------------------------------------*/
 
 
-
-.p_hid{
-  height: 48vh;
-  width:58vw; 
-  margin:0 auto;
-  padding: 0; 
-  position: relative;
-}
-
 .p_0{
   background:red;margin:0;padding:0;
   height: 48vh;
@@ -48,7 +39,6 @@
   border:2px solid orange;
 }
 
-.p_3{clear:both}
     /*---------------------------------------------------*/
 @mixin box-shadow{
 -webkit-box-shadow: 0px 0px 61px 29px rgba(0,0,0,0.75);
