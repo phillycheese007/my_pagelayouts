@@ -54,7 +54,15 @@ $anim_speed_3: .75s;
     /*---------------------------------------------------*/
 
 
-#foo{border:40px solid red;}
+#foo{
+  @include transitions(all $anim_speed_1 ease);
+  height: 48vh;
+  width:58vw; 
+  margin:0 auto;
+  margin-bottom:3px;/*border*/
+  padding: 0; 
+  position: relative;
+}
 
     /*---------------------------------------------------*/
 body,
