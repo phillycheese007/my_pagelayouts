@@ -155,7 +155,7 @@ html{
 }
 
 .transform{  
-  @include transitions(all $anim_speed_3 ease);
+  @include transitions(all $anim_speed_1 ease);
   @include skew(0, 0);
   @include rotate(0, 0);
 }
