@@ -109,7 +109,7 @@ var scroll = $(window).scrollTop();
 	        
       }
       else{	
-        $(this).delay(700).toggleClass("height").promise().done(function(){
+        $(this).toggleClass("height").promise().done(function(){
           $(this).toggleClass("position");
 		
         $(this).siblings().toggleClass("opacity_zero");     
