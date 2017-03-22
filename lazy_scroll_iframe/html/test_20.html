@@ -62,17 +62,21 @@ $(document).ready(function () {
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
-        $(this).delay(900).toggleClass("position");
-        $("footer").show();
+	      
+        $(this).delay(900).promise().done(function(){
+          $(this).toggleClass("position");
+        $("footer").hide();
+
+        });
 
 
       }
       else{	
         $(this).toggleClass("height");
 
-        $(this).promise().done(function(){
-          $(this).delay(900).toggleClass("position");
-        $("footer").delay(300).hide();
+        $(this).delay(900).promise().done(function(){
+          $(this).toggleClass("position");
+        $("footer").hide();
 
         });
       }
