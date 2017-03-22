@@ -139,12 +139,10 @@ html{
 }
 
 .perspective{
- @include transitions(all $anim_speed_0 );
   perspective:900px;
 }
 
 .skew{
- @include transitions(all $anim_speed_1 ease);
  transform:skewY(-5deg);
 }
 
