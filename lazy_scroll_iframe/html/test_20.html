@@ -51,8 +51,7 @@ var scroll = $(window).scrollTop();
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
         $(this).toggleClass("position");
-        $(this).siblings().before().toggleClass("marg_1");
-        $(this).siblings().next().toggleClass("marg_1");
+
 
       }
       else{	
@@ -60,8 +59,7 @@ var scroll = $(window).scrollTop();
 
         $(this).promise().done(function(){
           $(this).toggleClass("position");
-        $(this).siblings().before().toggleClass("marg_1");
-        $(this).siblings().next().toggleClass("marg_1");
+
 
         });
       }
@@ -88,6 +86,8 @@ var scroll = $(window).scrollTop();
 
 $(document).ready(function(){
     $("#cake").find( ".pud" ).on('click', function(){
+      $(this).siblings().before().toggleClass("marg_1");
+      $(this).siblings().next().toggleClass("marg_1");
         $('html,body').animate({scrollTop: $(this).offset().top}, 800);
 
     }); 
