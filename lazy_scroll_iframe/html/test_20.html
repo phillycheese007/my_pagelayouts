@@ -57,6 +57,8 @@ var scroll = $(window).scrollTop();
 
         $(this).promise().done(function(){
           $(this).toggleClass("position");
+          $(this).siblings().toggleClass("opacity_zero");
+
         });
       }
 
