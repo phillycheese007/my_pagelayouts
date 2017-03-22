@@ -23,10 +23,10 @@ body{
 .glitch{
   background:$glitch_background;
   color:white;/* background:blue; */
-  height:auto;width:100%;
-  font-size:8vh;
+  height:100%;width:100%;
+  font-size:7vh;
   position:relative;
-  text-indent:2vw;margin:0;padding:0;
+  margin:0;padding:0;
 }
 
 @keyframes noise-anim{
