@@ -144,7 +144,7 @@ html{
 }
 
 .skew{
- @include transitions(all $anim_speed_1 ease);
+ @include transitions(all $anim_speed_0);
  transform:skewY(-5deg);
 }
 
