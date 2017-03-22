@@ -17,7 +17,8 @@ header{
  // margin-top:0px;
   height: 48vh;
   width:58vw; 
-  transform:rotateY(45deg) skewY(45deg);
+  transform:rotateY(-45deg);
+  border:2px solid green;
 }
   
 .bub{
