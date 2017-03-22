@@ -9,11 +9,17 @@ body{
 }
 
 /*begin - glitch text */
+.header_2{
+  height:100%;
+  width:100%;
+  background:blue;
+}
+
 
 .glitch{
   background:$glitch_background;
   color:white;/* background:blue; */
-  height:auto;width:100%;
+  height:auto;width:100%;margin:0;padding:0;
   font-size:8.4vh;
   position:relative;
   text-indent:2vw;
