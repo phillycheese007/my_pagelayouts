@@ -143,9 +143,6 @@ html{
   top:2%;
 }
 
-
-
-
 .width{
   @include transitions(all $anim_speed_1 ease);
   width:96%;margin-left:2%;
