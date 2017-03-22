@@ -144,18 +144,19 @@ html{
 }
 
 .height{
-  @include transitions(all $anim_speed_3 ease);
-  height:96%;
-  @include box-shadow;
-}
-
-.top{
   @include transitions(all $anim_speed_0 );
-  top:2%;bottom:2%;
+  height:96%; 
 }
 
-
-
+.position{
+  @include transitions(all $anim_speed_3 ease);
+  position:fixed;
+  top:2%;
+ /* display:block; */
+  z-index:9999;
+  pointer-events: auto !important;
+   @include box-shadow;
+}
 
 .width{
   @include transitions(all $anim_speed_1 ease);
@@ -167,15 +168,7 @@ html{
   @include skew(0, 0);
   @include rotate(0, 0);
 }
-		
-.position{
-  @include transitions(all $anim_speed_3 ease);
-  position:fixed;
- /* display:block; */
-  z-index:9999;
-  pointer-events: auto !important;
-}
-
+	
 .pointer_events_auto{
   pointer-events: auto !important;
 }
