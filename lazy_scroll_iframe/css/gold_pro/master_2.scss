@@ -134,7 +134,7 @@ html{
 }
 
 .height{
-  @include transitions(all $anim_speed_3 ease);
+  @include transitions(all $anim_speed_0 );
   height:96%; top:2%;
 }
 
