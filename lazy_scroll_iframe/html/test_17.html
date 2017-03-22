@@ -93,9 +93,12 @@ var scroll = $(window).scrollTop();
       }
       else{	
         $(this).toggleClass("height");
-
+	      
+        $(this).delay(1900).promise().done(function(){
+       $(".p_hid").toggleClass("height2");
+        });
+	      
         $(this).promise().done(function(){
-       $(".p_hid").delay(1900).toggleClass("height2");
 
           $(this).toggleClass("position");
         });
