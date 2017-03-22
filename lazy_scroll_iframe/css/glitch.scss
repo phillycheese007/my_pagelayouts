@@ -9,17 +9,30 @@ body{
 }
 
 /*begin - glitch text */
-.header_2{
-  height:100%;
-  width:100%;
-  background:pink;position:absolute;top:0;
-  section{
-    height:100%;position:absolute;top:0;
-    background:lightblue;
-  }
-}
+header{
+  background:red;height:100%;
+  width:70%;margin:0 auto;
+  perspective:80vh;
+  margin-top:20px;
 
-.rr{}
+}
+  
+.bub{
+  width:80%;
+  background:blue;
+  transform: rotate(-20deg);
+  transform-style: preserve-3d;
+  transform-origin: 30% -20%;
+}
+  
+.glitch{
+  padding:0;
+  margin:0;
+}
+  
+ .rr{
+   margin-top:0vw;
+}
 
 .glitch{
   background:$glitch_background;
