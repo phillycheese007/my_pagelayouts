@@ -52,6 +52,7 @@ var scroll = $(window).scrollTop();
         $(this).toggleClass("height");
         $(this).toggleClass("position");
         $(this).siblings().before().toggleClass("marg_1");
+        $(this).siblings().next().toggleClass("marg_1");
 
       }
       else{	
@@ -59,7 +60,8 @@ var scroll = $(window).scrollTop();
 
         $(this).promise().done(function(){
           $(this).toggleClass("position");
-          $(this).siblings().toggleClass("marg_1");
+        $(this).siblings().before().toggleClass("marg_1");
+        $(this).siblings().next().toggleClass("marg_1");
 
         });
       }
