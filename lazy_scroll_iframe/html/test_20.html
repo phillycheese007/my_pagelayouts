@@ -82,20 +82,16 @@ var scroll = $(window).scrollTop();
 
 </script>
 
-<script>
 
-$(document).ready(function(){
-    $("#cake").find( ".pud" ).on('click', function(){
-      $(this).siblings().before().toggleClass("marg_1");
-      $(this).siblings().next().toggleClass("marg_1");
+	
+<script>	
+       $(this).siblings().next().toggleClass("marg_1").promise().done(function(){
         $('html,body').animate({scrollTop: $(this).offset().top}, 800);
 
-    }); 
-});  
 
+        });
 </script>
-		
-
+	
 </body>
 </html>
  
