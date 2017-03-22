@@ -117,6 +117,8 @@ html{
 	
 .pud{
   @include transitions(all $anim_speed_3 ease);
+  display:inline-block;
+
   height: 48vh;
   width:58vw; 
   margin:0 auto;
