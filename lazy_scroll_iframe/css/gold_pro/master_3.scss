@@ -146,6 +146,7 @@ html{
 .height{
   @include transitions(all $anim_speed_3 ease);
   height:96%;
+  @include box-shadow;
 }
 
 .top{
@@ -173,7 +174,6 @@ html{
  /* display:block; */
   z-index:9999;
   pointer-events: auto !important;
-   @include box-shadow;
 }
 
 .pointer_events_auto{
