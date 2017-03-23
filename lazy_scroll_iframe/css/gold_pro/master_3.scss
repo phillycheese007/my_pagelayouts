@@ -122,7 +122,7 @@ html{
   margin-bottom:7px;/*border*/
   padding: 0; 
   position: relative;
-  @include skew(-45, 0);
+  @include skew(-45, 12);
   @include rotate(-45, 0);
   border:2px solid green;
 }
