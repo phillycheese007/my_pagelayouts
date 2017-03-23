@@ -80,7 +80,7 @@ perspective:300px;
 
 .cc{
   transform: rotateX(30deg) ; 
-  height: 90%; 
+  height: 85%; 
   transform-style: preserve-3d;
 }
 
@@ -88,9 +88,9 @@ perspective:300px;
 header {
   transform-style: preserve-3d;
   background: purple;
-  margin:0 25%;
+  margin:0 15%;
   height: 100%; 
-  width: 50%;
+  width: 70%;
 	/*transform-origin:50% 50%;*/
  /* transform: rotateX(30deg) skewX(-64deg);*/
 }
