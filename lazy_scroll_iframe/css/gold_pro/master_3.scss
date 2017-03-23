@@ -112,7 +112,10 @@ html{
   position: relative;
   border:2px solid $color_1;
 }
-.p_0{border:2px solid green;}
+.p_0{
+  border:2px solid green;
+  height: 68vh;
+}
 
 .p_head{
   @include transitions(all $anim_speed_3 ease);
