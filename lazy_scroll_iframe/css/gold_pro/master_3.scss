@@ -124,7 +124,7 @@ html{
   position: relative;
   @include skew(-45, 12);
   @include rotate(-45, 12);
-  transform:rotateZ(30deg);
+  transform-origin:(50%, 50%);
   border:2px solid green;
 }
 
