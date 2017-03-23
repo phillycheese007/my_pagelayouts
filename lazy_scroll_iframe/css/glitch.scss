@@ -19,7 +19,7 @@ header{
   
 .bub{
   width:100%;
-  background:blue;margin-top:-8vh;
+  background:blue;margin-top:0vh;top:0;
  // transform: rotate(-20deg);
  // transform-style: preserve-3d;
  // transform-origin: 30% -20%;
@@ -31,7 +31,7 @@ header{
 }
   
  .rr{
-   margin-top:8vw;
+   margin-top:0vw;top:0;
 }
 
 .glitch{
@@ -40,7 +40,7 @@ header{
   height:auto;width:100%;
   font-size:8vh;
   position:relative;
-  margin:0;padding:0;
+  margin:0;padding:0;top:0;margin-top:0;
   text-indent:2px;
 }
 
