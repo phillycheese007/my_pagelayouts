@@ -162,7 +162,7 @@ header {
 
 .p_0{
   @include skew(-50, 0);
-  @include rotate(-50, 0);
+  @include rotate(-50, 50);
   position: relative;
   height: 48vh;
   width:58vw; 
