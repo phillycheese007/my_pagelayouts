@@ -9,11 +9,11 @@ body{
 }
 
 /*begin - glitch text */
-header { background: purple; height: 100%; width: 40vw; margin-left: 6vw; transform: rotateX(40deg) skewX(-34deg); }
+header { background: purple; height: auto; width: 40vw; margin-left: 6vw; transform: rotateX(40deg) skewX(-34deg); }
 
   
 .bub{
-  height:auto;
+  height:100%;
   width:100%;
   background:lightgreen;margin-top:-8vh;
  // transform: rotate(-20deg);
