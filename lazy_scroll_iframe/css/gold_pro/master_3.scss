@@ -136,7 +136,11 @@ html{
 .perspective{perspective:900px;}
 
 .marg_bottom_1{margin-bottom:50px;}
-.marg_top_1{margin-top:50px;}
+
+.marg_top_1{
+  @include transitions(all $anim_speed_3 ease);
+  margin-top:100vh;
+}
 
 .no_scroll{
   border:20px solid green;
