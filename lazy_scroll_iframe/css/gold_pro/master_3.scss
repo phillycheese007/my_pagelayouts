@@ -112,6 +112,7 @@ html{
   position: relative;
   border:2px solid $color_1;
 }
+
 .p_0{
   border:2px solid green;
   perspective:40vh;
@@ -119,20 +120,6 @@ html{
   height: 60vh;
   @include skew(-39, 0);
   @include rotate(-39, 0);
-}
-
-.p_head{
-  @include transitions(all $anim_speed_3 ease);
-  height: 48vh;
-  width:58vw; 
-  margin:0 auto;
-  margin-bottom:7px;/*border*/
-  padding: 0; 
-  position: relative;
-  @include skew(-45, 12);
-  @include rotate(-45, 12);
-  transform-origin:(50%, 50%);
-  border:2px solid green;
 }
 
 .pud_1{
