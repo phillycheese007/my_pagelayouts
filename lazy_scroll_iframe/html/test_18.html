@@ -100,10 +100,10 @@ var scroll = $(window).scrollTop();
     function () {
 
 	    
-	    
+           $(this).next().toggleClass("marg_top_1");
+
 	    
         if ($(this).hasClass("position")) {      
-           $(this).next().toggleClass("marg_top_1");
 	}else{
            $(this).next().toggleClass("marg_top_1");
 	}
