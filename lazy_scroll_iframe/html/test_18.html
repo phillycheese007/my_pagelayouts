@@ -99,7 +99,7 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 	    
-$(this).prepend(
+$(this).find("object").prepend(
   $('<div/>')
     .attr("id", "poop")
     .addClass("pud")
