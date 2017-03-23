@@ -89,7 +89,7 @@ $(document).ready(function () {
 	
 	
 	
-$( "object" ).append( "<div class='poop_pud_2'>Hello</div>" );
+
 
 	
 	
@@ -98,7 +98,11 @@ var scroll = $(window).scrollTop();
 	
   $("#cake").find( ".pud" ).click(
     function () {
-
+	    
+ $( this ).html();
+	    
+	    
+	    
         $("object").toggleClass("pointer_events_auto");
 
         $(this).toggleClass("top");
