@@ -76,13 +76,14 @@ header {
 }
 
 .aa{
-  transform: skewX(-64deg);
-  height: 100%; 
+perspective:500px;
 }	
 .bb{
+  transform: skewX(-64deg);
+  height: 100%; }	
+.cc{
  /* transform: rotateX(30deg) ; */
-}	
-
+}
 
 .logo{
   background:lightblue;
