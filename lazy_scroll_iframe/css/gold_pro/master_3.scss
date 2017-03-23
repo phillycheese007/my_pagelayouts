@@ -111,6 +111,7 @@ html{
   perspective:20vh;
   perspective-origin: 0% 0%;
   height: 60vh;
+  width:50vw; 
   @include skew(-50, 0);
   @include rotate(-50, 0);
 }
