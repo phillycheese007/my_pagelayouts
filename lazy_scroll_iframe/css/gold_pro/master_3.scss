@@ -111,8 +111,8 @@ html{
   perspective:20vh;
   perspective-origin: 0% 0%;
   height: 60vh;
-  @include skew(-39, 0);
-  @include rotate(-39, 0);
+  @include skew(-50, 0);
+  @include rotate(-50, 0);
 }
 
 .pud_1{
