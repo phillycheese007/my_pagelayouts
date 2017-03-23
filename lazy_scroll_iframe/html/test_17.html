@@ -147,9 +147,9 @@ $(document).ready(function(){
 	    
     
       if ($(this).hasClass("position")) {
+        $(this).find("object").attr('data', data.replace('#/',''));	     	            
       }
       else{	
-        $(this).find("object").attr('data', data.replace('#/',''));	     	            
       }
 	    
 	    
