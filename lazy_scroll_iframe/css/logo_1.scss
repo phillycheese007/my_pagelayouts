@@ -12,16 +12,16 @@
 }
 @keyframes load_2 {
   0% {
-    margin-left:10px;
+    margin-left:0;
   }
   25% {
-    margin-left:100px;
+    margin-left:5vh;
   }
   50% {
-    margin-left:100px;
+    margin-left:5vh;
   }
   75% {
-   margin-left:-100px;
+   margin-left:-5vh;
   }
   100% {
     margin-left:0;
@@ -33,13 +33,13 @@
 }
 
 .e {
-  width: 100px;
-  height: 25%;
+  width: 5vh;
+  height: 5vh;
   opacity: 0;
 }
 .e2 {
-  width: 100px;
-  height: 25%;
+  width: 5vh;
+  height: 5vh;
 }
 .one {
   background: red;
