@@ -30,10 +30,7 @@ header{
   margin:0;
 }
   
- .rr{
-   margin-top:-3vw;
-   color:green;
-}
+
 
 .glitch{
   background:$glitch_background;
@@ -43,6 +40,11 @@ header{
   position:relative;
   margin:0;padding:0;
   text-indent:2px;
+}
+
+ .rr{
+   margin-top:-3vw;
+   color:green !important;
 }
 
 @keyframes noise-anim{
