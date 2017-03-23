@@ -69,11 +69,19 @@ html{
 header {
   background: purple;
   margin:0 25%;
-  height: 35vh; 
+  height: 100; 
   width: 50%;
 	/*transform-origin:50% 50%;*/
  /* transform: rotateX(30deg) skewX(-64deg);*/
 }
+
+.aa{
+  transform: skewX(-64deg);
+}	
+.bb{
+ /* transform: rotateX(30deg) ; */
+}	
+
 
 .logo{
   background:lightblue;
