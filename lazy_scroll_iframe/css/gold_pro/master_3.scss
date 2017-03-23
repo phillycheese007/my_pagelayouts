@@ -29,15 +29,7 @@
     /*---------------------------------------------------*/
 
 
-.p_0{
-  background:red;margin:0;padding:0;
-  height: 48vh;
-  width:58vw; 
-  margin:0 auto;
-  padding: 0; 
-  position: relative;
-  border:2px solid orange;
-}
+
 
     /*---------------------------------------------------*/
 @mixin box-shadow{
@@ -110,23 +102,18 @@ html{
   border:2px solid $color_1;
 }
 
-.puddd{
+.p_0{
   @include transitions(all $anim_speed_3 ease);
   height: 48vh;
   width:58vw; 
   margin:0 auto;
+  margin-bottom:7px;/*border*/
   padding: 0; 
   position: relative;
-  border:2px solid $color_1;padding:0;
-	transform:skewY(0deg) rotateY(0deg) ;
+  border:2px solid $color_1;
 }
-.pudddy{
-  @include transitions(all $anim_speed_3 ease);
-  height: 48vh;
-  width:58vw; 
-  border:2px solid yellow;padding:0;
-	transform:skewY(0deg) rotateY(0deg) ;
-}
+
+
 .pud_1{
   background:$color_1;
  /* border:1px solid $color_2; */
