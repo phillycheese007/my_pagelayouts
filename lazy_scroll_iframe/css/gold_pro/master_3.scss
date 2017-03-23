@@ -79,10 +79,13 @@ perspective:300px;
 
 .cc{
  /* transform: rotateX(30deg) ; */
+  transform-style: preserve-3d;
+
 }
 
 
 header {
+  transform-style: preserve-3d;
   background: purple;
   margin:0 25%;
   height: 100%; 
