@@ -88,9 +88,9 @@ perspective:400px;
 header {
   transform-style: preserve-3d;
   background: purple;
-  margin:0 15%;
+  margin:0 auto;
   height: 100%; 
-  width: 70%;
+  width: 100%;
 	/*transform-origin:50% 50%;*/
  /* transform: rotateX(30deg) skewX(-64deg);*/
 }
@@ -106,7 +106,7 @@ header {
 
 .boxer{
   background:blue;
-  height:80%;
+  height:100%;
   width:100%;
   p{
     background:white;
