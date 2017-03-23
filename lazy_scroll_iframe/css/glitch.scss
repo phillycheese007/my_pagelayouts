@@ -10,7 +10,7 @@ body{
 
 /*begin - glitch text */
 header{
-  background:red;height:100%;
+  background:$glitch_background;height:100%;
   width:100%;
   // margin:0 auto;
  // perspective:80vh;
@@ -31,7 +31,7 @@ header{
 }
   
  .rr{
-   margin-top:0vw;
+   margin-top:8vw;
 }
 
 .glitch{
