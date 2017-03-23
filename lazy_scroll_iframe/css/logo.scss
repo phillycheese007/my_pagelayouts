@@ -1,0 +1,55 @@
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load_2 {
+  0% {
+    margin-left:10px;
+  }
+  25% {
+    margin-left:100px;
+  }
+  50% {
+    margin-left:100px;
+  }
+  75% {
+   margin-left:-100px;
+  }
+  100% {
+    margin-left:0;
+  }
+}
+.e {
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+}
+.e2 {
+  width: 100px;
+  height: 100px;
+}
+.one {
+  background: red;
+  -webkit-animation: load 5s infinite;
+  animation: load 5s infinite;
+}
+.two {
+  background: green;
+  -webkit-animation: load_2 5s infinite 1s;
+  animation: load_2 5s infinite 1s;
+}
+.three {
+  background: yellow;
+  -webkit-animation: load 5s infinite 2s;
+  animation: load 5s infinite 2s;
+}
+.four {
+  background: pink;
+  -webkit-animation: load 5s infinite 3s;
+  animation: load 5s infinite 3s;
+}
