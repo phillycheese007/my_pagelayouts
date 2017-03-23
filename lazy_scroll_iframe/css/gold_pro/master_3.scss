@@ -70,9 +70,9 @@ header {
   background: purple;
   margin:0 auto;
   height: 35vh; 
-  width: 24vw;
+  width: 50%;
 	transform-origin:50% 50%;
-  transform: rotateX(30deg) skewX(-64deg);
+  transform: /*rotateX(30deg)*/ skewX(-64deg);
 }
 
 .logo{
