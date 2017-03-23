@@ -1,5 +1,5 @@
 ---
-#master2
+#master3
 ---
 
     /*---------------------------------------------------*/
@@ -29,6 +29,15 @@
     /*---------------------------------------------------*/
 
 
+.p_0{
+  background:red;margin:0;padding:0;
+  height: 48vh;
+  width:58vw; 
+  margin:0 auto;
+  padding: 0; 
+  position: relative;
+  border:2px solid orange;
+}
 
     /*---------------------------------------------------*/
 @mixin box-shadow{
@@ -47,8 +56,6 @@ $color_3:blue;
 $color_4:lightblue;
 $color_5:orange;
 
-$header_color:$color_2;
-
 $anim_speed_0: 0s;
 $anim_speed_1: .25s;
 $anim_speed_2: .5s;
@@ -56,16 +63,7 @@ $anim_speed_3: .75s;
     /*---------------------------------------------------*/
 
 
-.foo{
-  border:10px solid red;
-  @include transitions(all $anim_speed_1 ease);
-  height: 48vh;
-  width:58vw; 
-  margin:0 auto;
-  margin-bottom:3px;/*border*/
-  padding: 0; 
-  position: absolute;
-}
+
 
     /*---------------------------------------------------*/
 body,
@@ -75,14 +73,15 @@ html{
   height:100%;
   background:$color_2;
 }
-
+.beefy{
+	border:30px solid red;
+}
  object{  
   pointer-events: none !important;
 }
 
-
 #gordo{
-  background:$color_4;
+  background:$color_2;
   height:100%;
   min-height:100%;
   width:100%;
@@ -101,20 +100,37 @@ html{
 }
 	
 .pud{
-  @include transitions(all $anim_speed_1 ease);
+  @include transitions(all $anim_speed_3 ease);
   height: 48vh;
   width:58vw; 
   margin:0 auto;
-  margin-bottom:5px;/*border*/
+  margin-bottom:7px;/*border*/
   padding: 0; 
   position: relative;
-  border: 2px solid $color_1;
+  border:2px solid $color_1;
 }
-	
+
+.puddd{
+  @include transitions(all $anim_speed_3 ease);
+  height: 48vh;
+  width:58vw; 
+  margin:0 auto;
+  padding: 0; 
+  position: relative;
+  border:2px solid $color_1;padding:0;
+	transform:skewY(0deg) rotateY(0deg) ;
+}
+.pudddy{
+  @include transitions(all $anim_speed_3 ease);
+  height: 48vh;
+  width:58vw; 
+  border:2px solid yellow;padding:0;
+	transform:skewY(0deg) rotateY(0deg) ;
+}
 .pud_1{
   background:$color_1;
  /* border:1px solid $color_2; */
-  @include transitions(all $anim_speed_1 ease);
+  @include transitions(all $anim_speed_3 ease);
   @include skew(45, 0);
   @include rotate(45, 0);
 }
@@ -122,29 +138,22 @@ html{
 .pud_2{
   background:$color_1;
  /* border:1px solid $color_2; */
-  @include transitions(all $anim_speed_1 ease);
+  @include transitions(all $anim_speed_3 ease);
   @include skew(-45, 0);
   @include rotate(-45, 0);
-}
-
-.p_0{
-  background: $header_color;
 }
 
 .p_4{
   margin-bottom:20vh;
 }	
 			
+.perspective{perspective:900px;}
 
-.marg_1{margin-bottom:100vh;}
-.marg_2{margin-top:100vh;}
+.marg_1{margin-bottom:50px;}
+.marg_2{margin-top:50px;}
 
 .no_scroll{
   border:20px solid green;
-}
-
-.perspective{
-  perspective:900px;
 }
 
 .skew{
@@ -152,12 +161,19 @@ html{
 }
 
 .height{
-  @include transitions(all $anim_speed_1 ease );
+  @include transitions(all $anim_speed_0 );
   height:96%; 
 }
 
+.height2{
+  @include transitions(all $anim_speed_3 );
+  height:94%; 
+}
+
+
+
 .position{
-  @include transitions(all $anim_speed_1 ease);
+  @include transitions(all $anim_speed_3 ease);
   position:fixed;
   top:2%;
  /* display:block; */
@@ -172,14 +188,12 @@ html{
 }
 
 .transform{  
-  @include transitions(all $anim_speed_1 ease);
+  @include transitions(all $anim_speed_3 ease);
   @include skew(0, 0);
   @include rotate(0, 0);
 }
 		
-.opacity_zero{
-  opacity:0;
-}
+
 
 .pointer_events_auto{
   pointer-events: auto !important;
@@ -216,6 +230,7 @@ html{
 .close_but:hover { cursor: pointer; transition: background-color 1s ease; background-color: red; }
 
 .display_vis { display: block; }
+.display_none { display: none; }
 
 footer#one{
   width:100%;
@@ -237,7 +252,7 @@ footer#one{
 
 @media screen and (min-width: 481px) and (max-width:960px) {
   .pud{width:50vw;height:45vh;margin:0 auto;}
-  .width{width:96vw !important;transition:all .5s;} 
-  .height{height:100vh;transition:all .5s;} 
+  .width{width:96% !important; margin-left:2%;transition:all .5s;} 
+  .height{height:94vh;transition:all .5s;} 
   .skew{transform: skewY(-4deg);}
 }
