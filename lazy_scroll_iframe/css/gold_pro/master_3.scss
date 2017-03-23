@@ -91,20 +91,22 @@ html{
   margin-top: 100px; 
 }
 	
-.pud, .p_0{
+.pud{
   @include transitions(all $anim_speed_3 ease);
   height: 48vh;
   width:58vw; 
   margin:0 auto;
-  margin-bottom:7px;/*border*/
+  margin-bottom:1vw;/*border*/
   padding: 0; 
   position: relative;
   border:2px solid $color_1;
   box-sizing: border-box;
-
 }
 
 .p_0{
+  margin-bottom:1vw;/*border*/
+  padding: 0; 
+  position: relative;
   border:2px solid green;
   box-sizing: border-box;
   background:brown;
