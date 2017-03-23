@@ -70,7 +70,8 @@ header {
   background: purple;
   margin:0 auto;
   height: 35vh; 
-  width: 24vw;margin-left:28vw;
+  width: 24vw;
+	transform-origin:0 0;
   transform: rotateX(40deg) skewX(-74deg);
 }
 
