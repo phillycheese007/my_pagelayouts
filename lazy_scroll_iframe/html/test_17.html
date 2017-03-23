@@ -142,7 +142,7 @@ $(document).ready(function(){
 	var data = $(this).find('object').attr('data');
 	
 	
-    $("#cake").find( ".pud" ).on('click', function(){
+    $("#cake").find( ".pud" ).find("object").on('click', function(){
         $('html,body').animate({scrollTop: $(this).offset().top}, 800);
 	    
     
@@ -151,7 +151,7 @@ $(document).ready(function(){
       else{	
       }
 	    
-	        $(this).find("object").attr('data', data.replace('#/',''));	     	            
+	        $(this).attr('data', data.replace('#/',''));	     	            
     
 	    
     }); 
