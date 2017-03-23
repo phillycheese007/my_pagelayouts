@@ -107,7 +107,7 @@ var scroll = $(window).scrollTop();
 	      
         $("footer").hide();
 
-        $(this).delay(500).promise().done(function(){
+        $(this).promise().done(function(){
             $(this).toggleClass("position");
         });      
 
