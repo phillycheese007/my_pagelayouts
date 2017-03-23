@@ -90,7 +90,7 @@ header {
   overflow:hidden;
   background: purple;
   margin:0 auto;
-  height: 96%; 
+  height: 100%; 
   width: 100%;
 	/*transform-origin:50% 50%;*/
  /* transform: rotateX(30deg) skewX(-64deg);*/
@@ -162,6 +162,7 @@ header {
 }
 
 .p_0{
+  @include transitions(all $anim_speed_3 ease);
   @include skew(-45, 0);
   @include rotate(-45, 0);
   position: relative;
