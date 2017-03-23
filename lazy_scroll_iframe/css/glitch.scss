@@ -9,15 +9,8 @@ body{
 }
 
 /*begin - glitch text */
-header{
-  background:purple;
-  height:auto;
-  width:40vw; 
-  transform: rotateX(15deg) skewX(-50deg);
-  // margin:0 auto;
- // perspective:80vh;
- // margin-top:0px;
-}
+header { background: purple; height: auto; width: 40vw; margin-left: 6vw; transform: rotateX(40deg) skewX(-34deg); }
+
   
 .bub{
   height:auto;
