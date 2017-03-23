@@ -75,12 +75,14 @@ header {
 }
 
 .logo{
+  @include skew(-33, 0);
   background:pink;
   height:20%;
   width:100%;
 }
 
 .boxer{
+  @include skew(-33, 0);
   background:blue;
   height:80%;
   width:100%;
