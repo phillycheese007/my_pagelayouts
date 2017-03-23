@@ -99,7 +99,13 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 	    
- $( this ).html();
+$(this).append(
+  $('<div/>')
+    .attr("id", "poopie")
+    .addClass("pud")
+    .append("<span/>")
+      .text("hello world")
+);
 	    
 	    
 	    
