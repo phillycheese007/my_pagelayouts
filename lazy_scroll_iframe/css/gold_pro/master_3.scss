@@ -100,10 +100,13 @@ html{
   padding: 0; 
   position: relative;
   border:2px solid $color_1;
+  box-sizing: border-box;
+
 }
 
 .p_0{
   border:2px solid green;
+  box-sizing: border-box;
   background:brown;
   perspective:20vh;
   perspective-origin: 0% 0%;
@@ -139,10 +142,6 @@ html{
 .marg_top_1{
   @include transitions(all $anim_speed_2 ease);
   margin-top:96vh;
-}
-
-.no_scroll{
-  border:20px solid green;
 }
 
 .skew{
