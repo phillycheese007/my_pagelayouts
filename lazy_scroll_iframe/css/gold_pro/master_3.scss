@@ -103,8 +103,14 @@ header {
 
 .logo{
   background:lightblue;
-  height:20%;
+  height:100%;
   width:100%;
+  p{
+  text-align:right;
+  float:right;
+  width:80%;
+  background:green;
+  }	  
 }
 
 .boxer{
