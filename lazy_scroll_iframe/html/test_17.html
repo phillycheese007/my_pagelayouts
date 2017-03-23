@@ -146,8 +146,8 @@ $(document).ready(function(){
 
         $('html,body').animate({scrollTop: $(this).offset().top}, 800);
 	    
-  
-	        $(this).find("object").attr('data', data.replace('',data));	     	            
+                $(this).attr('href', href.replace('#/',''));
+
     
 	    
     }); 
