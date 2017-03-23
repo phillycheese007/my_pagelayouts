@@ -99,13 +99,8 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 	    
-$(this).next().find("object").prepend(
-  $('<div/>')
-    .attr("id", "poop")
-    .addClass("pud")
-    .append("<span/>")
-      .text("hello world")
-);
+$(this).next().toggleClass("marg_top_1");
+
 	    
 	    
 	    
