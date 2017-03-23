@@ -116,6 +116,12 @@ html{
 
 .p_head{
   @include transitions(all $anim_speed_3 ease);
+  height: 48vh;
+  width:58vw; 
+  margin:0 auto;
+  margin-bottom:7px;/*border*/
+  padding: 0; 
+  position: relative;
   transform:rotateY(-45deg) skewY(-45deg);
   border:2px solid green;
 }
