@@ -116,7 +116,7 @@ html{
 
 .p_head{
   @include transitions(all $anim_speed_3 ease);
-  transform:rotateY(-30deg) skewY(-30deg);
+  transform:rotateY(-45deg) skewY(-45deg);
   border:2px solid green;
 }
 
