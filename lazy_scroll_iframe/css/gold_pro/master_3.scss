@@ -73,6 +73,7 @@ perspective:300px;
 
 .bb{
   transform: skewX(-4deg);
+  transform-style: preserve-3d;
   height: 100%; 
 }
 
