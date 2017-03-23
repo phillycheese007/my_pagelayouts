@@ -106,7 +106,7 @@ html{
   border:2px solid green;
   background:brown;
   perspective:40vh;
-  perspective-origin: 10% 70%;
+  perspective-origin: 0% 0%;
   height: 60vh;
   @include skew(-39, 0);
   @include rotate(-39, 0);
