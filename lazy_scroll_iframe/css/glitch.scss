@@ -36,7 +36,7 @@ header{
 
 .glitch{
   background:$glitch_background;
-  color:white;/* background:blue; */
+  color:yellow;/* background:blue; */
   height:auto;width:100%;
   font-size:7vh;
   position:relative;
@@ -59,7 +59,7 @@ header{
   left:2px;
   text-shadow:-1px 0 red;
   top:0;
-  color:white;
+  color:yellow;
   background:$glitch_background;
   overflow:hidden;
   clip:rect(0,900px,0,0); 
@@ -81,7 +81,7 @@ header{
   left:-2px;
   text-shadow:1px 0 blue; 
   top:0;
-  color:white;
+  color:yellow;
   background:$glitch_background;
   overflow:hidden;
   clip:rect(0,900px,0,0); 
