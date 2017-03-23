@@ -138,7 +138,7 @@ html{
 .marg_bottom_1{margin-bottom:50px;}
 
 .marg_top_1{
-  @include transitions(all $anim_speed_3 ease);
+  @include transitions(all $anim_speed_2 ease);
   margin-top:96vh;
 }
 
