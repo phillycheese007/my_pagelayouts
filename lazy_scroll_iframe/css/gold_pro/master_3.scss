@@ -60,6 +60,7 @@ $anim_speed_3: .75s;
   height:96vh;
   margin-top:-10vh;
   width:100vw;
+  position:relative;
   @include skew(-45, 0);
   @include rotate(-45, 0);
 }
