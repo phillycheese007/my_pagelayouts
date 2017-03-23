@@ -71,8 +71,8 @@ header {
   margin:0 auto;
   height: 35vh; 
   width: 50%;
-	transform-origin:50% 50%;
-  transform: /*rotateX(30deg)*/ skewX(-64deg);
+	/*transform-origin:50% 50%;*/
+  transform: rotateX(30deg) skewX(-64deg);
 }
 
 .logo{
