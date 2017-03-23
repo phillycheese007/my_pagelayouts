@@ -99,9 +99,14 @@ var scroll = $(window).scrollTop();
   $("#cake").find( ".pud" ).click(
     function () {
 	    
+      if ($(this).hasClass("position")) {
+	      
 $(this).next().toggleClass("marg_top_1");
 
-	    
+	}else{
+$(this).next().toggleClass("marg_top_1");
+	
+	}
 	    
 	    
         $("object").toggleClass("pointer_events_auto");
