@@ -104,18 +104,19 @@ html{
 }
 
 .p_0{
+  @include skew(-39, 0);
+  @include rotate(-39, 0);
+  position: relative;
+  height: 60vh;
+  width:58vw; 
+  margin:0 auto;
   margin-bottom:1vw;/*border*/
   padding: 0; 
-  position: relative;
   border:2px solid green;
   box-sizing: border-box;
   background:brown;
   perspective:20vh;
   perspective-origin: 0% 0%;
-  height: 60vh;
-  width:58vw; 
-  @include skew(-39, 0);
-  @include rotate(-39, 0);
 }
 
 .pud_1{
