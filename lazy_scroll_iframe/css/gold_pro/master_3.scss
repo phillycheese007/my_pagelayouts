@@ -73,7 +73,7 @@ perspective:400px;
 
 .bb{
   transform: skewX(-30deg);
-  width: 100%; 
+  width: 80%; 
   height: 100%; 
   transform-style: preserve-3d;
 }
@@ -89,7 +89,7 @@ header {
   transform-style: preserve-3d;
   background: purple;
   margin:0 auto;
-  height: 70%; 
+  height: 75%; 
   width: 100%;
 	/*transform-origin:50% 50%;*/
  /* transform: rotateX(30deg) skewX(-64deg);*/
