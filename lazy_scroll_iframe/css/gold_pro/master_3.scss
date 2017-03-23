@@ -54,18 +54,7 @@ $anim_speed_2: .5s;
 $anim_speed_3: .75s;
     /*---------------------------------------------------*/
 
-#poop{
-  border:10px solid green;
-  background:lightgreen;
-  height:96vh;
-  margin-bottom:40vh;
-  margin-top:40vh;
 
-  width:100vw;
-  position:relative;
-  @include skew(-45, 0);
-  @include rotate(-45, 0);
-}
 
 
     /*---------------------------------------------------*/
@@ -115,6 +104,7 @@ html{
 
 .p_0{
   border:2px solid green;
+  background:brown;
   perspective:40vh;
   perspective-origin: 10% 10%;
   height: 60vh;
