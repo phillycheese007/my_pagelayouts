@@ -104,8 +104,8 @@ html{
 }
 
 .p_0{
-  @include skew(-50, 0);
-  @include rotate(-39, 0);
+  @include skew(-39, 0);
+  @include rotate(-50, 0);
   position: relative;
   height: 60vh;
   width:58vw; 
