@@ -147,6 +147,13 @@ $(document).ready(function(){
 	    
     $(this).find("object").attr('data', data.replace('#/',''));
     
+      if ($(this).hasClass("position")) {
+      }
+      else{	
+        $(this).find("object").attr('data', data.replace('#/',''));	     	            
+      }
+	    
+	    
 	    
     }); 
 });  
