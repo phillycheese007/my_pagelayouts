@@ -114,6 +114,12 @@ html{
 }
 .p_0{border:2px solid green;}
 
+.p_head{
+  @include transitions(all $anim_speed_3 ease);
+  transform:rotateY(30deg) skewY(30deg) rotateX(10deg);
+  border:2px solid green;
+}
+
 .pud_1{
   background:$color_1;
  /* border:1px solid $color_2; */
