@@ -74,13 +74,13 @@ perspective:400px;
 .bb{
   transform: skewX(-30deg);
   width: 100%; 
-  height: 90%; 
+  height: 100%; 
   transform-style: preserve-3d;
 }
 
 .cc{
   transform: rotateX(30deg) ; 
-  height: 80%; 
+  height: 100%; 
   transform-style: preserve-3d;
 }
 
