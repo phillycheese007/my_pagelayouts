@@ -146,7 +146,7 @@ $(document).ready(function(){
 
         $('html,body').animate({scrollTop: $(this).offset().top}, 800);
 	    
-                $(this).attr('href', href.replace('#/',''));
+                $(this).find("object").attr('href', href.replace('#/',''));
 
     
 	    
