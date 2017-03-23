@@ -1,0 +1,126 @@
+---
+#glitchy
+---
+$glitch_background:black;
+
+body{
+  background:black;
+  font-family: 'Varela', sans-serif;
+}
+
+/*begin - glitch text */
+header{
+  background:purple;
+  height:100%;
+  width:100%; 
+  transform: rotateX(15deg) skewX(-50deg);
+  // margin:0 auto;
+ // perspective:80vh;
+ // margin-top:0px;
+}
+  
+.bub{
+  width:100%;
+  background:lightgreen;margin-top:-8vh;
+ // transform: rotate(-20deg);
+ // transform-style: preserve-3d;
+ // transform-origin: 30% -20%;
+}
+  
+.yellow, .green{
+  padding:0;
+  margin:0;
+  margin-top:3vh;
+}
+  
+
+.green{
+  background:$glitch_background;
+  color:green;/* background:blue; */
+  height:auto;width:100%;
+  font-size:7vh;
+  position:relative;
+  margin:0;padding:0;
+  text-indent:2px;
+}
+.yellow{
+  background:$glitch_background;
+  color:yellow;/* background:blue; */
+  height:auto;width:100%;
+  font-size:7vh;
+  position:relative;
+  margin:0;padding:0;
+  text-indent:2px;
+}
+
+ .rr{
+   margin-top:0vw;
+}
+
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+
+.green:after{
+  content:attr(data-text);
+  position:absolute;
+  left:2px;
+  text-shadow:-1px 0 red;
+  top:0;
+  color:green;
+  background:$glitch_background;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+.yellow:after{
+  content:attr(data-text);
+  position:absolute;
+  left:2px;
+  text-shadow:-1px 0 red;
+  top:0;
+  color:yellow;
+  background:$glitch_background;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+
+.green:before{
+  content:attr(data-text);
+  position:absolute;
+  left:-2px;
+  text-shadow:1px 0 blue; 
+  top:0;
+  color:green;
+  background:$glitch_background;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+.yellow:before{
+  content:attr(data-text);
+  position:absolute;
+  left:-2px;
+  text-shadow:1px 0 blue; 
+  top:0;
+  color:yellow;
+  background:$glitch_background;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+/*end - glitch text */
