@@ -108,6 +108,7 @@ header.header_2 {
     transform:rotateX(30deg);
     transform-style:preserve-3d;
     P{
+        transform-style:preserve-3d;
         color:$color_1; 
 	width:96%;
         margin:0;
