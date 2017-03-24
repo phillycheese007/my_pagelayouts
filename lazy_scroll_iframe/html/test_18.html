@@ -134,8 +134,7 @@ var scroll = $(window).scrollTop();
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
-        $(this).find(".image_center_one").toggleClass("height");
-
+        $(this).find(".image_center_one").css("height", "100vh");
         $(this).toggleClass("position");
 	      
         $("footer").show();
@@ -143,7 +142,7 @@ var scroll = $(window).scrollTop();
       }
       else{	
         $(this).toggleClass("height");
-        $(this).find(".image_center_one").toggleClass("height");
+        $(this).find(".image_center_one").css("height", "100vh");
         $("footer").hide();
 
         $(this).promise().done(function(){
