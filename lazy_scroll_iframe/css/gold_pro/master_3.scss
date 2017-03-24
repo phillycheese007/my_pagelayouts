@@ -85,6 +85,14 @@ perspective:200px;
   transform-style: preserve-3d;
 }
 
+footer#one{
+  width:100%;
+  height:100px;
+  margin-top:20vh;
+  background:purple;
+  clear:both;
+}
+
 header.header_2 {
   background:red;
   transform-style: preserve-3d;
@@ -271,7 +279,10 @@ IMG.displayed {
 .cd{
   margin-bottom:20vh;
 }	
-			
+
+
+      /*-------------BB toggle classes -------------------*/
+      /*-------------BB toggle classes -------------------*/
 .perspective{perspective:900px;}
 
 .marg_bottom_1{margin-bottom:50px;}
@@ -294,8 +305,6 @@ IMG.displayed {
   @include transitions(all $anim_speed_3 );
   height:100%; 
 }
-
-
 
 .position{
   @include transitions(all $anim_speed_3 ease);
@@ -356,14 +365,12 @@ IMG.displayed {
 
 .display_vis { display: block; }
 .display_none { display: none; }
+      /*-------------EE toggle classes -------------------*/
+      /*-------------EE toggle classes -------------------*/
 
-footer#one{
-  width:100%;
-  height:100px;
-  margin-top:20vh;
-  background:purple;
-  clear:both;
-}
+
+
+
 
 
 @media screen and (max-width: 480px) {
