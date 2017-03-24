@@ -64,9 +64,19 @@ html{
   height:100%;
   background:$color_2;
     text-shadow: 0 0 2px yellow;
-
+   overflow-x:hidden;
 }
-
+@-moz-document url-prefix() {
+body,
+html{
+  margin:0;
+  padding:0;
+  height:100%;
+  background:$color_2;
+    text-shadow: 0 0 2px yellow;
+   overflow-x:visible;
+}
+}
 
 .aa{
 perspective:200px;
