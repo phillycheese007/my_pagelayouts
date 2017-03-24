@@ -190,10 +190,25 @@ header.header_2 {
 
 }
 
-.center{  
+.center_1{  
   @include transitions(all $anim_speed_3 ease);
   @include skew(45, 0);
   @include rotate(45, 0);
+ /* height: 48vh;*/
+  width:58vw;   height:48vh;
+
+  margin:0 auto;
+  margin-bottom:1vw;/*border*/
+  padding: 0; 
+  position: relative;
+  border:2px solid $color_1;
+  box-sizing: border-box;
+}
+
+.center_2{  
+  @include transitions(all $anim_speed_3 ease);
+  @include skew(-45, 0);
+  @include rotate(-45, 0);
  /* height: 48vh;*/
   width:58vw;   height:48vh;
 
@@ -213,7 +228,10 @@ header.header_2 {
 }
 
 
-.image_center_two{
+
+
+
+.image_center_two_two{
   background:blue;
   height:100%;
 	width:100%;
