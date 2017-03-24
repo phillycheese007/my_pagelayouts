@@ -134,16 +134,20 @@ var scroll = $(window).scrollTop();
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
-        $(this).find(".image_center_one").css("height", "100vh");
-        $(this).toggleClass("position");
+	      
+     $(this).find(".image_center_one").toggleClass("height");
+	      
+	  $(this).toggleClass("position");
 	      
         $("footer").show();
 	      
       }
       else{	
         $(this).toggleClass("height");
-        $(this).find(".image_center_one").css("height", "100vh");
-        $("footer").hide();
+	      
+     $(this).find(".image_center_one").toggleClass("height");
+	      
+	      $("footer").hide();
 
         $(this).promise().done(function(){
             $(this).toggleClass("position");
