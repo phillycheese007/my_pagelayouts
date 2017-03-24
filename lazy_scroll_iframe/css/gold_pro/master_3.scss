@@ -187,10 +187,29 @@ header.header_2 {
   position: relative;
   border:2px solid $color_1;
   box-sizing: border-box;
-    img.displayed {
-       display: block;
-       margin-left: auto;
-       margin-right: auto }
+
+}
+
+.center{}
+
+.one{
+  background:red;
+  width:100%;
+  height:90vh;
+  margin:0 auto;
+  margin-top:5vh;
+}
+
+.two{
+  background:blue;
+  height:100%;
+  margin:0 auto;
+  text-align:center;
+}
+
+IMG.displayed {
+  width:auto;
+  height:100%;
 }
 
 
