@@ -87,7 +87,7 @@ perspective:200px;
 }
 
 
-header {
+header.header_1 {
   transform-style: preserve-3d;
   overflow:hidden;
   background: purple;
@@ -97,7 +97,23 @@ header {
 	/*transform-origin:50% 50%;*/
  /* transform: rotateX(30deg) skewX(-64deg);*/
 }
-
+header.header_2 {
+  transform-style: preserve-3d;
+  overflow:hidden;
+  background: purple;
+  margin:0 auto;
+  height: 80%; 
+  width: 100%;
+  div{
+    width:100%;
+    background:lightblue;
+    P{
+	float:right;    
+    }
+  }
+	/*transform-origin:50% 50%;*/
+ /* transform: rotateX(30deg) skewX(-64deg);*/
+}
 
 
 
