@@ -1,13 +1,12 @@
-
 <html>
 <head>
 <TITLE>Your Title Here</TITLE>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/u_8.css" rel="stylesheet" />-->
-<!--<link href="/my_pagelayouts/lazy_scroll_iframe/css/glitch.css" rel="stylesheet" />-->	
-
+<link href="/my_pagelayouts/lazy_scroll_iframe/css/logo_1.css" rel="stylesheet" />
+<link href="/my_pagelayouts/lazy_scroll_iframe/css/glitch.css" rel="stylesheet" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<link href="/my_pagelayouts/lazy_scroll_iframe/css/gold_pro/master_2.css" rel="stylesheet" />
+<link href="/my_pagelayouts/lazy_scroll_iframe/css/gold_pro/master_3.css" rel="stylesheet" />
 
 <style>
 
@@ -17,8 +16,30 @@
 <body>
 <div id="gordo">
 
+
+	
+	
 <div id="bake" class="perspective">
 <div id="cake" class="skew">
+
+
+	
+
+   <div class="p_0">
+
+	   
+
+           <header class="header_2">
+	     <div><p>A</p></div>
+             <div><p>Designer with</p></div>
+             <div><p>12 years Un-professional</p></div>
+             <div><p>Exerience designing websites</p></div>
+	   </header>
+	   
+	   
+  </div>
+
+
 	
   <div class="pud pud_1 p_1">
     <div class="close_but">&#10006;</div>
@@ -28,23 +49,52 @@
 	
   <div class="pud pud_2 p_2">
     <div class="close_but">&#10006;</div>
-    <object id="gap" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/svg/phoneyphone.svg" >
+    <object id="gap" width="100%" height="100%"  data="https://phillycheese007.github.io/my_threejs/apasta/examples/crappy.html" >
     </object>
   </div>
 	
-  <div class="pud pud_1 p_3">
-    <div class="close_but">&#10006;</div>        
-    <object id="gap" width="100%" height="100%"  data="https://phillycheese007.github.io/philipdusel/html/index.html" >
-    </object>
-  </div>	
-  <div class="pud pud_2 p_4 cd">
+  <div class="center_1 p_7 image_pod">
+    <div class="image_center_one">
+      <div class="image_center_two">
+        <IMG class="displayed" src="/my_pagelayouts/lazy_scroll_iframe/images/reap.png"/>
+      </div>
+    </div>
+  </div>
+	
+  <div class="pud pud_2 p_4">
+    <div class="close_but">&#10006;</div>
+    <object id="gap" width="100%" height="100%"  data="https://phillycheese007.github.io/responsive_shapes/html/furniture_scenes/scene_7.html" >
+    </object>  
+  </div>
+  <div class="pud pud_1 p_5">
     <div class="close_but">&#10006;</div>
     <object id="gap" width="100%" height="100%"  data="https://phillycheese007.github.io/philipdusel/html/index.html" >
     </object>  
   </div>
-	
+  <div class="pud pud_2 p_6">
+    <div class="close_but">&#10006;</div>
+    <object id="gap" width="100%" height="100%"  data="https://phillycheese007.github.io/responsive_shapes/html/furniture_scenes/scene_7.html" >
+    </object>  
 </div>
 
+	
+	
+	
+	
+	
+  <div class="center_1 p_7 image_pod cd">
+    <div class="image_center_one">
+      <div class="image_center_two">
+        <IMG class="displayed" src="https://www.w3.org/Style/Woolly/woolly-mc.png"/>
+      </div>
+    </div>
+  </div>
+	
+	
+	
+	
+	
+	
 </div>
    <footer id="one"></footer>
 
@@ -54,52 +104,73 @@
 	
 <script>
 $(document).ready(function () {
+	
+	
+	
+
+
+	
+	
+	
 var scroll = $(window).scrollTop();
 	
-  $("#cake").find( ".pud" ).click(
+  $("#cake").find( ".pud, .image_pod" ).click(
     function () {
 
 	    
 
+	    
+        if ($(this).hasClass("position")) { 
+		           $(this).next().removeClass("marg_top_1");
+	}else{
+           $(this).next().toggleClass("marg_top_1");
+	}
 
-      $("object").toggleClass("pointer_events_auto");
+	    
+	    
+	    
+	    
+        $("object").toggleClass("pointer_events_auto");
 
-
-      $(this).toggleClass("top");
-      $(this).toggleClass("width");	    
+        $(this).toggleClass("top");
 
       if ($(this).hasClass("position")) {
         $(this).toggleClass("height");
-        $(this).toggleClass("position");     
 	      
+     $(this).find(".image_center_one").toggleClass("height2");
 	      
-
+	  $(this).toggleClass("position");
 	      
-	        
+        $("footer").show();
+	      
       }
       else{	
-        $(this).delay(800).toggleClass("height").promise().done(function(){
-          $(this).toggleClass("position");
-		
+        $(this).toggleClass("height");
+	      
+     $(this).find(".image_center_one").toggleClass("height2");
+	      
+	      $("footer").hide();
 
-		
-        });
+        $(this).promise().done(function(){
+            $(this).toggleClass("position");
+        });      
+
+	      
+	      
       }
 
+      $(this).toggleClass("width");
       $(this).toggleClass("transform");
 
 
+      $("#cake").find( ".pud" ).find( "#gap" ).toggleClass("pointer_events");
       $(this).find( ".close_but" ).toggleClass("display_vis");
       
       $("#cake").toggleClass("skew");
-	    
-	    
       $("#bake").toggleClass("perspective");
-	    
 
+	
 
-
-	    
 
     }            
   );	
@@ -107,31 +178,53 @@ var scroll = $(window).scrollTop();
 });
 
 </script>
-
+	
 <script>
+    $("#cake").find( ".pud, .image_pod" ).on('click', function(){
 
-$(document).ready(function(){
-    $("#cake").find( ".pud" ).on('click', function(){
         $('html,body').animate({scrollTop: $(this).offset().top}, 800);
-
+	    
+		
+	    
     }); 
-});  
-
-</script>	
+</script>
 	
 
-	
 <script>
+
 $(document).ready(function(){
-  $("#cake").find( ".pud" ).on('click', function(){
-    $(this).delay(0).promise().done(function(){
-      $("html,body").toggleClass("overflow");		
-    });
-  }); 
+	
+	
+	
+    $("#cake").find( ".pud" ).on('click', function(){
+	var data = $(this).find('object').attr('data');
+
+	   
+      if ($(this).hasClass("position")) {
+	      
+                $(this).find("object").attr('data', data.replace('#/',''));
+
+	}else{
+		
+	}	
+		
+	    
+    }); 
+	
+	
+$("footer").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+	
 });  
-</script>	
+
+</script>
 	
 
+	
 </body>
 </html>
  
+
+
