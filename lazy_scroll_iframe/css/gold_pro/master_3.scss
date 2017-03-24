@@ -252,7 +252,7 @@ IMG.displayed {
   @include transitions(all $anim_speed_3 ease);
   @include skew(-33, 0);
   @include rotate(-45, 99);
-  perspective:45vh;
+  perspective:55vh;
   position: relative;
   height: 48vh;
   width:58vw; 
