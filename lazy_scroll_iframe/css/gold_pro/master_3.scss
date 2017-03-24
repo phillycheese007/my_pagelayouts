@@ -194,6 +194,8 @@ header.header_2 {
   @include transitions(all $anim_speed_3 ease);
   @include skew(45, 0);
   @include rotate(45, 0);
+  height: 48vh;
+  width:58vw; 
 }
 
 .image_center_one{
