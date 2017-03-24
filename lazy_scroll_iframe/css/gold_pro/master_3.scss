@@ -196,6 +196,12 @@ header.header_2 {
   @include rotate(45, 0);
  /* height: 48vh;*/
   width:58vw; 
+  margin:0 auto;
+  margin-bottom:1vw;/*border*/
+  padding: 0; 
+  position: relative;
+  border:2px solid $color_1;
+  box-sizing: border-box;
 }
 
 .image_center_one{
