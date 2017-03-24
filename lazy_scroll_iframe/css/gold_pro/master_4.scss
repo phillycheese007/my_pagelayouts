@@ -112,13 +112,13 @@ header.header_2 {
   transform:rotateX(17deg);
 
   div{
-    width:100%;
+    width:100%;background:red;
     height:25%;
     margin:0 auto;
     transform-style:preserve-3d;
     P{
         transform-style:preserve-3d;
-       /* background:green; */
+        background:green; 
         color:$color_1; 
 	width:93%;
         margin:0 auto;
