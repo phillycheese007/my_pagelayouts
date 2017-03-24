@@ -190,7 +190,11 @@ header.header_2 {
 
 }
 
-.center{}
+.center{  
+  @include transitions(all $anim_speed_3 ease);
+  @include skew(45, 0);
+  @include rotate(45, 0);
+}
 
 .image_center_one{
   background:red;
