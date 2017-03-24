@@ -111,9 +111,11 @@ header.header_2 {
     transform-style:preserve-3d;
     P{
         transform-style:preserve-3d;
+        background:green;
         color:$color_1; 
 	width:95%;
         margin:0 auto;
+	margin-right:5%;
 	font-size:3.3vw;
 	line-height:3.3vw;
 	margin-top:0vw;
