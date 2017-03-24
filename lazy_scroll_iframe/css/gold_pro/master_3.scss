@@ -97,8 +97,8 @@ header.header_1 {
  /* transform: rotateX(30deg) skewX(-64deg);*/
 }
 header.header_2 {
+  background:red;
   transform-style: preserve-3d;
-  overflow:hidden;
   margin:0 auto;
   height: 50vh; 
   width: 100%;
