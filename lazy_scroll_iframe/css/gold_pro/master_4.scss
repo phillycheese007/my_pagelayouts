@@ -1,394 +1,108 @@
----
-#master4
----
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+body, html { margin: 0; padding: 0; height: 100%; background: black; text-shadow: 0 0 2px yellow; overflow-x: hidden; }
 
-    /*---------------------------------------------------*/
-@import "mixins_1";
-    /*---------------------------------------------------*/
+.aa { perspective: 200px; }
 
+.bb { /* transform: skewX(-30deg);*/ width: 80%; margin-left: 10%; height: 100%; transform-style: preserve-3d; }
 
+.cc { transform: rotateX(30deg); height: 100%; transform-style: preserve-3d; }
 
-    /*---------------------------------------------------*/
-// scale
-@mixin scale($scale) {
-  @include transform(scale($scale));
-} 
-// translate
-@mixin translate ($x, $y) {
-   @include transform(translate($x, $y));
-}
-// skew
-@mixin skew ($x, $y) {
-   @include transform(skew(#{$x}deg, #{$y}deg));
-}
-// rotate
-@mixin rotate ($x, $y) {
-   @include transform(rotate(#{$x}deg, #{$y}deg));
-}
-    /*---------------------------------------------------*/
+footer#one { width: 100%; height: 100px; margin-top: 20vh; background: purple; clear: both; }
 
+header.header_2 { background: red; transform-style: preserve-3d; margin: 0 auto; height: 50vh; width: 100%; transform: rotateX(17deg); /*transform-origin:50% 50%;*/ /* transform: rotateX(30deg) skewX(-64deg);*/ }
+header.header_2 div { width: 100%; height: 25%; margin: 0 auto; transform-style: preserve-3d; }
+header.header_2 div P { transform-style: preserve-3d; background: green; color: white; width: 95%; margin: 0 auto; margin-right: 3.8vw; font-size: 3.7vw; line-height: 3.7vw; margin-top: 0vw; text-align: center; }
 
+.logo { height: 100%; width: 100%; }
 
+.boxer { background: blue; height: 100%; width: 100%; }
+.boxer p { background: white; width: 70%; margin: 2px auto; }
 
-    /*---------------------------------------------------*/
-@mixin box-shadow{
--webkit-box-shadow: 0px 0px 61px 29px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 61px 29px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 61px 29px rgba(0,0,0,0.75);
-}
-    /*---------------------------------------------------*/
+.bub { height: 100%; width: 100%; background: lightgreen; margin-top: -8vh; }
 
+object { pointer-events: none !important; }
 
+#gordo { background: black; height: 100%; min-height: 100%; width: 100%; }
 
-    /*---------------------------------------------------*/
-$color_1:white;
-$color_2:black;
-$color_3:blue;
-$color_4:lightblue;
-$color_5:orange;
+#bake { margin-top: 100px; background: black; }
 
-$anim_speed_0: 0s;
-$anim_speed_1: .25s;
-$anim_speed_2: .5s;
-$anim_speed_3: .75s;
-    /*---------------------------------------------------*/
+#cake { background: black; min-height: 100%; width: 100%; margin: 0 auto; margin-top: 100px; }
 
+.pud { -moz-transition: all 0.75s ease; -o-transition: all 0.75s ease; -ms-transition: all 0.75s ease; -webkit-transition: all 0.75s ease; transition: all 0.75s ease; height: 48vh; width: 58vw; margin: 0 auto; margin-bottom: 1vw; /*border*/ padding: 0; position: relative; border: 2px solid white; box-sizing: border-box; }
 
+.center_1 { -moz-transition: all 0.75s ease; -o-transition: all 0.75s ease; -ms-transition: all 0.75s ease; -webkit-transition: all 0.75s ease; transition: all 0.75s ease; -moz-transform: skew(45deg, 0deg); -o-transform: skew(45deg, 0deg); -ms-transform: skew(45deg, 0deg); -webkit-transform: skew(45deg, 0deg); transform: skew(45deg, 0deg); -moz-transform: rotate(45deg, 0deg); -o-transform: rotate(45deg, 0deg); -ms-transform: rotate(45deg, 0deg); -webkit-transform: rotate(45deg, 0deg); transform: rotate(45deg, 0deg); /* height: 48vh;*/ width: 58vw; height: 48vh; margin: 0 auto; margin-bottom: 1vw; /*border*/ padding: 0; position: relative; border: 2px solid white; box-sizing: border-box; }
 
+.center_2 { -moz-transition: all 0.75s ease; -o-transition: all 0.75s ease; -ms-transition: all 0.75s ease; -webkit-transition: all 0.75s ease; transition: all 0.75s ease; -moz-transform: skew(-45deg, 0deg); -o-transform: skew(-45deg, 0deg); -ms-transform: skew(-45deg, 0deg); -webkit-transform: skew(-45deg, 0deg); transform: skew(-45deg, 0deg); -moz-transform: rotate(-45deg, 0deg); -o-transform: rotate(-45deg, 0deg); -ms-transform: rotate(-45deg, 0deg); -webkit-transform: rotate(-45deg, 0deg); transform: rotate(-45deg, 0deg); /* height: 48vh;*/ width: 58vw; height: 48vh; margin: 0 auto; margin-bottom: 1vw; /*border*/ padding: 0; position: relative; border: 2px solid white; box-sizing: border-box; }
 
-    /*---------------------------------------------------*/
-body,
-html{
-  margin:0;
-  padding:0;
-  height:100%;
-  background:$color_2;
-    text-shadow: 0 0 2px yellow;
-   overflow-x:hidden;
-}
-@-moz-document url-prefix() {
-body,
-html{
-  margin:0;
-  padding:0;
-  height:100%;
-  background:$color_2;
-    text-shadow: 0 0 2px yellow;
-   overflow-x:visible;
-}
-}
+.image_center_one { background: red; width: 100%; /*  height:48vh; */ margin: 0 auto; }
 
-.aa{
-perspective:200px;
-}	
+.image_center_two { background: white; height: 100%; width: 100%; margin: 0 auto; text-align: center; }
 
-.bb{
- /* transform: skewX(-30deg);*/
-  width: 80%;margin-left:4%;
-  height: 100%; 
-  transform-style: preserve-3d;
-}
+IMG.displayed { width: auto; height: 100%; }
 
-.cc{
-  transform: rotateX(30deg) ; 
-  height: 100%; 
-  transform-style: preserve-3d;
-}
+.house { height: 90vh; width: 80%; margin: 0 auto; background: yellow; }
 
-footer#one{
-  width:100%;
-  height:100px;
-  margin-top:20vh;
-  background:black;
-  clear:both;
-}
+.p_0 { background: blue; -moz-transition: all 0.75s ease; -o-transition: all 0.75s ease; -ms-transition: all 0.75s ease; -webkit-transition: all 0.75s ease; transition: all 0.75s ease; -moz-transform: skew(-33deg, 0deg); -o-transform: skew(-33deg, 0deg); -ms-transform: skew(-33deg, 0deg); -webkit-transform: skew(-33deg, 0deg); transform: skew(-33deg, 0deg); -moz-transform: rotate(-45deg, 99deg); -o-transform: rotate(-45deg, 99deg); -ms-transform: rotate(-45deg, 99deg); -webkit-transform: rotate(-45deg, 99deg); transform: rotate(-45deg, 99deg); perspective: 55vh; position: relative; height: 48vh; width: 58vw; margin: 0 auto; margin-bottom: 1vw; /*border*/ padding: 0; box-sizing: border-box; }
 
-header.header_2 {
- /* background:red;*/
-  transform-style: preserve-3d;
-  margin:0 auto;
-  height: 50vh; 
-  width: 100%;
-  transform:rotateX(17deg);
+.pud_1 { background: white; /* border:1px solid $color_2; */ -moz-transition: all 0.75s ease; -o-transition: all 0.75s ease; -ms-transition: all 0.75s ease; -webkit-transition: all 0.75s ease; transition: all 0.75s ease; -moz-transform: skew(45deg, 0deg); -o-transform: skew(45deg, 0deg); -ms-transform: skew(45deg, 0deg); -webkit-transform: skew(45deg, 0deg); transform: skew(45deg, 0deg); -moz-transform: rotate(45deg, 0deg); -o-transform: rotate(45deg, 0deg); -ms-transform: rotate(45deg, 0deg); -webkit-transform: rotate(45deg, 0deg); transform: rotate(45deg, 0deg); }
 
-  div{
-    width:100%;background:red;
-    height:25%;
-    margin:0 auto;
-    transform-style:preserve-3d;
-    P{
-        transform-style:preserve-3d;
-        background:green; 
-        color:$color_1; 
-	width:93%;
-        margin:0 auto;
-	margin-right:4vw;
-	font-size:3.7vw;
-	line-height:3.7vw;
-	margin-top:0vw;
-	text-align:center;
-	
-    }
-  }
-	/*transform-origin:50% 50%;*/
- /* transform: rotateX(30deg) skewX(-64deg);*/
-}
+.pud_2 { background: white; /* border:1px solid $color_2; */ -moz-transition: all 0.75s ease; -o-transition: all 0.75s ease; -ms-transition: all 0.75s ease; -webkit-transition: all 0.75s ease; transition: all 0.75s ease; -moz-transform: skew(-45deg, 0deg); -o-transform: skew(-45deg, 0deg); -ms-transform: skew(-45deg, 0deg); -webkit-transform: skew(-45deg, 0deg); transform: skew(-45deg, 0deg); -moz-transform: rotate(-45deg, 0deg); -o-transform: rotate(-45deg, 0deg); -ms-transform: rotate(-45deg, 0deg); -webkit-transform: rotate(-45deg, 0deg); transform: rotate(-45deg, 0deg); }
 
+.cd { margin-bottom: 20vh; }
 
+/*-------------BB toggle classes -------------------*/
+/*-------------BB toggle classes -------------------*/
+.perspective { perspective: 900px; }
 
-.logo{
-  height:100%;
-  width:100%;	  
-}
+.marg_bottom_1 { margin-bottom: 50px; }
 
-.boxer{
-  background:blue;
-  height:100%;
-  width:100%;
-  p{
-    background:white;
-    width:70%;
-    margin:2px auto;
-  }
-}
+.marg_top_1 { -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; margin-top: 96vh; }
 
-.bub{
-  height:100%;
-  width:100%;
-  background:lightgreen;margin-top:-8vh;
- // transform: rotate(-20deg);
- // transform-style: preserve-3d;
- // transform-origin: 30% -20%;
-}
+.skew { transform: skewY(-5deg); }
 
- object{  
-  pointer-events: none !important;
-}
+.height { -moz-transition: all 0s; -o-transition: all 0s; -ms-transition: all 0s; -webkit-transition: all 0s; transition: all 0s; height: 96%; }
 
-#gordo{
-  background:$color_2;
-  height:100%;
-  min-height:100%;
-  width:100%;
-}
+.height2 { -moz-transition: all 0.75s; -o-transition: all 0.75s; -ms-transition: all 0.75s; -webkit-transition: all 0.75s; transition: all 0.75s; height: 100%; }
 
-#bake{ 
-  margin-top:100px;
-  background:$color_2;
-}
+.position { -moz-transition: all 0.75s ease; -o-transition: all 0.75s ease; -ms-transition: all 0.75s ease; -webkit-transition: all 0.75s ease; transition: all 0.75s ease; position: fixed; top: 2%; /* display:block; */ z-index: 9999; pointer-events: auto !important; -webkit-box-shadow: 0px 0px 61px 29px rgba(0, 0, 0, 0.75); -moz-box-shadow: 0px 0px 61px 29px rgba(0, 0, 0, 0.75); box-shadow: 0px 0px 61px 29px rgba(0, 0, 0, 0.75); }
 
-#cake{ 
-  background:$color_2;
-  min-height:100%;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 100px; 
-}
-	
-.pud{
-  @include transitions(all $anim_speed_3 ease);
-  height: 48vh;
-  width:58vw; 
-  margin:0 auto;
-  margin-bottom:1vw;/*border*/
-  padding: 0; 
-  position: relative;
-  border:2px solid $color_1;
-  box-sizing: border-box;
+.width { -moz-transition: all 0.25s ease; -o-transition: all 0.25s ease; -ms-transition: all 0.25s ease; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; width: 96%; margin-left: 2%; }
 
-}
+.transform { -moz-transition: all 0.75s ease; -o-transition: all 0.75s ease; -ms-transition: all 0.75s ease; -webkit-transition: all 0.75s ease; transition: all 0.75s ease; -moz-transform: skew(0deg, 0deg); -o-transform: skew(0deg, 0deg); -ms-transform: skew(0deg, 0deg); -webkit-transform: skew(0deg, 0deg); transform: skew(0deg, 0deg); -moz-transform: rotate(0deg, 0deg); -o-transform: rotate(0deg, 0deg); -ms-transform: rotate(0deg, 0deg); -webkit-transform: rotate(0deg, 0deg); transform: rotate(0deg, 0deg); }
 
-.center_1{  
-  @include transitions(all $anim_speed_3 ease);
-  @include skew(45, 0);
-  @include rotate(45, 0);
- /* height: 48vh;*/
-  width:58vw;   height:48vh;
+.pointer_events_auto { pointer-events: auto !important; }
 
-  margin:0 auto;
-  margin-bottom:1vw;/*border*/
-  padding: 0; 
-  position: relative;
-  border:2px solid $color_1;
-  box-sizing: border-box;
-}
+.pointer_events_none { pointer-events: none !important; }
 
-.center_2{  
-  @include transitions(all $anim_speed_3 ease);
-  @include skew(-45, 0);
-  @include rotate(-45, 0);
- /* height: 48vh;*/
-  width:58vw;   height:48vh;
+.padd_bott { -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; padding-bottom: 30vh; }
 
-  margin:0 auto;
-  margin-bottom:1vw;/*border*/
-  padding: 0; 
-  position: relative;
-  border:2px solid $color_1;
-  box-sizing: border-box;
-}
+.overflow { -moz-transition: all 0.75s ease-in; -o-transition: all 0.75s ease-in; -ms-transition: all 0.75s ease-in; -webkit-transition: all 0.75s ease-in; transition: all 0.75s ease-in; height: 100vh; overflow: hidden; }
 
-.image_center_one{
-  background:red;
-  width:100%;
- /*  height:48vh; */
-  margin:0 auto;
-}
-
-.image_center_two{
-  background:$color_1;
-  height:100%;
-	width:100%;
-  margin:0 auto;
-  text-align:center;
-}
-
-
-
-
-
-
-
-.p_0{
-  background:$color_2;
-  @include transitions(all $anim_speed_3 ease);
-  @include skew(-33, 0);
-  @include rotate(-45, 99);
-  perspective:55vh;
-  position: relative;
-  height: 48vh;
-  width:58vw; 
-  margin:0 auto;
-  margin-bottom:1vw;/*border*/
-  padding: 0; 
-  box-sizing: border-box;
-}
-
-.pud_1{
-  background:$color_1;
- /* border:1px solid $color_2; */
-  @include transitions(all $anim_speed_3 ease);
-  @include skew(45, 0);
-  @include rotate(45, 0);
-}
-	
-.pud_2{
-  background:$color_1;
- /* border:1px solid $color_2; */
-  @include transitions(all $anim_speed_3 ease);
-  @include skew(-45, 0);
-  @include rotate(-45, 0);
-}
-
-.cd{
-  margin-bottom:20vh;
-}	
-
-
-      /*-------------BB toggle classes -------------------*/
-      /*-------------BB toggle classes -------------------*/
-.perspective{perspective:900px;}
-
-.marg_bottom_1{margin-bottom:50px;}
-
-.marg_top_1{
-  @include transitions(all $anim_speed_2 ease);
-  margin-top:96vh;
-}
-
-.skew{
- transform:skewY(-5deg);
-}
-
-.height{
-  @include transitions(all $anim_speed_0 );
-  height:96%; 
-}
-
-.height2{
-  @include transitions(all $anim_speed_3 );
-  height:100%; 
-}
-
-.position{
-  @include transitions(all $anim_speed_3 ease);
-  position:fixed;
-  top:2%;
- /* display:block; */
-  z-index:9999;
-  pointer-events: auto !important;
-   @include box-shadow;
-}
-
-.width{
-  @include transitions(all $anim_speed_1 ease);
-  width:96%;margin-left:2%;
-}
-
-.transform{  
-  @include transitions(all $anim_speed_3 ease);
-  @include skew(0, 0);
-  @include rotate(0, 0);
-}
-		
-
-
-.pointer_events_auto{
-  pointer-events: auto !important;
-}
-
-.pointer_events_none{
-  pointer-events: none !important;
-}
-
-.padd_bott{
-  @include transitions(all $anim_speed_2 ease);
-  padding-bottom:30vh;
-}
-
-.overflow{
-  @include transitions(all $anim_speed_3 ease-in);
-  height:100vh;overflow:hidden;
-}
-
-.close_but { 
-  background: lightblue;
-  display: none; 
-  position: absolute;
-  z-index: 99999; 
-  top: 90px;
-  right: 90px;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  font-size: 50px;
-  text-align:center;
-}
+.close_but { background: lightblue; display: none; position: absolute; z-index: 99999; top: 90px; right: 90px; height: 50px; width: 50px; line-height: 50px; font-size: 50px; text-align: center; }
 
 .close_but:hover { cursor: pointer; transition: background-color 1s ease; background-color: red; }
 
 .display_vis { display: block; }
+
 .display_none { display: none; }
-      /*-------------EE toggle classes -------------------*/
-      /*-------------EE toggle classes -------------------*/
 
-
-
-
-
-
-@media screen and (max-width: 480px) {
-  #cake{background:green;height:auto}
-  .pud{width:35vw;height:45vh;margin:0 auto;}
-  .skew{transform: skewY(-1deg);}
-  .perspective{perspective:none;}
-  .width{width:116vw;transition:all .5s;} 
-  .height{height:120vh;transition:all .5s;} 
-}
-
-@media screen and (min-width: 481px) and (max-width:960px) {
-  .pud{width:50vw;height:45vh;margin:0 auto;}
-  .width{width:96% !important; margin-left:2%;transition:all .5s;} 
-  .height{height:94vh;transition:all .5s;} 
-  .skew{transform: skewY(-4deg);}
-}
+/*-------------EE toggle classes -------------------*/
+/*-------------EE toggle classes -------------------*/
+@media screen and (max-width: 480px) { #cake { background: green; height: auto; }
+  .pud { width: 35vw; height: 45vh; margin: 0 auto; }
+  .skew { transform: skewY(-1deg); }
+  .perspective { perspective: none; }
+  .width { width: 116vw; transition: all .5s; }
+  .height { height: 120vh; transition: all .5s; } }
+@media screen and (min-width: 481px) and (max-width: 960px) { .pud { width: 50vw; height: 45vh; margin: 0 auto; }
+  .width { width: 96% !important; margin-left: 2%; transition: all .5s; }
+  .height { height: 94vh; transition: all .5s; }
+  .skew { transform: skewY(-4deg); } }
