@@ -246,7 +246,7 @@ IMG.displayed {
 
 
 .p_0{
-  background:blue;
+  background:black;
   @include transitions(all $anim_speed_3 ease);
   @include skew(-33, 0);
   @include rotate(-45, 99);
