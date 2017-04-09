@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+<style>
+body{
+  height:auto;
+  margin:0;
+}
+
+.red{background:red;} .pink{background:pink;} .purple{background:purple;}
+
+	
+.big_zindex{
+  z-index:9;position:absolute;
+}
+
+.circle_1 { 
+  position: absolute;z-index:9; display: block; background: yellow; border-radius: 100%;
+  height: 10vw; width: 10vw; left: 60%; top: 20px;  background: radial-gradient(circle at 10vw 10vw, #fff, #ffffe6); -webkit-box-shadow: 10px 10px 225px 75px white; -moz-box-shadow: 10px 10px 225px 75px white; box-shadow: 10px 10px 225px 75px white; }
+.circle_1:before { content: ""; position: absolute; 
+    background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(240, 209, 128, 0.5) 70%);
+    border-radius: 50%; bottom: 2.5%; left: 5%; opacity: 0.6; height: 100%; width: 90%; -webkit-filter: blur(5px); z-index: 2; }
+    
+    
+#ocean{
+  height:100vh;
+  width:100%;
+  margin:0;
+  position:absolute;left:0;
+  z-index:2;
+  background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0, rgb(0,50,150)),
+  color-stop(0.50, rgb(0,150,255))
+  ); 
+}
+
+.wave{
+  background:lightblue;
+  display:inline-block;
+  height:35%;
+  width:10px;
+  position:absolute;z-index:2;
+  -webkit-animation-name:             dostuff; 
+  -webkit-animation-duration:         3s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes dostuff{
+  0%{
+    height:60%;
+  }
+  50%{ 
+    height:40%;
+  }
+  100%{ 
+    height:60%;
+  }
+}
+            
+        
+#myHeader{
+    height:100vh;
+        /*
+    background-size:cover;
+    background-repeat: no-repeat;   
+    background-image: url("/my_pagelayouts/design_portfolio/images/buzzy.jpg");
+    background-color: #cccccc;
+        */
+}
+    
+.get_right{position:absolute;z-index:9;right:40px;top:40px;}
+    
+#gap{height:300px;width:100%;background:orange}
+	
+#gap_1{height:300px;}
+
+#gap_2{height:500px;}
+    
+.roomholder2{background:blue;height:300px;}
+.roomholder{background:blue;height:500px;}
+
+#gap_3room{width:1000px;height:1000px;}
+	
+.overflowhider{overflow:hidden;}
+	
+#mySidebar{z-index:99;}
+	
+.pos_bot_centy{position:absolute;width:100%;left:0;bottom:0px;text-decoration:none !important;}
+	
+</style>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+  <button class="w3-bar-item w3-button w3-right" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+</nav>
+
+<!-- Header -->
+<header  class="w3-container w3-theme" id="myHeader">
+    
+    
+  <figure class="circle_1"></figure>	
+  <div id="ocean">
+  </div>
+
+    
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme get_right"></i> 
+ 
+    
+  <div class="w3-padding big_zindex">
+      
+  <div class="w3-left">
+  <h5>Philip Dusel</h5>
+  <h1 class="w3-xxxlarge w3-animate-bottom">Designer / Creative</h1>
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
+    </div>
+  </div>  
+
+
+      
+ </div>
+
+    
+  <div class="w3-center pos_bot_centy big_zindex">
+    <div class="w3-transparent">
+      <a class="w3-button w3-text-black w3-transparent w3-hover-transparent w3-padding-32" href="#scroll_tothis_1"><i class="fa fa-3x fa-caret-down"></i></a>
+    </div>	  
+  </div>  
+    
+	
+</header>
+
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <h4>Oh snap! We just showed you a modal..</h4>
+        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+      </header>
+      <div class="w3-padding">
+        <p>Cool huh? Ok, enough teasing around..</p>
+        <p>Go to our <a class="w3-btn" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        <p>Modal footer</p>
+      </footer>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id02').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+      </header>
+      <div class="w3-padding">
+          <object id="gap_2777" width="100%" height="100%"  data="https://phillycheese007.github.io/aaazzz_myportfolios/index.html" >
+          </object> 
+      </div>
+
+    </div>
+</div>
+	
+	
+    
+<div id="scroll_tothis_1" class="w3-container">
+<hr>
+
+<div class="w3-row">
+  <div class="w3-col w3-container m2 w3-red"><p></p></div>
+  <div class="w3-col w3-container m2 w3-blue"><p></p></div>
+  <div class="w3-col w3-container m2 w3-blue-grey"><p></p></div>
+  <div class="w3-col w3-container m2 w3-teal"><p></p></div>
+  <div class="w3-col w3-container m2 w3-yellow"><p></p></div>
+  <div class="w3-col w3-container m2 w3-orange"><p></p></div>
+</div>
+    
+</div>
+    
+    
+    
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card-2 w3-container" style="min-height:460px">
+  <h3>Responsive</h3><br>
+  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Built-in responsiveness</p>
+  <p>Mobile first fluid grid</p>
+  <p>Fits any screen sizes</p>
+  <p>PC Tablet and Mobile</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-container" style="min-height:460px">
+  <h3>Standard CSS</h3><br>
+  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Standard CSS only</p>
+  <p>Easy to learn</p>
+  <p>No need for jQuery</p>
+  <p>No JavaScript library</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-container" style="min-height:460px">
+  <h3>Design</h3><br>
+  <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Paper like design</p>
+  <p>Bold colors and shadows</p>
+  <p>Equal across platforms</p>
+  <p>Equal across devices</p>
+  </div>
+</div>
+</div>
+
+  
+  
+<div class="w3-container">
+<hr>
+
+<div class="w3-row">
+  <div class="w3-col w3-container m2 w3-red"><p></p></div>
+  <div class="w3-col w3-container m2 w3-blue"><p></p></div>
+  <div class="w3-col w3-container m2 w3-blue-grey"><p></p></div>
+  <div class="w3-col w3-container m2 w3-teal"><p></p></div>
+  <div class="w3-col w3-container m2 w3-yellow"><p></p></div>
+  <div class="w3-col w3-container m2 w3-orange"><p></p></div>
+</div>
+
+    
+    
+
+<div class="w3-container w3-center">
+  <hr>
+  <h3>PROJECTS</h3>
+</div>
+
+<div class="w3-row-padding"> 
+
+<div class="w3-third">
+<div class="w3-card-2">
+  <div class="roomholder overflowhider">
+          <object id="gap_3room" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
+          </object>  
+  </div>
+  <div class="w3-container">
+  <p>w3-card-2</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-4" onclick="document.getElementById('id02').style.display='block'">
+          
+            <object id="gap_2" style="width:100%"  data="https://phillycheese007.github.io/aaazzz_myportfolios/index.html" >
+            </object>  
+	
+  <div class="w3-container">
+  <p>w3-card-4</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card-4">
+          <object id="gap_2" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
+          </object>  
+  <div class="w3-container">
+  <p>w3-card-4</p>
+  </div>
+</div>
+</div>
+</div>
+
+    
+    
+<hr>
+  <div class="w3-container">
+    <h4 class="w3-center">Skills</h4>
+      
+   <div class="w3-container w3-blue">
+    <h5>Coding</h5>
+   
+    <p>CSS</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-black" style="width:80%">+80%</div>
+    </div>
+
+    <p>SASS/SCSS</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-black" style="width:30%">+30%</div>
+    </div>
+      
+    <p>JAVASCRIPT/JQUERY</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-black" style="width:50%">50%</div>
+    </div>
+    <br>
+   </div>
+   
+   <br>
+      
+   <div class="w3-container w3-green">
+    <h5>Design</h5>
+       
+    <p>PHOTOSHOP</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-black" style="width:65%">65%</div>
+    </div>
+      
+    <p>ILLUSTRATOR</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-black" style="width:75%">75%</div>
+    </div>
+      
+    <p>IN-DESIGN</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-center w3-padding w3-black" style="width:5%">5%</div>
+    </div> 
+   <br>
+   </div>
+  </div>
+  <hr>
+
+  
+  
+  
+<div class="w3-center">
+  <h2>Built-In Responsiveness</h2>
+  <p class="w3-large">Resize the page to see the effect!</p>
+</div>
+<br>
+
+
+
+
+
+<div class="w3-row w3-border">
+  <div class="w3-quarter w3-container w3-red">
+    <h5>w3-quarter</h5>  
+    <p>The w3-quarter class uses one quarter (25%) of the screen window.</p>
+    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+  </div>
+  <div class="w3-quarter w3-container purple">
+    <div class="roomholder2 overflowhider">
+          <object id="gap_3room" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
+          </object>  
+    </div>
+  </div>
+  <div class="w3-quarter w3-container pink">
+          <object id="gap" class="w3-center" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
+          </object>  
+  </div>
+  <div class="w3-quarter w3-container red">
+              <IMG id="gap_1" class="w3-center" src="/my_pagelayouts/design_portfolio/images/rep1.png"/>
+
+  </div>
+</div> 
+     
+<hr>
+  
+  
+  
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>Footer</h3>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>&nbsp;   
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>Remember to check out our&nbsp;&nbsp;<a href="w3css_references.asp" class="w3-btn w3-theme-light" target="_blank">W3.CSS Reference</a></p>
+</footer>
+
+    
+    
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+	</script>
+    
+    
+    
+  <script>
+    $( document ).ready(function() {
+
+// make some waves.
+var ocean = document.getElementById("ocean"),
+    waveWidth = 10,
+    waveCount = Math.floor(window.innerWidth/waveWidth),
+    docFrag = document.createDocumentFragment();
+
+for(var i = 0; i < waveCount; i++){
+  var wave = document.createElement("div");
+  wave.className += " wave";
+  docFrag.appendChild(wave);
+  wave.style.left = i * waveWidth + "px";
+  wave.style.webkitAnimationDelay = (i/100) + "s";
+}
+
+ocean.appendChild(docFrag);
+
+
+    });
+</script>
+  
+  
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+slideIndex = slideIndex + n;
+showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
