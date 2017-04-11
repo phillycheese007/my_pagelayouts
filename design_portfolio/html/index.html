@@ -15,6 +15,9 @@ body{
   margin:0;
 }
 
+.red{background:red;} .pink{background:pink;} .purple{background:purple;}
+
+	
 .big_zindex{
   z-index:9;position:absolute;
 }
@@ -66,14 +69,9 @@ body{
     height:60%;
   }
 }
-    
-    
-    
-    
-      
-      
-      
-    #myHeader{
+            
+        
+#myHeader{
     height:100vh;
         /*
     background-size:cover;
@@ -81,25 +79,36 @@ body{
     background-image: url("/my_pagelayouts/design_portfolio/images/buzzy.jpg");
     background-color: #cccccc;
         */
-    }
+}
     
-    .get_right{position:absolute;z-index:9;right:40px;top:40px;}
+.get_right{position:absolute;z-index:9;right:40px;top:40px;}
     
-    #gap{height:300px;width:100%;background:orange}  
-    #gap_1{height:300px;}
+#gap{height:300px;width:100%;background:orange}
+	
+#gap_1{height:300px;}
 
-.red{background:red;} .pink{background:pink;} .purple{background:purple;}
+#gap_2{height:400px;}
+	
 
+	
+	
+#screen_shot_sml{width:100%;height:300px;}
+	
+#screen_shot_lrg{width:100%;height:400px}
 
-#gap_2{height:500px;}
-    
-.roomholder2{background:blue;height:300px;}
-.roomholder{background:blue;height:500px;}
+.roomholder2{height:300px;}
+.roomholder{height:400px;}
 
-#gap_3room{width:1000px;height:1000px;}
+#gap_3room{width:800px;height:800px;}
+	
 .overflowhider{overflow:hidden;}
+	
 #mySidebar{z-index:99;}
-.pos_bot_centy{position:absolute;width:100%;bottom:50px;}
+	
+.pos_bot_centy{position:absolute;width:100%;left:0;bottom:0px;text-decoration:none !important;}
+
+.w3-hover-transparent:hover{color:black 0!important;background-color:transparent !important}
+	
 </style>
 <body>
 
@@ -129,7 +138,7 @@ body{
       
   <div class="w3-left">
   <h5>Philip Dusel</h5>
-  <h1 class="w3-xxxlarge w3-animate-bottom">Designer / Creative</h1>
+  <h1 class="w3-xxxlarge w3-animate-bottom">Graphic Designer</h1>
     <div class="w3-padding-32">
       <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
     </div>
@@ -141,37 +150,21 @@ body{
 
     
   <div class="w3-center pos_bot_centy big_zindex">
-    <div class="w3-padding-32 w3-green">
-    
-    <a class="w3-text-white " href="#scroll_tothis_1"><span class="w3-xlarge">
-	    <h1>&#8595;</h1></span></a>	    
-    </div>
-	  
+    <div class="w3-container">
+  <a class="w3-button w3-text-black w3-transparent w3-hover-transparent w3-padding-32" href="#scroll_tothis_1">
+	  <i class="fa fa-3x fa-caret-down"></i></a>
+    </div>	  
   </div>  
     
+	
 </header>
 
 
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1"> 
-        <span onclick="document.getElementById('id01').style.display='none'"
-        class="w3-button w3-display-topright">&times;</span>
-        <h4>Oh snap! We just showed you a modal..</h4>
-        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-      </header>
-      <div class="w3-padding">
-        <p>Cool huh? Ok, enough teasing around..</p>
-        <p>Go to our <a class="w3-btn" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-      </div>
-      <footer class="w3-container w3-theme-l1">
-        <p>Modal footer</p>
-      </footer>
-    </div>
-</div>
 
-    
+
+
+	
+	
     
 <div id="scroll_tothis_1" class="w3-container">
 <hr>
@@ -188,56 +181,13 @@ body{
 </div>
     
     
-    
-
-<div class="w3-row-padding w3-center w3-margin-top">
-<div class="w3-third">
-  <div class="w3-card-2 w3-container" style="min-height:460px">
-  <h3>Responsive</h3><br>
-  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Built-in responsiveness</p>
-  <p>Mobile first fluid grid</p>
-  <p>Fits any screen sizes</p>
-  <p>PC Tablet and Mobile</p>
-  </div>
-</div>
-
-<div class="w3-third">
-  <div class="w3-card-2 w3-container" style="min-height:460px">
-  <h3>Standard CSS</h3><br>
-  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Standard CSS only</p>
-  <p>Easy to learn</p>
-  <p>No need for jQuery</p>
-  <p>No JavaScript library</p>
-  </div>
-</div>
-
-<div class="w3-third">
-  <div class="w3-card-2 w3-container" style="min-height:460px">
-  <h3>Design</h3><br>
-  <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Paper like design</p>
-  <p>Bold colors and shadows</p>
-  <p>Equal across platforms</p>
-  <p>Equal across devices</p>
-  </div>
-</div>
-</div>
+ 
 
   
   
-<div class="w3-container">
-<hr>
 
-<div class="w3-row">
-  <div class="w3-col w3-container m2 w3-red"><p></p></div>
-  <div class="w3-col w3-container m2 w3-blue"><p></p></div>
-  <div class="w3-col w3-container m2 w3-blue-grey"><p></p></div>
-  <div class="w3-col w3-container m2 w3-teal"><p></p></div>
-  <div class="w3-col w3-container m2 w3-yellow"><p></p></div>
-  <div class="w3-col w3-container m2 w3-orange"><p></p></div>
-</div>
+
+
 
     
     
@@ -249,40 +199,96 @@ body{
 
 <div class="w3-row-padding"> 
 
-<div class="w3-third">
-<div class="w3-card-2">
-  <div class="roomholder overflowhider">
-          <object id="gap_3room" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
-          </object>  
+  <div class="w3-third">
+    <div class="w3-card-2">
+        <!--<object id="gap_3room" class="w3-yellow" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
+        </object>-->
+	<a href="/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
+	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/Css_scene_9.png">  
+	</a>    
+      <div class="w3-container w3-white">
+        <p>w3-card-2</p>
+      </div>
+    </div>
   </div>
-  <div class="w3-container">
-  <p>w3-card-2</p>
+
+  <div class="w3-third">
+   <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_1.html">
+
+    <div class="w3-card-4" onclick="document.getElementById('id02').style.display='block'">     
+	    
+
+     <!--<object id="gap_2" class="w3-pink" style="width:100%"  data="https://phillycheese007.github.io/aaazzz_myportfolios/index3.html" >
+      </object>-->
+
+	    
+        <object id="gap_2" class="w3-pink" style="width:100%;pointer-events:none;"  data="https://phillycheese007.github.io/aaazzz_myportfolios/index3.html" >
+        </object>	
+      
+	    
+      <div class="w3-container w3-white">
+        <p>w3-card-4</p>
+      </div>
+    </div>
+   </a>  
   </div>
-</div>
+
+  <div class="w3-third">
+    <div class="w3-card-4">
+      <!--<object id="gap_2" class="w3-purple" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
+      </object>  -->
+	<img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/phone_screen_shot_1.png">  
+
+      <div class="w3-container w3-white">
+        <p>w3-card-4</p>
+      </div>
+    </div>
+  </div>
+	
 </div>
 
-<div class="w3-third">
-<div class="w3-card-4">
-          <object id="gap_2" style="width:100%"  data="https://phillycheese007.github.io/aaazzz_myportfolios/index.html" >
-          </object>  
-  <div class="w3-container">
-  <p>w3-card-4</p>
-  </div>
-</div>
-</div>
+<br>
+	
+<div class="w3-row-padding"> 
 
-<div class="w3-third">
-<div class="w3-card-4">
-          <object id="gap_2" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
-          </object>  
-  <div class="w3-container">
-  <p>w3-card-4</p>
+  <div class="w3-third">
+    <div class="w3-card-2">
+        <!--<object id="gap_3room" class="w3-yellow" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
+        </object>-->
+	<a href="/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
+	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/Css_scene_9.png">  
+	</a>    
+      <div class="w3-container w3-white">
+        <p>w3-card-2</p>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-</div>
 
-    
+  <div class="w3-third">
+    <div class="w3-card-4" onclick="document.getElementById('id02').style.display='block'">     
+      <object id="gap_2" class="w3-pink" style="width:100%"  data="https://phillycheese007.github.io/aaazzz_myportfolios/please_work/new_test_1.html" >
+      </object>  	
+      <div class="w3-container w3-white">
+        <p>w3-card-4</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4">
+      <!--<object id="gap_2" class="w3-purple" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
+      </object>  -->
+	<img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/phone_screen_shot_1.png">  
+
+      <div class="w3-container w3-white">
+        <p>w3-card-4</p>
+      </div>
+    </div>
+  </div>
+	
+</div>
+	
+	
     
 <hr>
   <div class="w3-container">
@@ -334,38 +340,8 @@ body{
 
   
   
-  
-<div class="w3-center">
-  <h2>Built-In Responsiveness</h2>
-  <p class="w3-large">Resize the page to see the effect!</p>
-</div>
-<br>
 
 
-
-
-
-<div class="w3-row w3-border">
-  <div class="w3-quarter w3-container w3-red">
-    <h5>w3-quarter</h5>  
-    <p>The w3-quarter class uses one quarter (25%) of the screen window.</p>
-    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
-  </div>
-  <div class="w3-quarter w3-container purple">
-    <div class="roomholder2 overflowhider">
-          <object id="gap_3room" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
-          </object>  
-    </div>
-  </div>
-  <div class="w3-quarter w3-container pink">
-          <object id="gap" class="w3-center" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
-          </object>  
-  </div>
-  <div class="w3-quarter w3-container red">
-              <IMG id="gap_1" class="w3-center" src="/my_pagelayouts/design_portfolio/images/rep1.png"/>
-
-  </div>
-</div> 
      
 <hr>
   
@@ -378,7 +354,6 @@ body{
 
 
 
-</div>
 
 
 
