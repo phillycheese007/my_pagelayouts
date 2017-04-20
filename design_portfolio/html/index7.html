@@ -1,0 +1,607 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+<style>
+body{
+  height:auto;
+  margin:0;
+}
+
+.red{background:red;} .pink{background:pink;} .purple{background:purple;}
+
+	
+.big_zindex{
+  z-index:9;position:absolute;
+}
+
+.circle_1 { 
+  position: absolute;z-index:9; display: block; background: yellow; border-radius: 100%;
+  height: 10vw; width: 10vw; left: 60%; top: 20px;  background: radial-gradient(circle at 10vw 10vw, #fff, #ffffe6); -webkit-box-shadow: 10px 10px 225px 75px white; -moz-box-shadow: 10px 10px 225px 75px white; box-shadow: 10px 10px 225px 75px white; }
+.circle_1:before { content: ""; position: absolute; 
+    background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(240, 209, 128, 0.5) 70%);
+    border-radius: 50%; bottom: 2.5%; left: 5%; opacity: 0.6; height: 100%; width: 90%; -webkit-filter: blur(5px); z-index: 2; }
+    
+    
+/*#ocean{
+  height:100vh;
+  width:100%;
+  margin:0;
+  position:absolute;left:0;
+  z-index:2;
+  background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0, rgb(0,50,150)),
+  color-stop(0.50, rgb(0,150,255))
+  ); 
+}
+
+.wave{
+  background:lightblue;
+  display:inline-block;
+  height:35%;
+  width:10px;
+  position:absolute;z-index:2;
+  -webkit-animation-name:             dostuff; 
+  -webkit-animation-duration:         3s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes dostuff{
+  0%{
+    height:60%;
+  }
+  50%{ 
+    height:40%;
+  }
+  100%{ 
+    height:60%;
+  }
+}
+   */         
+        
+#myHeader{
+    height:100vh;
+        /*
+    background-size:cover;
+    background-repeat: no-repeat;   
+    background-image: url("/my_pagelayouts/design_portfolio/images/buzzy.jpg");
+    background-color: #cccccc;
+        */
+}
+    
+.get_right{position:absolute;z-index:9;right:40px;top:40px;}
+    
+#gap{height:300px;width:100%;background:orange}
+	
+#gap_1{height:300px;}
+
+#gap_2{height:400px;}
+	
+
+	
+	
+#screen_shot_sml{width:100%;height:300px;}
+	
+#screen_shot_lrg{width:100%;height:400px}
+
+.roomholder2{height:300px;}
+.roomholder{height:400px;}
+
+#gap_3room{width:800px;height:800px;}
+	
+.overflowhider{overflow:hidden;}
+	
+#mySidebar{z-index:99;}
+	
+.pos_bot_centy{position:absolute;width:100%;left:0;bottom:0px;text-decoration:none !important;}
+
+.w3-hover-transparent:hover{color:black 0!important;background-color:transparent !important}
+.tiny{font-size:12px;}	
+	
+.my_text_black{color:black !important;}
+	
+.spozfoot{background:green;}
+.my-padding-lr{padding:0;padding-left:16px;padding-right:16px;
+}
+.mypadright{padding-right:32px;}
+	
+
+	</style>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+  <button class="w3-bar-item w3-button w3-right" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+</nav>
+
+<!-- Header -->
+<header  class="w3-container w3-yellow" id="myHeader">
+    
+    
+  <figure class="circle_1"></figure>	
+ <!-- <div id="ocean">
+  </div>-->
+
+    
+ <!-- <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme get_right"></i> -->
+ 
+    
+  <div class="w3-padding big_zindex">
+      
+  <div class="w3-left my_text_black">
+  <h3>Philip Dusel</h3>
+  <h3>Designer / Creative</h3>
+  <p>410-314-8278</p>
+  <p>philipdusel@gmail.com</p>
+  </div>  
+
+
+      
+ </div>
+
+    
+  <div class="w3-center pos_bot_centy big_zindex">
+    <div class="w3-container">
+  <a class="w3-button w3-text-black w3-transparent w3-hover-transparent w3-padding-32" href="#scroll_tothis_1">
+	  <i class="fa fa-3x fa-caret-down"></i></a>
+    </div>	  
+  </div>  
+    
+	
+</header>
+
+
+
+
+
+	
+	
+    
+<div id="scroll_tothis_1" class="w3-container"> 
+</div>
+    
+    
+ 
+
+  
+  
+
+
+
+
+    
+    
+
+<div class="w3-container w3-center">
+<br><br>
+	
+	<h3>PROJECTS</h3>
+</div>
+
+<div class="w3-row-padding"> 
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+        <!--<object id="gap_3room" class="w3-yellow" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
+        </object>-->
+	<a href="/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
+	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/Css_scene_9.png">  
+	</a>    
+      <div class="w3-container w3-white">
+        <p>Room in the Clouds</p>
+        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html">
+	   <p class="tiny">Link To Project</p>
+	</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+   <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_1.html">
+
+    <div class="w3-card-4" onclick="document.getElementById('id02').style.display='block'">     
+	    
+
+     <!--<object id="gap_2" class="w3-pink" style="width:100%"  data="https://phillycheese007.github.io/aaazzz_myportfolios/index3.html" >
+      </object>-->
+
+	    
+	<img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/birdroom.png">  
+	    
+      <div class="w3-container w3-white">
+        <p>Video Game</p>
+        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_1.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://phillycheese007.github.io/aaazzz_myportfolios/please_work/cloth5.html">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
+   </a>  
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4">
+      <!--<object id="gap_2" class="w3-purple" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
+      </object>  -->
+	<img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/phone_screen_shot_1.png">  
+
+      <div class="w3-container w3-white">
+        <p>Phone Animation</p>
+        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
+  </div>
+	
+</div>
+
+<br>
+	
+<div class="w3-row-padding"> 
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+        <!--<object id="gap_3room" class="w3-yellow" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
+        </object>-->
+	<a href="/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
+	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/bchtwn.png">  
+	</a>    
+      <div class="w3-container w3-white">
+        <p>Beach Town</p>
+        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://www.youtube.com/watch?v=FzITsi3P13Y">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4 overflowhider">
+      <!--<object id="gap_2" class="w3-purple" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
+      </object>  -->
+	    
+	<img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/ravinepic.png">  
+      <div class="w3-container w3-white">
+        <p>Ravine</p>
+        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://www.youtube.com/watch?v=oZW64b0xbVs">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4 overflowhider">
+      <!--<object id="gap_2" class="w3-purple" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
+      </object>  -->
+	    
+	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/spcpicvid.png">  
+      <div class="w3-container w3-white">
+        <p>Space Room</p>
+        <a href="/my_pagelayouts/design_portfolio/html/space_video.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://www.youtube.com/watch?v=z_bv70OFcT0">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
+  </div>
+	
+</div>
+	
+<br>
+	
+<div class="w3-row-padding"> 
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+        <!--<object id="gap_3room" class="w3-yellow" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
+        </object>-->
+	<a href="/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
+	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/mirrorroom.png">  
+	</a>    
+      <div class="w3-container w3-white">
+        <p>Mirror Room</p>
+        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://www.youtube.com/watch?v=AmY8iKtfls0">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4" onclick="document.getElementById('id02').style.display='block'">     
+	<a href="/my_pagelayouts/design_portfolio/html/space_video.html">
+	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/chaos.png">  
+	</a>	
+      <div class="w3-container w3-white">
+        <p>Chaos</p>
+        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://www.youtube.com/watch?v=O2LMtH0egY4">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4" onclick="document.getElementById('id02').style.display='block'">     
+	<a href="/my_pagelayouts/design_portfolio/html/space_video.html">
+	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/goofyguys.png">  
+	</a>	
+      <div class="w3-container w3-white">
+        <p>Reset</p>
+        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
+	   <p class="tiny">&nbsp;	 </p>
+	</a>
+	<a href="https://www.youtube.com/watch?v=bT5T6Je9UZ0">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
+  </div>
+	
+	
+</div>
+
+	
+	
+	
+
+
+
+  
+
+
+     
+<hr>
+  
+  
+
+<br>
+<div class="w3-row-padding w3-white"> <!--setas white -->
+  <div class="w3-twothird w3-left w3-white">
+		
+          <p>CSS</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-center w3-black" style="width:80%">+80%</div>
+          </div>
+		
+          <p>SASS/SCSS</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-center w3-black" style="width:30%">+30%</div>
+          </div>
+      
+          <p>JAVASCRIPT/JQUERY</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-center w3-black" style="width:50%">50%</div>
+          </div>
+	    
+          <p>PHOTOSHOP</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-center w3-black" style="width:65%">65%</div>
+          </div>
+      
+          <p>ILLUSTRATOR</p>
+          <div class="w3-grey">
+            <div class="w3-container w3-center w3-black" style="width:75%">75%</div>
+          </div>
+	  <br>
+  </div>
+
+	
+  <div class="w3-row-padding w3-third w3-right w3-white"> <!--setas white -->
+   <div class="w3-row-padding w3-black"> <!--setas black -->
+    
+    <h3 class="w3-center">Philip Dusel</h3>
+    <p class="w3-center"><img src="/my_pagelayouts/design_portfolio/images/picme2.jpg" class="w3-circle" style="height:195px;width:195px" alt="Avatar"></p>
+    <hr>
+    <p><i class="fa fa-pencil fa-fw w3-margin-left w3-text-white"></i> <span class="w3-margin-right w3-right">Designer, Creative</span></p>
+    <p><i class="fa fa-home fa-fw w3-margin-left w3-text-white"></i> <span class="w3-margin-right w3-right">New York Area</span></p>
+    <p><i class="fa fa-birthday-cake  w3-margin-left fa-fw w3-text-white"></i><span class="w3-margin-right w3-right">January 14, 1987</span></p>
+    <br>  
+   </div>   
+  </div>
+	
+	
+	
+<div class="w3-row-padding w3-center w3-white"> <!--setas white -->
+	<div class="w3-row-padding w3-padding-16 w3-center w3-black">  <!--setas black -->
+          <div class="w3-quarter w3-left w3-grey"><p>Philip Dusel</p></div>
+          <div class="w3-quarter w3-white"><p>410-314-8278</p></div>
+          <div class="w3-quarter w3-red"><p>philipdusel@gmail.com</p></div>
+          <div class="w3-quarter w3-blue">
+             
+  <div class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light">Go To Top</span>&nbsp;   
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+	     
+	     
+	  </div>
+		
+	</div>
+</div>	
+	
+	
+</div>
+<br>
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-black my-padding-lr">
+	<br>
+	<br>
+	<br>
+</footer>
+
+    
+    
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+	</script>
+    
+    
+    
+ <!-- <script>
+    $( document ).ready(function() {
+
+// make some waves.
+var ocean = document.getElementById("ocean"),
+    waveWidth = 10,
+    waveCount = Math.floor(window.innerWidth/waveWidth),
+    docFrag = document.createDocumentFragment();
+
+for(var i = 0; i < waveCount; i++){
+  var wave = document.createElement("div");
+  wave.className += " wave";
+  docFrag.appendChild(wave);
+  wave.style.left = i * waveWidth + "px";
+  wave.style.webkitAnimationDelay = (i/100) + "s";
+}
+
+ocean.appendChild(docFrag);
+
+
+    });
+</script> -->
+  
+  
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+slideIndex = slideIndex + n;
+showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
