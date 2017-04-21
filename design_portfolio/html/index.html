@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <title>W3.CSS</title>
@@ -15,14 +13,13 @@ body{
   height:auto;
   margin:0;
 }
-
-.red{background:red;} .pink{background:pink;} .purple{background:purple;}
-
 	
 .big_zindex{
   z-index:9;position:absolute;
 }
-
+.big_zindex p{
+  color:black; line-height:8px;
+}
 .circle_1 { 
   position: absolute;z-index:9; display: block; background: yellow; border-radius: 100%;
   height: 10vw; width: 10vw; left: 60%; top: 20px;  background: radial-gradient(circle at 10vw 10vw, #fff, #ffffe6); -webkit-box-shadow: 10px 10px 225px 75px white; -moz-box-shadow: 10px 10px 225px 75px white; box-shadow: 10px 10px 225px 75px white; }
@@ -74,6 +71,7 @@ body{
         
 #myHeader{
     height:100vh;
+    line-height:10px; color:blue;
         /*
     background-size:cover;
     background-repeat: no-repeat;   
@@ -117,8 +115,8 @@ body{
 .my-padding-lr{padding:0;padding-left:16px;padding-right:16px;
 }
 .mypadright{padding-right:32px;}
-	
-
+.my-yellow{background:yellow;}	
+h33{font-size:12px;color:blue;font-family:"Segoe UI",Arial,sans-serif;font-weight:40;margin:10px 0}
 	</style>
 <body>
 
@@ -133,7 +131,7 @@ body{
 </nav>
 
 <!-- Header -->
-<header  class="w3-container w3-yellow" id="myHeader">
+<header  class="w3-container my-yellow" id="myHeader">
     
     
   <figure class="circle_1"></figure>	
@@ -144,11 +142,11 @@ body{
  <!-- <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme get_right"></i> -->
  
     
-  <div class="w3-padding big_zindex">
+  <div class="w3-padding-32 big_zindex">
       
-  <div class="w3-left my_text_black">
-  <h3>Philip Dusel</h3>
-  <h3>Designer / Creative</h3>
+  <div class="w3-left">
+  <p>Philip Dusel</p>
+  <p>Designer / Creative</p>
   <p>410-314-8278</p>
   <p>philipdusel@gmail.com</p>
   </div>  
@@ -198,49 +196,6 @@ body{
 
 <div class="w3-row-padding"> 
 
-  <div class="w3-third">
-    <div class="w3-card-2">
-        <!--<object id="gap_3room" class="w3-yellow" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
-        </object>-->
-	<a href="/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
-	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/Css_scene_9.png">  
-	</a>    
-      <div class="w3-container w3-white">
-        <p>Room in the Clouds</p>
-        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
-	   <p class="tiny">Project Info Page</p>
-	</a>
-	<a href="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html">
-	   <p class="tiny">Link To Project</p>
-	</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-   <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_1.html">
-
-    <div class="w3-card-4" onclick="document.getElementById('id02').style.display='block'">     
-	    
-
-     <!--<object id="gap_2" class="w3-pink" style="width:100%"  data="https://phillycheese007.github.io/aaazzz_myportfolios/index3.html" >
-      </object>-->
-
-	    
-	<img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/birdroom.png">  
-	    
-      <div class="w3-container w3-white">
-        <p>Video Game</p>
-        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_1.html">
-	   <p class="tiny">Project Info Page</p>
-	</a>
-	<a href="https://phillycheese007.github.io/aaazzz_myportfolios/please_work/cloth5.html">
-	   <p class="tiny">Link To Project</p>
-	</a>      	    
-      </div>
-    </div>
-   </a>  
-  </div>
 
   <div class="w3-third">
     <div class="w3-card-4">
@@ -260,49 +215,10 @@ body{
     </div>
   </div>
 	
-</div>
-
-<br>
 	
-<div class="w3-row-padding"> 
 
-  <div class="w3-third">
-    <div class="w3-card-2">
-        <!--<object id="gap_3room" class="w3-yellow" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
-        </object>-->
-	<a href="/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
-	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/bchtwn.png">  
-	</a>    
-      <div class="w3-container w3-white">
-        <p>Beach Town</p>
-        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
-	   <p class="tiny">Project Info Page</p>
-	</a>
-	<a href="https://www.youtube.com/watch?v=FzITsi3P13Y">
-	   <p class="tiny">Link To Project</p>
-	</a>      	    
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card-4 overflowhider">
-      <!--<object id="gap_2" class="w3-purple" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
-      </object>  -->
-	    
-	<img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/ravinepic.png">  
-      <div class="w3-container w3-white">
-        <p>Ravine</p>
-        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
-	   <p class="tiny">Project Info Page</p>
-	</a>
-	<a href="https://www.youtube.com/watch?v=oZW64b0xbVs">
-	   <p class="tiny">Link To Project</p>
-	</a>      	    
-      </div>
-    </div>
-  </div>
-
+	
+	
   <div class="w3-third">
     <div class="w3-card-4 overflowhider">
       <!--<object id="gap_2" class="w3-purple" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
@@ -319,6 +235,91 @@ body{
 	</a>      	    
       </div>
     </div>
+  </div>	
+	
+	
+	
+  <div class="w3-third">
+   <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_1.html">
+
+    <div class="w3-card-4" onclick="document.getElementById('id02').style.display='block'">     
+	    
+	<img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/birdroom.png">  
+	    
+      <div class="w3-container w3-white">
+        <p>Video Game</p>
+        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_1.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://phillycheese007.github.io/aaazzz_myportfolios/please_work/cloth5.html">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
+   </a>  
+  </div>
+
+
+	
+</div>
+
+<br>
+	
+<div class="w3-row-padding"> 
+
+	
+	
+  <div class="w3-third">
+    <div class="w3-card-2">
+        <!--<object id="gap_3room" class="w3-yellow" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
+        </object>-->
+	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/aw11.png">  
+      <div class="w3-container w3-white">
+        <p>Room in the Clouds</p>
+        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_7.html">
+	   <p class="tiny">Link To Project</p>
+	</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w3-third">
+    <div class="w3-card-4 overflowhider">
+      <!--<object id="gap_2" class="w3-purple" width="100%" height="100%"  data="https://phillycheese007.github.io/my_svg/phone/html/testing_index_2.html" >
+      </object>  -->
+	    
+	<img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/ravinepic.png">  
+      <div class="w3-container w3-white">
+        <p>Ravine</p>
+        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_movies_1.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://www.youtube.com/watch?v=oZW64b0xbVs">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2">
+        <!--<object id="gap_3room" class="w3-yellow" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
+        </object>-->
+	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/bchtwn.png">  
+      <div class="w3-container w3-white">
+        <p>Beach Town</p>
+        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_movies_1.html">
+	   <p class="tiny">Project Info Page</p>
+	</a>
+	<a href="https://www.youtube.com/watch?v=FzITsi3P13Y">
+	   <p class="tiny">Link To Project</p>
+	</a>      	    
+      </div>
+    </div>
   </div>
 	
 </div>
@@ -331,12 +332,10 @@ body{
     <div class="w3-card-2">
         <!--<object id="gap_3room" class="w3-yellow" data="https://phillycheese007.github.io/responsive_shapes/scene_11/html/attempt_6.html" >
         </object>-->
-	<a href="/my_pagelayouts/design_portfolio/html/room_in_the_clouds.html">
 	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/mirrorroom.png">  
-	</a>    
       <div class="w3-container w3-white">
         <p>Mirror Room</p>
-        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
+        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_movies_1.html">
 	   <p class="tiny">Project Info Page</p>
 	</a>
 	<a href="https://www.youtube.com/watch?v=AmY8iKtfls0">
@@ -348,12 +347,10 @@ body{
 
   <div class="w3-third">
     <div class="w3-card-4" onclick="document.getElementById('id02').style.display='block'">     
-	<a href="/my_pagelayouts/design_portfolio/html/space_video.html">
 	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/chaos.png">  
-	</a>	
       <div class="w3-container w3-white">
         <p>Chaos</p>
-        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
+        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_movies_1.html">
 	   <p class="tiny">Project Info Page</p>
 	</a>
 	<a href="https://www.youtube.com/watch?v=O2LMtH0egY4">
@@ -365,13 +362,11 @@ body{
 
   <div class="w3-third">
     <div class="w3-card-4" onclick="document.getElementById('id02').style.display='block'">     
-	<a href="/my_pagelayouts/design_portfolio/html/space_video.html">
 	  <img id="screen_shot_lrg" src="/my_pagelayouts/design_portfolio/images/goofyguys.png">  
-	</a>	
       <div class="w3-container w3-white">
         <p>Reset</p>
-        <a href="/my_pagelayouts/design_portfolio/html/phone_animation.html">
-	   <p class="tiny">&nbsp;	 </p>
+        <a href="https://phillycheese007.github.io/my_pagelayouts/design_portfolio/html/video_game_movies_1.html">
+	   <p class="tiny">Project Info Page</p>
 	</a>
 	<a href="https://www.youtube.com/watch?v=bT5T6Je9UZ0">
 	   <p class="tiny">Link To Project</p>
